@@ -6,11 +6,12 @@ A streamlined 5-step implementation plan designed around the core technical spec
 
 ## 📌 Implementation Steps
 
-### Step 1: Project Setup & Data Acquisition
+### Step 1: Project Setup & TinixAI Data Acquisition
 - [ ] Initialize project directory structure (`data/`, `src/`, `configs/`, `notebooks/`, `tests/`).
-- [ ] Create `requirements.txt` containing dependencies: `pandas`, `numpy`, `scikit-learn`, `lightgbm`, `flashtext`, `sentence-transformers`, `beautifulsoup4`, `networkx`, `shap`, `umap-learn`, `matplotlib`, `seaborn`, `pytest`.
+- [x] Create `requirements.txt` for TinixAI download/filtering: `pandas`, `pyarrow`, `huggingface_hub`, `tqdm`, `ipykernel`. Add modeling dependencies when those stages are implemented.
 - [ ] Construct `configs/skill_dictionary.json` defining canonical skill names and synonym mappings.
-- [ ] Place raw scraped dataset(s) into `data/raw/`.
+- [x] Download TinixAI `data.parquet` into `data/raw/tinixai_vietnamese_job_descriptions/`.
+- [x] Filter IT/AI/Data Science titles using `notebooks/tinix_download_filter.ipynb`, exporting CSV, Parquet and metadata to `data/processed/`.
 
 ### Step 2: Data Preprocessing Pipeline (`src/preprocessing/`)
 - [ ] **`cleaner.py`**: Implement HTML stripping (`clean_html`), Vietnamese text normalization (`normalize_text`), and minimum experience parsing (`parse_experience`).

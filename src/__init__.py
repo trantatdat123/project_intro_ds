@@ -1,3 +1,0 @@
-"""
-JobLens Vietnam source package.
-"""
