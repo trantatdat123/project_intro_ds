@@ -1,0 +1,9 @@
+﻿cluster,rows,top_skills,top_roles,median_salary_vnd
+0,3310,"JavaScript, CSS, HTML, Git, MySQL, React, REST API, SQL","Software Engineer: 2765, Other: 509, Data Engineer: 23",17500000.0
+1,3348,"Firewall, Linux, CCNA, Cisco, DNS, Windows Server, DHCP, VPN","Other: 3229, Software Engineer: 102, Data Analyst: 10",11500000.0
+2,887,"C++, Excel, C#, Python, STM32, TCP/IP, Machine Learning, SOLID","Other: 781, Software Engineer: 100, Data Engineer: 3",12500000.0
+3,3462,"Python, SQL, Machine Learning, AWS, Docker, CI/CD, Java, Excel","Other: 1783, Software Engineer: 729, Data Analyst: 464",17500000.0
+4,547,"Android, iOS, Git, OOP, Kotlin, REST API, Swift, Java","Software Engineer: 470, Other: 75, Data Analyst: 2",17500000.0
+5,2430,"Excel, SQL, JavaScript, HTML, WordPress, CSS, SQL Server, PHP","Other: 2255, Software Engineer: 105, Data Analyst: 64",14000000.0
+6,26,"Firewall, SQL Server, DNS, DHCP, Cisco",Other: 26,10000000.0
+7,24,,Other: 24,17500000.0

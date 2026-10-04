@@ -1,0 +1,38 @@
+{
+  "input": "data/processed/tinixai_it_ai_data_jobs.parquet",
+  "random_state": 42,
+  "usd_to_vnd_rate": 25500,
+  "skill_min_frequency": 20,
+  "classification_models": [
+    "tfidf_logistic",
+    "tfidf_svm",
+    "tfidf_mlp"
+  ],
+  "regression_models": [
+    "lightgbm",
+    "random_forest",
+    "ridge"
+  ],
+  "salary_train_quantiles": [
+    0.01,
+    0.99
+  ],
+  "embeddings": {
+    "enabled": true,
+    "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "batch_size": 4,
+    "max_seq_length": 256
+  },
+  "clustering": {
+    "n_clusters": 8,
+    "min_cluster_size": 35,
+    "n_neighbors": 20,
+    "n_components": 15
+  },
+  "graph": {
+    "min_skill_count": 50,
+    "min_cooccurrence": 20
+  },
+  "shap_sample_size": 150
+}

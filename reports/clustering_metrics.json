@@ -1,0 +1,25 @@
+{
+  "graph": {
+    "nodes": 171,
+    "edges": 3437,
+    "density": 0.23646370829033367,
+    "components": 2
+  },
+  "semantic": {
+    "kmeans": {
+      "method": "kmeans",
+      "clusters": 8,
+      "noise_rows": 0,
+      "silhouette_reduced_space": 0.48177430033683777,
+      "rows": 14034
+    },
+    "hdbscan": {
+      "method": "hdbscan",
+      "clusters": 44,
+      "noise_rows": 5060,
+      "silhouette_reduced_space": 0.5284162759780884,
+      "rows": 14034
+    }
+  },
+  "dataset_fingerprint": "c3c030de43509edf2c5bed1e570577fb7240e5a4c8f83e7f4edff16a30cd6862"
+}

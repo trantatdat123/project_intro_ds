@@ -1,0 +1,87 @@
+{
+  "selected_model": "lightgbm",
+  "selection_metric": "validation_mae_vnd",
+  "models": {
+    "lightgbm": {
+      "validation": {
+        "mae_vnd": 7413558.91830916,
+        "rmse_vnd": 15577383.550618988,
+        "r2": 0.17840158199470946,
+        "median_absolute_error_vnd": 4183831.7526560277,
+        "rows": 939,
+        "target": "advertised_salary_midpoint_vnd_month"
+      },
+      "test": {
+        "mae_vnd": 6119000.987353846,
+        "rmse_vnd": 9526083.06706146,
+        "r2": 0.3866274258143194,
+        "median_absolute_error_vnd": 4037055.281765623,
+        "rows": 742,
+        "target": "advertised_salary_midpoint_vnd_month"
+      }
+    },
+    "random_forest": {
+      "validation": {
+        "mae_vnd": 7573640.286803371,
+        "rmse_vnd": 15659235.939103935,
+        "r2": 0.1697446112133867,
+        "median_absolute_error_vnd": 4365505.3021862805,
+        "rows": 939,
+        "target": "advertised_salary_midpoint_vnd_month"
+      },
+      "test": {
+        "mae_vnd": 6276458.937078933,
+        "rmse_vnd": 9877072.10304865,
+        "r2": 0.34059524693598653,
+        "median_absolute_error_vnd": 4394561.02307813,
+        "rows": 742,
+        "target": "advertised_salary_midpoint_vnd_month"
+      }
+    },
+    "ridge": {
+      "validation": {
+        "mae_vnd": 7799380.661770753,
+        "rmse_vnd": 16490985.739045987,
+        "r2": 0.07920320308577833,
+        "median_absolute_error_vnd": 4039713.014160851,
+        "rows": 939,
+        "target": "advertised_salary_midpoint_vnd_month"
+      },
+      "test": {
+        "mae_vnd": 6373576.563462725,
+        "rmse_vnd": 9901993.288132848,
+        "r2": 0.33726351476897953,
+        "median_absolute_error_vnd": 4406548.929180795,
+        "rows": 742,
+        "target": "advertised_salary_midpoint_vnd_month"
+      }
+    }
+  },
+  "dataset_fingerprint": "c3c030de43509edf2c5bed1e570577fb7240e5a4c8f83e7f4edff16a30cd6862",
+  "baseline_mae_vnd": 8190633.423180593,
+  "training_bounds_vnd": [
+    2000000.0,
+    65000000.0
+  ],
+  "training_rows_removed": 44,
+  "split_rows": {
+    "train": 2312,
+    "validation": 939,
+    "test": 742
+  },
+  "target": "advertised_salary_midpoint_vnd_month",
+  "feature_columns": [
+    "experience_min",
+    "year",
+    "skill_count",
+    "role_standard",
+    "location_group",
+    "seniority",
+    "education_level",
+    "job_position",
+    "extracted_skills"
+  ],
+  "shap_model": "lightgbm",
+  "shap_scale": "log1p_salary",
+  "shap_rows": 150
+}

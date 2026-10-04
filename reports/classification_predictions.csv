@@ -1,0 +1,990 @@
+﻿id,company_group,role_standard,title_clean,predicted_role
+19,cong ty co phan giao duc cong nghe rino edu,Software Engineer,"Middle Frontend (Thu Nhập 18-25tr/Tháng, Nguyễn Tuân - Thanh Xuân)",Software Engineer
+28,cong ty tnhh dao tao va ho tro giao duc thanh dat,Software Engineer,Nhân Viên Lập Trình (Part-Time),Software Engineer
+32,le thi huyen,Software Engineer,[HN] Công Ty Giải Pháp Công Nghệ Migi Technology Tuyển Dụng Nhân Viên Lập Trình Java Full-time 2026,Software Engineer
+156,cong ty co phan tap doan meey land,AI/ML Engineer,AI Engineer,AI/ML Engineer
+157,autonomous inc,AI/ML Engineer,AI Engineer,AI/ML Engineer
+1109,cong ty tnhh linagora,Software Engineer,Frontend Architect,Software Engineer
+1291,cong ty tnhh cong nghe rbx,Software Engineer,Lập Trình Viên iOS,Software Engineer
+1307,cong ty tnhh evselab,Software Engineer,Kỹ Sư Lập Trình Frontend,Software Engineer
+1311,tong cong ty cp bao hiem sai gon ha noi bsh,Software Engineer,Lập trình viên .Net,Software Engineer
+1318,cong ty co phan giai phap thanh toan viet nam vnpay,Software Engineer,[HCM] Lập trình viên Frontend,Software Engineer
+1320,cong ty cp giai phap thanh toan viet nam vnpay,Software Engineer,Lập Trình Viên Frontend (DVNH),Software Engineer
+1322,cong ty co phan bravesoft viet nam,Software Engineer,Lập Trình Viên Frontend,Software Engineer
+1331,cong ty co phan giai phap thanh toan viet nam vnpay,Software Engineer,[HCM] Lập trình viên Backend (Golang),Software Engineer
+1337,cong ty tnhh evselab,Software Engineer,Kỹ Sư Lập Trình Backend,Software Engineer
+1348,cong ty co phan giao duc cong nghe rino edu,Software Engineer,Lập Trình Viên Backend Middle Node.Js (Thu Nhập 18-25Tr++/Tháng),Software Engineer
+1349,cong ty cp giai phap thanh toan viet nam vnpay,Software Engineer,Lập Trình Viên Backend Java,Software Engineer
+1352,cong ty co phan giai phap thanh toan viet nam vnpay,Software Engineer,Lập trình viên Backend,Software Engineer
+1354,unit technology corporation,Software Engineer,Lập Trình Viên Backend (Java),Software Engineer
+1357,cong ty tnhh tin hoc vi na,Software Engineer,Nhân Viên Lập Trình Fullstack Developer - Nhận Việc Ngay Tại Q4 HCM,Software Engineer
+1359,mobiwork jsc,Software Engineer,[HN] Công Ty Công Nghệ MOBIWORK Tuyển Dụng Lập Trình Viên Python ERPNext/Fullstack Node.JS/ React.JS Full-time 2026,Software Engineer
+1363,le thi huyen,Software Engineer,[HN] Công Ty Giải Pháp Công Nghệ MIGI Tuyển Dụng Nhân Viên Lập Trình Fullstack Full-time 2026,Software Engineer
+1366,cong ty co phan cong nghe infosys viet nam,Software Engineer,Lập Trình Fullstack,Software Engineer
+1368,cong ty co phan dau tu vang phu quy,Software Engineer,Nhân viên lập trình,Software Engineer
+1374,cong ty co phan dich vu cong nghe tsc viet nam,Software Engineer,Nhân Viên Lập Trình Fullstack,Software Engineer
+1375,chuong trinh hoc vien cong nghe bkacad,Software Engineer,Nhân viên lập trình viên fullstack,Software Engineer
+1381,vuihoc vn,Software Engineer,"Chuyên Viên Lập Trình Mobile (Thu Nhập 18-25 Triệu, PV Tháng 2 - Đi Làm Tháng 3)",Software Engineer
+1383,quynh nhu,Software Engineer,[HCM] Công Ty Alta Software Tuyển Dụng Nhân Viên Lập Trình Mobile (React Native) Full-time 2026,Software Engineer
+1392,cong ty co phan the first one,Software Engineer,Lập Trình Viên Java,Software Engineer
+1393,cong ty co phan infinity technologies global,Software Engineer,Lập Trình Viên IOS (Middle),Software Engineer
+1394,cong ty tnhh tom group viet nam,Software Engineer,Chuyên Viên Lập Trình (AUTOMATION AI),Software Engineer
+1398,cong ty co phan atomi digital,Software Engineer,Lập Trình Viên .NET,Software Engineer
+1409,cong ty tnhh cong nghe ezcloud toan cau,Software Engineer,Lập Trình Viên .Net,Software Engineer
+1411,cong ty co phan the first one,Software Engineer,Lập Trình Viên React Native,Software Engineer
+1418,quynh nhu,Software Engineer,[HCM] Công Ty Alta Software Tuyển Dụng Nhân Viên Lập Back-End/AI/Mobile (React Native) Full-time 2026,Software Engineer
+1424,tong cong ty co phan bao hiem ngan hang dau tu va phat trien viet nam bic,Software Engineer,Lập trình viên PHP (PM Quản lý nhân sự),Software Engineer
+1428,tong cong ty co phan bao hiem ngan hang dau tu va phat trien viet nam bic,Software Engineer,Lập trình viên,Software Engineer
+1433,cong ty tnhh dao tao va ho tro giao duc thanh dat,Software Engineer,Nhân Viên Lập Trình Frontend (Remote),Software Engineer
+1438,cong ty trach nhiem huu han trung son alpha he thong nha thuoc trung son,Software Engineer,Lập Trình Viên - App Mobile,Software Engineer
+1441,cong ty co phan atomi digital,Software Engineer,Lập Trình Viên Mobile (React Native),Software Engineer
+1444,cong ty co phan cong nghe so vci,Software Engineer,Lập Trình Viên Mobile,Software Engineer
+1501,ngan hang tmcp quan doi,Data Engineer,Kỹ sư Dữ liệu - Data Engineer - Khối Dữ liệu (HO26.31),Data Engineer
+1502,ngan hang tmcp quan doi,Data Engineer,Kỹ sư Dữ liệu - Data Engineer - Data Engineer - Khối Dữ liệu (HO26.78),Data Engineer
+1532,benh vien tham my kangnam,Data Analyst,Chuyên Viên Phân Tích Dữ Liệu,Data Analyst
+1535,ngan hang tmcp phuong dong ocb,Data Analyst,"Khối Quản lý rủi ro, Hội sở - CVCC Phân tích dữ liệu và mô hình",Data Analyst
+1537,ngan hang tmcp sai gon ha noi shb,Data Analyst,Chuyên viên Phân tích Dữ liệu (Khối CNTT),Data Analyst
+1541,cong ty cp tham my thu cuc,Data Analyst,Nhân Viên Phân Tích Số Liệu,Data Analyst
+1544,ngan hang tmcp quan doi,Data Analyst,Chuyên viên Phân tích Khách hàng Doanh nghiệp - Business Customer Data Analyst - Khối Dữ liệu (HO26.37),Data Analyst
+1545,ngan hang tmcp quan doi,Data Analyst,Chuyên viên Phân tích và thiết kế Mô hình dữ liệu - Data Analyst - Khối Dữ liệu (HO26.76),Data Analyst
+1546,ngan hang tmcp quan doi,Data Analyst,Chuyên viên Phân tích Khách hàng Doanh nghiệp - Business Customer Data Analyst - Khối Dữ liệu (HO26.37),Data Analyst
+1548,cong ty tnhh giay lee man viet nam,Data Analyst,Nhân Viên Phân Tích Dữ Liệu,Data Analyst
+1549,cong ty cp cong nghe va truyen thong dagoras,Data Analyst,Chuyên Viên Phân Tích Dữ Liệu (Data Analyst),Data Analyst
+1557,cong ty tnhh billion vietnam holding,Data Analyst,Chuyên Viên Phân Tích Dữ Liệu,Data Analyst
+1571,truong dai hoc cong nghe dong a,Data Scientist,Giảng Viên Công Nghệ Thông Tin - Khoa Học Dữ Liệu,Software Engineer
+1572,ngan hang tmcp phuong dong ocb,Data Scientist,P. Khoa học dữ liệu - CVCC Khoa học dữ liệu,AI/ML Engineer
+3860,btaskee vietnam,Software Engineer,Software Developer Intern,Software Engineer
+3865,isv vietnam co ltd,Software Engineer,"Software Developer (Java, PHP, .Net, JavaScript, Fresher)",Software Engineer
+3866,cong ty tnhh mitek viet nam,Software Engineer,"Software Engineer (DevOps. NET, C#)",Software Engineer
+3868,mindx,Software Engineer,"[Startup-HN] Trường Công Nghệ MindX Tuyển Dụng Thực Tập Sinh Software Engineer, Nhân Viên Software Engineer (Fresher)/Software Mid-Level Engineer Part-time/Full-time 2026",Software Engineer
+3877,viettel idc,Software Engineer,Software Engineer (Golang/Python/Java),Software Engineer
+3880,cong ty cp vang bac da quy phu nhuan pnj,Software Engineer,Expert Software Engineer (AWS),Software Engineer
+3891,mitek viet nam,Software Engineer,Senior Software Engineer (C++/C# Desktop Applications),Software Engineer
+3904,cong ty co phan bravesoft viet nam,Software Engineer,Bridge Software Engineer,Software Engineer
+3906,cong ty co phan giai phap phan mem biplus viet nam,Software Engineer,Software Engineer (Java),Software Engineer
+3907,cong ty co phan viet nam,Software Engineer,Software Engineer,Software Engineer
+3910,friwo vietnam co ltd,Software Engineer,Embedded Software Engineer,Software Engineer
+3913,cong ty co phan cmc openai,Software Engineer,Fullstack Software Engineer,Software Engineer
+3938,cong ty tnhh rakus viet nam,Software Engineer,Senior / Principal Php Software Engineer,Software Engineer
+3941,cong ty tnhh mitek viet nam,Software Engineer,"Senior Software Engineer (C++, C#)",Software Engineer
+3943,bss group,Software Engineer,Magento Frontend Developer (Hyva Theme),Software Engineer
+3946,cong ty co phan tomotek,Software Engineer,Intern/Fresher Frontend Developer (Angular/Reactjs),Software Engineer
+3947,cong ty co phan atomi digital,Software Engineer,Lập Trình Viên Frontend (Angular Junior - Senior),Software Engineer
+3948,tma solutions,Software Engineer,Web App Frontend Developer/UI/UX,Software Engineer
+3950,cong ty tnhh edtech cole,Software Engineer,Junior Frontend Developer - Tại Hà Nội,Software Engineer
+3954,unit technology corporation,Software Engineer,Frontend Developer (ReactJS),Software Engineer
+3962,unit technology corporation,Software Engineer,Frontend Developer (Angular),Software Engineer
+3975,cong ty tnhh gemcommerce,Software Engineer,Frontend Developer (ReactJS/VueJS),Software Engineer
+3977,careerviet,Software Engineer,"Frontend Developer (ReactJS, Next.js)",Software Engineer
+3992,cong ty co phan rikkeisoft,Software Engineer,Frontend Developer VueJS (Biết Java),Software Engineer
+4001,cong ty co phan truyen thong van hoa viet,Software Engineer,Frontend Developer PHP,Software Engineer
+4022,cong ty co phan cong nghe ky thuat vtech,Software Engineer,Senior Frontend Developer - Lương Upto 40tr [Hà Nội],Software Engineer
+4026,unit technology corporation,Software Engineer,Senior Frontend Developer (Angular),Software Engineer
+4046,cong ty co phan tomotek,Software Engineer,Intern/Fresher Backend Developer (Nodejs/Python),Software Engineer
+4076,cong ty tnhh mot thanh vien wacontre,Software Engineer,"Senior Golang Developer (Backend, AWS, MySQL)",Software Engineer
+4082,cong ty tnhh live group viet nam,Software Engineer,Senior Backend Developer (Golang & NodeJS),Software Engineer
+4106,cong ty co phan viet nam,Software Engineer,Backend Developer,Software Engineer
+4107,cong ty tnhh metacrew,Software Engineer,Backend Developer,Software Engineer
+4110,cong ty co phan viet nam,Software Engineer,Backend Developer,Software Engineer
+4116,unit technology corporation,Software Engineer,Backend Developer (C/C++ – Banking Domain),Software Engineer
+4132,ngan hang tmcp phuong dong ocb,Software Engineer,IT-Backend Developer (Java/Spring Boot) - Middle to Senior Level,Software Engineer
+4135,cong ty tnhh live group viet nam,Software Engineer,Senior Backend Developer (Golang & NodeJS),Software Engineer
+4136,cong ty tnhh giai phap nuoc va moi truong singapore,Software Engineer,Senior Backend Developer (Nodejs),Software Engineer
+4139,cong ty tnhh giai phap nuoc va moi truong singapore,Software Engineer,Senior Backend Developer (Nodejs),Software Engineer
+4140,isb vien dao tao quoc te,Software Engineer,Senior/Lead Backend Developer,Software Engineer
+4141,cong ty tnhh giai phap nuoc va moi truong singapore,Software Engineer,Senior Backend Developer,Software Engineer
+4145,cong ty tnhh truyen thong yoday,Software Engineer,Fullstack Developer Intern (Hỗ trợ phụ cấp + Mộc thực tập),Software Engineer
+4154,cong ty cp cong nghe va truyen thong dagoras,Software Engineer,Fullstack Java Developer,Software Engineer
+4161,fpt software cong ty tnhh phan mem fpt ho chi minh,Software Engineer,Fresher Fullstack ReactJS & NodeJS,Software Engineer
+4173,opencommerce group,Software Engineer,Fullstack Developer- Upto 35M Net (Junior Cứng/ Middle),Software Engineer
+4175,opencommerce group,Software Engineer,Fullstack Developer- Junior- Upto 20M Net,Software Engineer
+4176,cong ty tnhh lisod viet nam,Software Engineer,Junior Fullstack Developer (PHP/Laravel),Software Engineer
+4182,ngan hang tmcp quan doi,Software Engineer,"(Middle, Senior) FullStack Developer - Khối Công nghệ thông tin (HOLT.12)",Software Engineer
+4185,ngan hang tmcp quan doi,Software Engineer,"(Middle, Senior) FullStack Developer - Khối Công nghệ thông tin (HOLT.12)",Software Engineer
+4187,cong ty co phan i group,Software Engineer,Fullstack Developer,Software Engineer
+4190,cong ty tnhh rakus viet nam,Software Engineer,Senior PHP Fullstack Developer (SaaS Product) - Phú Nhuận,Software Engineer
+4197,unit technology corporation,Software Engineer,Fullstack .NET Developer,Software Engineer
+4208,secom service company limited,Software Engineer,Fullstack Developer Junior,Software Engineer
+4212,secom service company limited,Software Engineer,Fullstack Developer (Middle),Software Engineer
+4214,unit technology corporation,Software Engineer,Fullstack Developer,Software Engineer
+4217,cong ty co phan phc media,Software Engineer,Fullstack Developer Lead,Software Engineer
+4223,cong ty tnhh fastech asia,Software Engineer,Fullstack Developer,Software Engineer
+4226,cong ty cp phan mem mor,Software Engineer,Fullstack Developer,Software Engineer
+4229,nova service group cong ty co phan tap doan nova services,Software Engineer,Fullstack Developer,Software Engineer
+4235,cong ty tnhh innosoft technologies,Software Engineer,Fullstack Developer,Software Engineer
+4245,bss group,Software Engineer,Fullstack Developer,Software Engineer
+4248,ngan hang tmcp quan doi,Software Engineer,"FullStack Developer (Junior, Senior) - Khối Công nghệ thông tin (HOLT.04)",Software Engineer
+4252,ngan hang tmcp quan doi,Software Engineer,"FullStack Developer (Junior, Senior) - Khối Công nghệ thông tin (HOLT.04)",Software Engineer
+4281,cong ty tnhh cong nghe rbx,Software Engineer,Backend Developer (Fresher),Software Engineer
+4301,cong ty tnhh dich vu cong nghe tp,Software Engineer,Junior System Developer,Software Engineer
+4302,cong ty tnhh dich vu cong nghe tp,Software Engineer,Junior IOS Developer,Software Engineer
+4308,ngan hang tmcp quan doi,Software Engineer,"[Junior, Middle] Mobile Developer (Flutter, React Native) - Khối Công nghệ thông tin (HO25.494)",Software Engineer
+4319,cong ty co phan dau tu kinh doanh bds nhsland,Software Engineer,React Native & Next.js Developer (Mobile hoặc Web),Software Engineer
+4321,ngan hang tmcp quan doi,Software Engineer,"[Middle, Senior] Mobile Developer (Flutter, React Native) - Khối Công nghệ thông tin (HO25.495)",Software Engineer
+4325,cong ty co phan giai phap tu dong hoa ky thuat viet nam aes viet nam,Software Engineer,Mobile Developer (Flutter) - Onsite Gia Lâm,Software Engineer
+4346,cong ty co phan tien bo sai gon,Software Engineer,Trưởng Nhóm Mobile Developer Flutter,Software Engineer
+4348,alphaway technology,Software Engineer,Mobile Developer (Android),Software Engineer
+4349,cong ty tnhh dich vu tfs,Software Engineer,Mobile Developer (Flutter/Android),Software Engineer
+4353,cong ty co phan unisoft global,Software Engineer,Android Developer (,Software Engineer
+4354,cong ty co phan cmc openai,Software Engineer,Trưởng Nhóm Mobile Developer,Software Engineer
+4358,cong ty co phan cmc openai,Software Engineer,Mobile Developer,Software Engineer
+4368,cong ty co phan amf apex mekong future,Software Engineer,Mobile Developer (Flutter),Software Engineer
+4377,cong ty tnhh linagora,Software Engineer,Senior Mobile/Flutter Developer,Software Engineer
+4383,cong ty co phan apetechs,Software Engineer,Developer Mobile,Software Engineer
+4529,btaskee vietnam,Data Engineer,Data Engineer,Data Engineer
+4531,cong ty co phan cong nghe va dich vu xgame,Data Engineer,DATA ENGINEER,Data Engineer
+4547,entobel,Data Engineer,R&D Senior Data Engineer,Data Analyst
+4557,cong ty cp phan mem siten,Data Engineer,Data Engineer,Data Engineer
+4568,cong ty tnhh hcl vietnam,Data Engineer,Data Engineer (Quận 1 - HCM),Data Engineer
+4578,autonomous inc,Data Engineer,Senior Data Engineer,Data Engineer
+4583,cong ty co phan quoc te anh van hoi viet my,Data Analyst,Senior Data Analyst Executive - Finance Dept.,Data Analyst
+4594,ngan hang tmcp quan doi,Data Scientist,Chuyên viên Phát triển khoa học dữ liệu - Data Scientist - Khối Công nghệ thông tin (HO25.532),Data Scientist
+4605,ngan hang tmcp quan doi,Data Scientist,Chuyên viên Phát triển khoa học dữ liệu - Data Scientist - Khối Công nghệ thông tin (HO26.84),Data Scientist
+4616,cong ty co phan cong nghe va dich vu xgame,AI/ML Engineer,AI Engineer (Upto 40M),AI/ML Engineer
+4621,cong ty tnhh lisod viet nam,AI/ML Engineer,AI Engineer (LLM/RAG/Knowledge Graphs),AI/ML Engineer
+4624,ngan hang tmcp quan doi,AI/ML Engineer,AI Engineer (Computer Vision/NPL/LLM) - Khối Công nghệ thông tin (HOLT.13),AI/ML Engineer
+4625,marusys vina co ltd,AI/ML Engineer,AI Engineer (Computer Vision) One Year Of Experience Required,AI/ML Engineer
+4632,ngan hang tmcp quan doi,AI/ML Engineer,AI Engineer (Computer Vision/NPL/LLM) - Khối Công nghệ thông tin (HOLT.13),AI/ML Engineer
+4636,cong ty tnhh mot thanh vien wacontre,AI/ML Engineer,AI Engineer / Machine Learning Engineer,AI/ML Engineer
+4663,cong ty co phan giai phap cong nghe ttc viet nam,AI/ML Engineer,AI Engineer,AI/ML Engineer
+4668,cong ty cp phan mem siten,AI/ML Engineer,AI Engineer (GenAI),AI/ML Engineer
+4669,gremsy jsc,AI/ML Engineer,Edge AI Engineer,AI/ML Engineer
+4676,viettel idc,AI/ML Engineer,AI Engineer,AI/ML Engineer
+4681,ngan hang tmcp sai gon ha noi shb,AI/ML Engineer,AI Engineer,AI/ML Engineer
+4703,cong ty tnhh sai gon stec,AI/ML Engineer,AI Engineer,AI/ML Engineer
+4706,ngan hang tmcp sai gon ha noi shb,AI/ML Engineer,AI Engineer,AI/ML Engineer
+4708,cong ty co phan cmc openai,AI/ML Engineer,AI Engineer,AI/ML Engineer
+4709,cong ty co phan cong nghe va dich vu xgame,AI/ML Engineer,AI Engineer,AI/ML Engineer
+4710,cong ty co phan giai phap thanh toan viet nam vnpay,AI/ML Engineer,AI ENGINEER,Software Engineer
+4711,cong ty cp giai phap thanh toan viet nam vnpay,AI/ML Engineer,AI Engineer,Software Engineer
+4717,ngan hang tmcp quan doi,AI/ML Engineer,Senior AI Engineer (Computer Vision/NPL/LLM) - Khối Công nghệ thông tin (HO25.528),AI/ML Engineer
+4722,ngan hang tmcp quan doi,AI/ML Engineer,Senior AI Engineer (Computer Vision/NPL/LLM) - Khối Công nghệ thông tin (HO25.476),AI/ML Engineer
+4723,ngan hang tmcp quan doi,AI/ML Engineer,Senior AI Engineer (Computer Vision/NPL/LLM) - Khối Công nghệ thông tin (HOLT.17),AI/ML Engineer
+4727,ngan hang tmcp quan doi,AI/ML Engineer,Senior AI Engineer (Computer Vision/NPL/LLM) - Khối Công nghệ thông tin (HOLT.17),AI/ML Engineer
+4735,cong ty co phan cong nghe truyen thong viet nam,AI/ML Engineer,AI Engineer,AI/ML Engineer
+4742,autonomous inc,AI/ML Engineer,Middle/Senior AI Engineer,AI/ML Engineer
+4858,co phan quoc te anh van hoi viet my vus,Data Analyst,Senior Data Analyst/ Business Intelligence Executive (Fin. Dept.),Data Analyst
+4866,cong ty little garden lg clinic,Data Analyst,Senior Data Analyst (Business Focus),Data Analyst
+5589,onschool cong ty cp cong nghe giao duc truong hoc truc tuyen,Data Engineer,"[HN/HCM] Công Ty Onschool Edtech Group Tuyển Dụng Nhân Viên Data Engineer, Chuyên Viên Tư Vấn Tuyển Sinh/Chăm Sóc Khách Hàng/Digital Marketing Full-time 2026",Software Engineer
+7097,cong ty tnhh aprime,Data Analyst,PPC Data Analyst Intern,Data Analyst
+7131,cong ty co phan infinity technologies global,Data Analyst,Data Analyst - App Mobile (Junior),Data Analyst
+7802,vnext software,Software Engineer,Intern RPA Developer (Robotic Process Automation),Software Engineer
+7902,ngan hang tmcp quan doi,AI/ML Engineer,"MB Trainee - AI Engineer (Fresher, Intern) - Khối Công nghệ thông tin (HOLT.14)",AI/ML Engineer
+7903,ngan hang tmcp quan doi,Software Engineer,"MB Trainee - BackEnd Engineer (Intern, Fresher) - Khối Công nghệ thông tin (HOLT.09)",Software Engineer
+7904,ngan hang tmcp quan doi,Software Engineer,"MB Trainee - BackEnd Engineer (Intern, Fresher) - Khối Công nghệ thông tin (HOLT.09)",Software Engineer
+7905,ngan hang tmcp quan doi,Software Engineer,"MB Trainee - BackEnd Engineer (Intern, Fresher) - Khối Công nghệ thông tin (HOLT.09)",Software Engineer
+7948,ngan hang tmcp quan doi,AI/ML Engineer,"MB Trainee - AI Engineer (Fresher, Intern) - Khối Công nghệ thông tin (HOLT.14)",AI/ML Engineer
+7965,mitek viet nam,Software Engineer,Internal Developer Platform Engineer,Software Engineer
+7967,mitek viet nam,Software Engineer,Internal Developer Platform Engineer,Software Engineer
+7977,fpt software cong ty tnhh phan mem fpt ho chi minh,AI/ML Engineer,AI Engineer Intern,AI/ML Engineer
+8015,marusys vina co ltd,Software Engineer,Fresher Embedded Engineer,Software Engineer
+8020,cong ty co phan mynavi techtus viet nam,Software Engineer,Fresher Backend Engineer,Software Engineer
+8025,cong ty tnhh hcl vietnam,Software Engineer,Software Engineer (Fresher),Software Engineer
+8042,navigos group,Software Engineer,Junior Backend Engineer (Generative AI),AI/ML Engineer
+8092,viettel idc,Software Engineer,Senior Software Engineer,Software Engineer
+8120,cong ty co phan cong nghe va truyen thong bien xanh,Software Engineer,Technical Leader/ Senior Fullstack Engineer Tại Hà Nội (Lương Upto 40 Triệu),Software Engineer
+8266,giap vuong,Software Engineer,[HN] Công Ty Replay Global Tuyển Dụng Nhân Viên Unity Developer/Game Designer (Fresher/Junior) Full-time 2026,Software Engineer
+8621,cong ty tnhh nhan thang,Software Engineer,Senior Developer,Software Engineer
+8627,routine vn fashion design retailer,Software Engineer,Senior Developer,Software Engineer
+8631,ngan hang tmcp sai gon ha noi shb,Software Engineer,Senior Android Developer - Khối Ngân hàng Số,Software Engineer
+8633,ngan hang tmcp sai gon ha noi shb,Software Engineer,Senior iOS Developer - Khối Ngân hàng Số,Software Engineer
+8644,cong ty tnhh mtv outsource solutions,Software Engineer,"SENIOR FULLSTACK DEVELOPER (React.Js, Dotnet)",Software Engineer
+8649,ngan hang tmcp quan doi,Software Engineer,"(Middle, Senior) FullStack Developer - Khối Công nghệ thông tin (HOLT.12)",Software Engineer
+8650,bao mat,Software Engineer,Senior Backend Developer,Software Engineer
+8652,unit technology corporation,Software Engineer,Senior Backend Developer,Software Engineer
+8676,thanh loan,Software Engineer,[HN/HCM] Công Ty Ads Agency Tuyển Dụng Thực Tập Sinh Backend/Nhân Viên Kinh Doanh Digital Marketing Full-time 2026,Software Engineer
+8704,cong ty tnhh ah longquan,Software Engineer,Thực Tập Sinh Lập Trình Python (Python Development Internship),Software Engineer
+8706,the enest language center,Software Engineer,[HCM] Trung Tâm Anh Ngữ The Enest Tuyển Dụng Thực Tập Sinh Lập Trình Web Part-time 2026,Software Engineer
+8708,cong ty co phan bkav,Software Engineer,Thực Tập Sinh Lập Trình Backend C#,Software Engineer
+8710,cong ty co phan apetechs,Software Engineer,[HCM] Công Ty APETECHS Tuyển Dụng Thực Tập Sinh Lập Trình Full-time 2026,Software Engineer
+8711,cong ty co phan cong nghe g connect,Software Engineer,Thực Tập Sinh Lập Trình Phần Mềm,Software Engineer
+8712,info starack,Software Engineer,[HCM] Công Ty STARACK Tuyển Dụng Thực Tập Sinh Lập Trình Full-time 2026,Software Engineer
+8718,cty tnhh thundersoft viet nam,Software Engineer,Intern Android Developer,Software Engineer
+8725,cong ty tnhh thuong mai dich vu lifestyle viet nam,Software Engineer,Intern Game Developer – HTML5,Software Engineer
+8732,cong ty tnhh border z vietnam,Software Engineer,"Intern Developer Backend (PHP, Ruby, NodeJs)",Software Engineer
+8740,cong ty co phan tos,Software Engineer,Thực Tập Sinh PHP Developer,Software Engineer
+8758,nguyen julia,Software Engineer,[HCM] Công Ty JOBEE Tuyển Dụng Thực Tập Sinh Lập Trình Front End/BA/UX/UI Designer/Digital Marketing Part-time/Full-time 2026,Software Engineer
+8761,cong ty co phan orenda,Software Engineer,Thực Tập Sinh Lập Trình .Net,Software Engineer
+8763,cong ty co phan tap doan visimex,Software Engineer,Thực Tập Sinh Lập Trình,Software Engineer
+8770,hopper global holdings,Software Engineer,MOBILE DEVELOPMENT INTERN (FULL-TIME) / THỰC TẬP SINH LẬP TRÌNH MOBILE,Software Engineer
+8772,cong ty tnhh to chuc giao duc iecs,Software Engineer,Thực Tập Sinh IT – Lập Trình,Software Engineer
+8780,cong ty co phan onenet,Software Engineer,"Lập Trình Viên .NET - Thu Nhập Hấp Dẫn, Từ 10 Triệu Trở Lên - Trên 1 Năm Kinh Nghiệm Lâp Trình NET - Hà Nội",Software Engineer
+8803,cong ty tnhh ky su cong nghe cao vn,Software Engineer,Lập Trình Viên Nhúng (Embedded) (2 Năm Kinh Nghiệm),Software Engineer
+8809,vuihoc vn,Software Engineer,"Lập Trình Viên (Có Kinh Nghiệm Về Sản Phẩm AI, Thu Nhập 15 - 25 Triệu/Tháng)",Software Engineer
+8823,cong ty tnhh hcl vietnam,Data Engineer,Senior Data Engineer (Quận 1 - HCM),Data Engineer
+8850,cong ty tnhh tom group viet nam,Data Analyst,Chuyên viên Phân tích Dữ liệu Kinh doanh (Commercial Data Analyst),Data Analyst
+8859,ngan hang tmcp quan doi,Data Scientist,Chuyên viên Mô hình và Phân tích nâng cao - Data Scientist - Modeling and Advanced Analytics - Khối Dữ liệu (HOLT.07),Data Scientist
+8860,ngan hang tmcp quan doi,Data Scientist,Chuyên viên Mô hình và Phân tích nâng cao - Data Scientist - Modeling and Advanced Analytics - Khối Dữ liệu (HOLT.07),Data Scientist
+8863,ngan hang tmcp quan doi,Data Analyst,"Chuyên viên, Chuyên viên cao cấp Phân tích dữ liệu và xây dựng mô hình phát hiện gian lận - Khối Quản trị rủi ro (HO25.522)",Data Analyst
+8865,ngan hang tmcp quan doi,Data Scientist,Chuyên viên cao cấp Mô hình hóa và Phân tích Nâng cao - Senior Data Scientist - Modeling and Advanced Analytics - Khối Dữ liệu (HOLT.08),Data Scientist
+8867,ngan hang tmcp quan doi,Data Scientist,Chuyên viên cao cấp Mô hình hóa và Phân tích Nâng cao - Senior Data Scientist - Modeling and Advanced Analytics - Khối Dữ liệu (HOLT.08),Data Scientist
+8870,ngan hang tmcp quan doi,Data Analyst,"Chuyên viên cao cấp, Chuyên Gia Phân tích dữ liệu Tuân thủ - Khối Pháp chế và Tuân thủ (HO26.88)",Data Analyst
+8875,ngan hang tmcp sai gon ha noi shb,Data Analyst,Chuyên viên cao cấp Phân tích dữ liệu rủi ro,Data Analyst
+8876,ngan hang tmcp dai chung viet nam pvcombank,Data Analyst,Chuyên viên cao cấp phân tích dữ liệu (Data Analyst),Data Analyst
+8886,cong ty tnhh seta international viet nam,Data Scientist,Data Scientist,AI/ML Engineer
+8893,cong ty co phan dac data technology viet nam,Data Scientist,Data Scientist,Data Scientist
+8894,cong ty tnhh seta international viet nam,Data Scientist,Data Scientist,AI/ML Engineer
+8901,ngan hang tmcp dai chung viet nam pvcombank,Data Scientist,Senior Data Scientist - K.CNTT,AI/ML Engineer
+8922,cong ty cp giai phap thanh toan viet nam vnpay,Data Scientist,Data Scientist,AI/ML Engineer
+8937,ngan hang tmcp quan doi,Data Scientist,"Chuyên viên, Chuyên viên Cao cấp Khoa học Dữ liệu - Data Scientist - Data Scientist - Khối Dữ liệu (HO26.77)",Data Scientist
+8941,ngan hang tmcp quan doi,Data Scientist,"Chuyên viên, Chuyên viên Cao cấp Khoa học Dữ liệu - Data Scientist - Data Scientist - Khối Dữ liệu (HO26.30)",Data Scientist
+9000,tap doan y te viet nga,Data Analyst,"Chuyên Viên Cao Cấp Phân Tích Dữ Liệu, Đánh Giá Chất Lượng Dịch Vụ & CSKH Online",Data Analyst
+10023,cong ty co phan giai phap va dich vu ictvina,Software Engineer,Sinh Viên Thực Tập Lập Trình Viên,Software Engineer
+10025,cong ty co phan giai phap va dich vu ictvina,Software Engineer,Lập Trinh Viên - Không Yêu Cầu Kinh Nghiệm (Thu Nhập Đến 20Tr),Software Engineer
+13291,cong ty co phan tu van va phan tich mci,Data Analyst,Thực Tập Sinh Data Analyst- Dự Án Tài Chính,Data Analyst
+13334,cong ty co phan thuan hai,Data Analyst,[HCM] Công Ty Thuận Hải Tuyển Dụng Thực Tập Sinh/Chuyên Viên Phân Tích Dữ Liệu Full-time 2026,Data Analyst
+13435,vnetwork,Software Engineer,"[HCM] Công Ty VNETWORK Tuyển Dụng Thực Tập Sinh Chăm Sóc Khách Hàng/Sales/Kế Toán/Lập Trình Viên, Nhân Viên Phát Triển (Junior), Chuyên Viên Sales, Trưởng Nhóm Chăm Sóc Khách Hàng Part-time/Full-time 2026",Software Engineer
+15828,cong ty tnhh top forida,Software Engineer,Lập Trình Web,Software Engineer
+17326,cong ty co phan cong nghe sang tao tre teky holdings,Software Engineer,"Giáo Viên Part-Time Dạy Lập Trình/Kỹ Thuật Điện Tử [Hồ Chí Minh/Bình Dương] - Phù Hợp Sinh Viên CNTT, Thu Nhập Upto 4.000.000đ/Tháng",Software Engineer
+18267,cong ty co phan htc vien thong quoc te,Software Engineer,Senior .Net Developer,Software Engineer
+18548,cong ty co phan giai phap doanh nghiep toan cau,Software Engineer,Lập Trình Viên Web,Software Engineer
+18570,cong ty tnhh mtg technology,Software Engineer,Công Ty TNHH Mtg Technology Tuyển Dụng Vị Trí Junior Android Developer Full-Time 2022,Software Engineer
+18891,altaa vistaa,Software Engineer,Android HMI SDK Development for Automotive Developer,Software Engineer
+18904,datalogic viet nam,Software Engineer,"Android Embedded Senior Engineer (Embedded Linux, C++)",Software Engineer
+19276,cong ty tnhh cong nghe truyen thong truyen hinh,Software Engineer,Lập Trình Viên Dotnet,Software Engineer
+20486,cong ty tnhh thuong mai va dich vu cong nghe aht,Software Engineer,Nhân Viên Lập Trình Website (PHP),Software Engineer
+24006,cong ty tnhh cong nghe truyen thong truyen hinh,Software Engineer,Lập Trình Viên PHP (Laravel),Software Engineer
+25733,cong ty tnhh phan mem tri viet,Software Engineer,"Nhân Viên Lập Trình Web Laravel, Igniter",Software Engineer
+27029,cong ty co phan inn saigon,Data Analyst,Nhân Viên Xử Lý / Phân Tích Dữ Liệu,Data Analyst
+27273,pay way cong ty cp nhat phuong,Software Engineer,[Tuyển Gấp] Nhân Viên Backend Developer (.Net / Java),Software Engineer
+28520,cong ty tnhh cong nghe va giai phap minh phu,Software Engineer,"Fullstack Web Dev (Nodejs, Reactjs)",Software Engineer
+31101,cong ty co phan phat trien kizi,Software Engineer,Lập Trình Viên Back-End,Software Engineer
+31508,cong ty cp thiet bi cong nghiep huynh long,Software Engineer,Nhân Viên Lập Trình - IT,Software Engineer
+31674,cong ty tnhh thinh phat window,Software Engineer,Lập Trình Website Và Code Web,Software Engineer
+31682,cong ty tnhh thinh phat window,Software Engineer,Lập Trình Website Và Code Web,Software Engineer
+32055,cong ty tnhh tm va dv phu my phuong,Software Engineer,Nhân Viên Lập Trình App,Software Engineer
+32057,cong ty tnhh tm va dv phu my phuong,Software Engineer,Nhân Viên Lập Trình Web,Software Engineer
+33595,cong ty tnhh che tao may vima,Software Engineer,Tuyển Dụng Lập Trình Viên C#,Software Engineer
+34498,cong ty co phan cong nghe luc phat,Software Engineer,Lập Trình Viên PHP,Software Engineer
+34674,cong ty co phan giai phap va dich vu ictvina,Software Engineer,Sinh Viên Thực Tập Lập Trình Viên,Software Engineer
+34692,cong ty tnhh dasvision,Software Engineer,Front-End Developer,Software Engineer
+35547,cong ty co phan my lan,Software Engineer,Senior Software Developer .Net / C#,Software Engineer
+35981,ecom365 company limited,Software Engineer,Mobile Developer / Flutter,Software Engineer
+36054,ecom365 company limited,Software Engineer,Front End / Reactjs (Senior / Junior),Software Engineer
+38601,cong ty tnhh hktm vina,Software Engineer,Tuyển Dụng Nhân Viên Lập Trình C#,Software Engineer
+40400,cong ty tnhh next level solution,Software Engineer,Reactjs Developer,Software Engineer
+40838,cong ty co phan thiet bi dien vi na si no,Software Engineer,Kỹ Sư Lập Trình Vi Điều Khiển,Software Engineer
+42518,xuong san xuat kinh doanh thoi trang nu namoon,Software Engineer,Nhân Viên Phát Triển Sản Phẩm_Product Developer,Software Engineer
+43107,cong ty co phan thanh toan neo,Software Engineer,[TPHCM] Công Ty Cổ Phần Thanh Toán Neo Tuyển Dụng Vị Trí Backend Developer Năm 2022,Software Engineer
+43109,cong ty tnhh can sports viet nam,Software Engineer,Kỹ Sư Phần Mềm - IT,Software Engineer
+43514,cong ty tnhh dabeeo vina,Software Engineer,[Phạm Hùng - Hà Nội] 02 Junior Fullstack Developer,Software Engineer
+43948,datawings vietnam cong ty tnhh doi canh du lieu viet nam,Software Engineer,Lập Trình .Net,Software Engineer
+44286,cong ty cp n h logistics,Software Engineer,Junior Software Developer,Software Engineer
+44396,cong ty cp n h logistics,Software Engineer,"Senior Software Developer (C#,SQL,python,PHP)",Software Engineer
+44682,cong ty co phan thanh toan neo,Software Engineer,[TPHCM] Công Ty Cổ Phần Thanh Toán Neo Tuyển Dụng Vị Trí Backend Developer Năm 2022,Software Engineer
+44796,cong ty co phan dau tu gss,Software Engineer,Nhân Viên Lập Trình Viên PHP,Software Engineer
+44811,cong ty tnhh adms viet nam,Software Engineer,"NV Thiết Kế, Lập Trình Gia Công",Software Engineer
+44850,cong ty co phan uc vn,Software Engineer,Nhân Viên IT - Backend Developer,Software Engineer
+45783,cong ty tnhh amoeba,Software Engineer,"Chuyên Viên IT / Senior Back-End Developer (Nestjs, CRM)",Software Engineer
+49681,cong ty co phan dau tu cong nghe hoang minh,Software Engineer,Thực Tập Sinh - Lập Trình Thiết Kế Hạ Tầng,Software Engineer
+49968,cong ty tnhh cong nghe asilla viet nam,AI/ML Engineer,"AI Engineer C++, Computer Vision",AI/ML Engineer
+50523,cong ty co phan quoc te truong long phat,Software Engineer,Appsheet Developer,Data Analyst
+50789,cong ty co phan asoft,Software Engineer,Trưởng Nhóm Lập Trình Phần Mềm .Net,Software Engineer
+50851,cong ty tnhh cong nghe cloudgo,Software Engineer,Senior PHP Developer,Software Engineer
+51941,cong ty co phan cong nghe dgx,Software Engineer,Frontend Developer (Angular),Software Engineer
+53036,cong ty co phan teaser,Software Engineer,"Fullstack Developer (Nodejs, Nextjs) - Teaser Software",Software Engineer
+53625,cong ty tnhh cong nghe asilla viet nam,Software Engineer,Software Developer (C++ Developer),Software Engineer
+55249,cong ty co phan rang dong,Software Engineer,Kỹ Sư Phần Mềm,Software Engineer
+57461,cong ty tnhh lisod viet nam,Software Engineer,Nodejs Developer,Software Engineer
+57469,cong ty tnhh lisod viet nam,Software Engineer,Ios Developer,Software Engineer
+57474,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên Python,Software Engineer
+57478,cong ty tnhh lisod viet nam,Software Engineer,Reactjs Developer,Software Engineer
+57481,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên Vuejs,Software Engineer
+57493,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên Flutter,Software Engineer
+57514,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên PHP / Laravel,Software Engineer
+57526,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên Wordpress,Software Engineer
+57527,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên React Native,Software Engineer
+57691,cong ty tnhh lisod viet nam,Software Engineer,Ios Developer (Swift),Software Engineer
+57702,cong ty tnhh lisod viet nam,Software Engineer,Reactjs Developer,Software Engineer
+57707,cong ty tnhh lisod viet nam,Software Engineer,Nodejs Developer,Software Engineer
+57726,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên Python,Software Engineer
+57736,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên React Native,Software Engineer
+57738,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên PHP / Laravel,Software Engineer
+57747,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên Flutter,Software Engineer
+57755,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên Wordpress,Software Engineer
+57757,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên Vuejs,Software Engineer
+58059,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên Ios (Swift),Software Engineer
+58067,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên Nodejs,Software Engineer
+58075,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên Reactjs,Software Engineer
+58077,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên Flutter,Software Engineer
+58080,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên Wordpress,Software Engineer
+58084,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên PHP / Laravel,Software Engineer
+58086,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên Python,Software Engineer
+58092,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên React Native,Software Engineer
+58094,cong ty tnhh lisod viet nam,Software Engineer,Lập Trình Viên Vuejs,Software Engineer
+59028,cong ty co phan cong nghe va dau tu vnplus,Software Engineer,Senior Backend Developer,Software Engineer
+59221,cong ty tnhh tm cong nghe bach long,Software Engineer,Lập Trình Web - Lương Đến 20 Triệu,Software Engineer
+59972,cong ty co phan giai phap doanh nghiep toan cau,Software Engineer,Lập Trình Viên - Không Yêu Cầu Kinh Nghiệm,Software Engineer
+61812,cong ty co phan dich vu va giai tri thang long viet nam,Software Engineer,PHP Developer,Software Engineer
+61832,cong ty co phan dich vu va giai tri thang long viet nam,Software Engineer,Flutter Developer,Software Engineer
+62218,cong ty tnhh tich hop he thong quan ly quoc te goi tat la cong ty gimasys,Software Engineer,Junior Backend Developer,Software Engineer
+62765,ho kinh doanh filesoft,Software Engineer,Web Developer,Software Engineer
+62918,cong ty tnhh xu ly moi truong water care,Software Engineer,Laravel Developer,Software Engineer
+65881,cong ty tnhh softkey marketing viet nam,Software Engineer,Lập Trình Viên PHP Wordpress,Software Engineer
+68904,cong ty tnhh pakago viet nam,Software Engineer,Lập Trình Frontend (HTML / CSS),Software Engineer
+70970,cong ty tnhh neko soft,Software Engineer,Senior Android Developer,Software Engineer
+71757,cong ty co phan quoc te thuong do,Software Engineer,Lập Trình Viên PHP - Dev - Backend Lương Upto 40M,Software Engineer
+73169,cong ty tnhh nextg solutions,Software Engineer,"Lập Trình Viên Java, Kinh Nghiệm 1 Năm Trở Lên, Lương Lên Tới 25 Triệu",Software Engineer
+78362,cong ty tnhh cong nghe beatcolor,Software Engineer,PHP Developer,Software Engineer
+78385,cong ty tnhh cong nghe beatcolor,Software Engineer,Frontend Deverloper,Software Engineer
+79826,cong ty co phan giai phap va ung dung doanh nghiep netbase,Software Engineer,Thực Tập Lập Trình PHP,Software Engineer
+80301,cong ty co phan mac tich,Software Engineer,Chuyên Viên Lập Trình (Sap B1),Software Engineer
+81463,cong ty tnhh nin sing logistics,Data Analyst,Senior Data Analyst,Data Analyst
+82687,cong ty co phan v b p o,Software Engineer,Nhân Viên Developer,Software Engineer
+82875,cong ty co phan pisee viet nam,Software Engineer,Lập Trình Website PHP - Wordpress,Software Engineer
+83718,cong ty tnhh phan mem tri viet,Software Engineer,"Nhân Viên Lập Trình Web (Laravel, Igniter)",Software Engineer
+85613,cong ty co phan giai phap doanh nghiep toan cau,Software Engineer,Lập Trình Viên Web,Software Engineer
+86744,datawings vietnam cong ty tnhh doi canh du lieu viet nam,Software Engineer,Lập Trình Java,Software Engineer
+86747,datawings vietnam cong ty tnhh doi canh du lieu viet nam,Software Engineer,Lập Trình .Net,Software Engineer
+87144,cong ty tnhh tu van dau tu nam bo vn,Software Engineer,Lập Trình Website- Laravel / Wordpress / Framework PHP,Software Engineer
+87496,cong ty tnhh phan mem tri viet,Software Engineer,"Nhân Viên Lập Trình Web (Laravel, Igniter)",Software Engineer
+87927,cong ty luat tnhh mtv sunlaw,Data Analyst,Chuyên Viên Phân Tích Dữ Liệu,Data Analyst
+88588,cong ty tnhh cong nghe magezon,Software Engineer,Fresher React Developer,Software Engineer
+89359,cong ty tnhh cong nghe xtek,Software Engineer,Ui Developer,Software Engineer
+90526,cong ty co phan cap nuoc ba ria vung tau,Software Engineer,Tuyển Dụng Kỹ Sư Lập Trình Viên,Software Engineer
+90943,cong ty co phan tap doan nexttech,Software Engineer,Lập Trình Viên PHP,Software Engineer
+90962,cong ty co phan tap doan nexttech,Software Engineer,Lập Trình Viên Flutter,Software Engineer
+92035,cong ty co phan tap doan cong nghe htp,Software Engineer,Nhân Viên Java Backend Developer,Software Engineer
+93377,cong ty co phan htc vien thong quoc te,Software Engineer,Senior .Net Developer,Software Engineer
+95779,cong ty co phan xuc tien thuong mai dien tu,Software Engineer,Lập Trình Viên PHP,Software Engineer
+96648,cong ty tnhh nice tech center viet nam,Software Engineer,Tcp / Ip Communication Developer,Software Engineer
+98510,cong ty co phan apetechs,Software Engineer,Nhân Viên Web App Angular Developer,Software Engineer
+98526,cong ty co phan apetechs,Software Engineer,Nhân Viên Mobile Developer,Software Engineer
+98561,cong ty co phan apetechs,Software Engineer,Nhân Viên Web App Angular Developer,Software Engineer
+98601,cong ty co phan apetechs,Software Engineer,Nhân Viên Mobile Developer,Software Engineer
+98616,cong ty tnhh cong nghe spazone,Software Engineer,Lập Trình Viên Back End (Nodejs),Software Engineer
+102294,cong ty co phan dau tu phat trien openlive,Software Engineer,Back-End Develop (Golang / MySQL),Software Engineer
+104065,cong ty tnhh tulpo software,Software Engineer,Backend Developer (Nodejs),Software Engineer
+105276,cong ty tnhh avery dennison ris viet nam,Data Analyst,Production Planner (Data Analyst Team),Data Analyst
+107400,cong ty tnhh cong nghe va giai phap minh phu,Software Engineer,"Tuyển Fullstack Web Dev (Nodejs, Reactjs)",Software Engineer
+108170,cong ty tnhh bzcom,Software Engineer,Tuyển lập trình viên Fullstack,Software Engineer
+108256,cong ty tnhh cong nghe asilla viet nam,Software Engineer,Software Engineer (C++/Python) tại Hà Nội - Thu Nhập Hấp Dẫn,Software Engineer
+108453,cong ty tnhh can sports viet nam,Software Engineer,Kỹ Sư Phần Mềm - IT,Software Engineer
+112787,cong ty co phan torus engineering,Data Scientist,Data Scientist,Data Analyst
+113180,decos software,Software Engineer,Decos Software Is Hiring Backend Engineers,Software Engineer
+113314,decos software,Software Engineer,Decos Software Is Hiring Frontend Engineers,Software Engineer
+113780,cong ty co phan bep chef studio,Software Engineer,Front-End Web Developer,Software Engineer
+115003,cong ty tnhh tinysoft,Software Engineer,"Lập Trình Viên Backend / Backend Developer (.Net, .Net Core, Asp.Net , C#)",Software Engineer
+116186,cong ty tnhh gcc consultancy,Software Engineer,Thực Tập Sinh Lập Trình Phát Triển Trang Web,Software Engineer
+116197,cong ty tnhh gcc consultancy,Software Engineer,Thực Tập Sinh Lập Trình Phát Triển Trang Web,Software Engineer
+116464,cong ty tai chinh tnhh mtv quoc te viet nam jaccs,Data Analyst,Nhân Viên Phân Tích Dữ Liệu & Thẩm Định,Data Analyst
+116491,cong ty tai chinh tnhh mtv quoc te viet nam jaccs,Data Analyst,Nhân Viên Phân Tích Dữ Liệu & Thẩm Định,Data Analyst
+117090,cong ty cp thiet bi cong nghiep huynh long,Software Engineer,Nhân Viên Lập Trình,Software Engineer
+117437,cong ty tnhh gcc consultancy,Software Engineer,Thực Tập Sinh Lập Trình Phát Triển Website,Software Engineer
+119280,cong ty co phan tong hop viet nhat,Software Engineer,Lập Trình Viên React Native,Software Engineer
+120056,cong ty dich vu so buu dien,Software Engineer,Lập Trình Viên (Developer),Software Engineer
+120103,cong ty co phan cong nghe va dich vu y te so med on,Software Engineer,Lập Trình Viên Flutter,Software Engineer
+120197,cong ty co phan cong nghe va dich vu y te so med on,Software Engineer,Lập Trình Viên React-Js,Software Engineer
+121267,cong ty co phan smart solutions viet nam,Software Engineer,Lập Trình Viên Java (Lương 600$-2000$),Software Engineer
+122545,ngan hang tnhh mot thanh vien shinhan viet nam,Data Analyst,Data Admin - Phòng Business Intelligence,Data Analyst
+122718,cong ty co phan mega sun,Data Analyst,Nhân Viên Tổng Hợp Và Phân Tích Dữ Liệu Tại Hà Nội,Data Analyst
+123717,cong ty tnhh truyen thong quang cao logitech,Software Engineer,Lập Trình Viên,Software Engineer
+124233,cong ty co phan mega sun,Data Analyst,Nhân Viên Tổng Hợp Và Phân Tích Dữ Liệu,Data Analyst
+125195,cong ty tnhh dau tu phat trien bitech,Software Engineer,"Frontend Developers (Reactjs, React Native)",Software Engineer
+125487,tuyen dung,Software Engineer,Junior Games Unity Developer,Software Engineer
+125490,tuyen dung,Software Engineer,Senior 3D Unity Developer,Software Engineer
+128355,cong ty tai chinh tnhh mtv quoc te viet nam jaccs,Data Analyst,Nhân Viên Phân Tích Dữ Liệu & Thẩm Định,Data Analyst
+129068,cong ty co phan dong tam dong tam group,Software Engineer,Senior Backend 3Yrs+,Software Engineer
+129159,cong ty tnhh allcommerce,Software Engineer,Fullstack Developer Đi Làm Ngay,Software Engineer
+129170,cong ty tnhh allcommerce,Software Engineer,Fullstack Developer Đi Làm Ngay,Software Engineer
+129223,cong ty tai chinh tnhh mtv quoc te viet nam jaccs,Data Analyst,Nhân Viên Phân Tích Dữ Liệu Và Thẩm Định,Data Analyst
+131815,khach hang tim viec nhanh,Software Engineer,Lendtop- Chuyên Viên Lập Trình Máy Vi Tính,Software Engineer
+132200,cong ty co phan giai phap cong nghe ipharm,Software Engineer,Thực Tập Sinh Lập Trình Viên,Software Engineer
+132439,cong ty tnhh hanbiro viet nam,Software Engineer,Thực Tập Sinh Lập Trình Viên,Software Engineer
+133694,cong ty tnhh transcosmos viet nam,Data Analyst,Workforce Management - Data Analyst Specialist,Data Analyst
+134033,cong ty tnhh lap phuc,Software Engineer,Nhân Viên Lập Trình Cam Thu Nhập Từ 10-30 Triệu,Software Engineer
+134270,cong ty co phan my lan,Software Engineer,Mobile Developer,Software Engineer
+134578,cong ty tnhh dau tu phat trien bitech,Software Engineer,"Frontend Developers (React Native, Reactjs)",Software Engineer
+135391,cong ty co phan elofun entertaiment,Software Engineer,Fresher Game Developer,Software Engineer
+136514,cong ty co phan cong nghe va dich vu y te so med on,Software Engineer,Lập Trình Viên (Flutter),Software Engineer
+136844,cong ty co phan smart solutions viet nam,Software Engineer,Nhân Viên Front-End Developer (Mức Lương 600$-2000$),Software Engineer
+137310,ta hoang thien an tic tac fastfood,Software Engineer,Lập Trình,Software Engineer
+137755,cong ty co phan giai phap va dich vu ictvina,Software Engineer,Lập Trình Viên - Thu Nhập Đến 20Tr,Software Engineer
+140751,cong ty tnhh cong nghe thong tin bee solutions,Software Engineer,Fullstack Dev (Hybrid),Software Engineer
+141602,cong ty co phan dich vu truyen thong da phuong tien viet nam,Software Engineer,Lập Trình Viên Javascript,Software Engineer
+143494,cong ty co phan trung tam di san cac nha khoa hoc viet nam,Software Engineer,"Lập Trình Viên PHP Laravel (01Fresher, 01 Junior)",Software Engineer
+143913,cong ty tnhh giai phap cong nghe thong minh isoft,Software Engineer,Tuyển Dụng Lập Trình Viên,Software Engineer
+144131,cong ty tnhh giai phap cong nghe thong minh isoft,Software Engineer,Nhân Viên Lập Trình,Software Engineer
+144508,cong ty tnhh dau tu phat trien bitech,Software Engineer,"Backend Developer (C#, Asp.Net, .Net Core)",Software Engineer
+146679,cong ty co phan cong nghe chuyen doi so long viet,Software Engineer,05 Nhân Viên Lập Trình,Software Engineer
+146684,cong ty tnhh finan,Software Engineer,Frontend Developer (Reactjs),Software Engineer
+146757,cong ty co phan cong nghe chuyen doi so long viet,Software Engineer,Nhân Viên Lập Trình,Software Engineer
+148131,cong ty co phan giai phap cong nghe tag viet nam,Software Engineer,Nhân Viên Lập Trình,Software Engineer
+151726,cong ty tnhh phan mem tri viet,Software Engineer,"Nhân Viên Thiết Kế, Lập Trình Web",Software Engineer
+153113,cong ty tnhh icon technic,Data Analyst,Business Analyst - Phân Tích Dữ Liệu,Software Engineer
+154083,cong ty co phan giai phap va dich vu ictvina,Software Engineer,Lập Trình Viên - Thu Nhập Đến 20Tr,Software Engineer
+154479,cong ty tnhh tap doan cong nghe sao vega,Software Engineer,Lập Trình Viên Back-End - Thu Nhập Lên Tới 30 Triệu - Tại Hà Nội,Software Engineer
+154705,cong ty co phan nexle,Software Engineer,Front End Developer (Reactjs),Software Engineer
+156171,cong ty tnhh dau tu phat trien bitech,Software Engineer,"Backend Developer (C#, Asp.Net, .Net Core)",Software Engineer
+157590,cong ty tnhh di tru va dau tu cic,Software Engineer,"Tuyển Gấp Việc Làm Canada: Lập Trình Viên, Kỹ Sư CNTT, Lập Trình Game, Lập Trình Web...",Software Engineer
+157697,cong ty tnhh di tru va dau tu cic,Software Engineer,Tuyển Gấp Việc Làm Canada: Kỹ Sư Phần Mềm (Software Developer),Software Engineer
+159083,cong ty co phan trung tam di san cac nha khoa hoc viet nam,Software Engineer,Lập Trình Viên PHP Laravel,Software Engineer
+160078,cong ty co phan atomi digital,Software Engineer,Lập Trình Viên Android / Ios Làm Việc Tại Hà Nội,Software Engineer
+161452,cong ty tnhh tap doan cong nghe sao vega,Software Engineer,Lập Trình Viên Back-End - Thu Nhập Lên Tới 30 Triệu - Tại Hà Nội,Software Engineer
+162589,cong ty co phan dich vu nen di dong viet nam,Software Engineer,Lập Trình Viên,Software Engineer
+162599,cong ty co phan dich vu nen di dong viet nam,Software Engineer,Lập Trình Viên,Software Engineer
+163510,cong ty tnhh can sports viet nam,Software Engineer,Kỹ Sư Phần Mềm - IT (Tại Tây Ninh),Software Engineer
+163959,cong ty co phan cong nghe dien giao thong,Software Engineer,Lập Trình Viên,Software Engineer
+165295,cong ty tnhh cong nghe so nam phuong,Software Engineer,Web Developer,Software Engineer
+165329,cong ty tnhh cong nghe so nam phuong,Software Engineer,Web Developer,Software Engineer
+165637,cong ty tnhh lisod viet nam,Software Engineer,Frontend Dev Reactjs,Software Engineer
+166066,cong ty co phan quoc te batstone,Software Engineer,Lập Trình Viên Python (Odoo),Software Engineer
+167632,cong ty co phan icheck,Software Engineer,Lập Trình Viên PHP - PHP Developer,Software Engineer
+169757,cong ty tnhh tu van chien luoc cong nghe va du lieu doanh nghiep anatics,Data Analyst,Business Intelligence (Bi) Analysis Executive,Data Analyst
+171332,cong ty rydiam sai gon tnhh,Data Analyst,Data Analyst (Chuyên Viên Phân Tích Dữ Liệu),Data Analyst
+178329,cong ty tnhh transcosmos viet nam,Data Analyst,Data Analyst / Chuyên Viên Phân Tích Dữ Liệu,Data Analyst
+178753,sang tam co ltd cong ty tnhh sang tam,Software Engineer,"Nhân Viên Front-End Dev (HTML, CSS, Javascript)",Software Engineer
+179279,cong ty tnhh mtv infinity studios,Software Engineer,Full Stack Developer,Software Engineer
+179821,cong ty tnhh cong nghe truyen thong truyen hinh,Software Engineer,"Lập Trình Viên PHP (Laravel, Vuejs)",Software Engineer
+180371,cong ty co phan truyen thong luat viet nam,Software Engineer,Nhân Viên Lập Trình Web .Net,Software Engineer
+182499,cong ty co phan tap doan cong nghe phat trien nong nghiep viet nam,Software Engineer,Lập Trình Viên PHP,Software Engineer
+182673,cong ty tnhh phan mem tri viet,Software Engineer,Lập Trình Viên CMM,Software Engineer
+183772,cong ty tnhh cong nghe n h a viet nam,Data Analyst,[Remote Job] Data Analyst,Software Engineer
+185789,datawings vietnam cong ty tnhh doi canh du lieu viet nam,Software Engineer,Lập Trình Java,Software Engineer
+186327,cong ty tnhh cong nghe thong tin thong minh viet nam,Software Engineer,Lập Trình Phát Triển Ứng Dụng Web,Software Engineer
+187010,cong ty tnhh lien doanh vinh hung,Software Engineer,Product Developer (Garment),Software Engineer
+187413,cong ty tnhh mtv mediatech viet nam,Software Engineer,Full Stack Development Executive,Software Engineer
+188545,cong ty co phan tap doan quoc te bat viet nam,Software Engineer,Lập Trình Viên Python (Odoo),Software Engineer
+190508,cong ty co phan cong nghe va dao tao yoot,Software Engineer,"Senior Full-Stack Dev / Tech Lead (C#, React Js)",Software Engineer
+193121,cong ty co phan htgsoft viet nam,Software Engineer,Thực Tập Sinh Front-End,Software Engineer
+194085,sang tam co ltd cong ty tnhh sang tam,Software Engineer,"Nhân Viên Front-End Dev [HTML, CSS, Javascript]",Software Engineer
+194304,datawings vietnam cong ty tnhh doi canh du lieu viet nam,Software Engineer,Lập Trình Java (Quận 3),Software Engineer
+197163,datawings vietnam cong ty tnhh doi canh du lieu viet nam,Software Engineer,Nhân Viên Lập Trình Java,Software Engineer
+197168,datawings vietnam cong ty tnhh doi canh du lieu viet nam,Software Engineer,Lập Trình Java Làm Việc Tại Quận 3,Software Engineer
+197256,cong ty tnhh mekong invention back office,Software Engineer,Lập Trình Viên,Software Engineer
+199127,cong ty tnhh tap doan cong nghe sao vega,Software Engineer,Lập Trình Viên Back-End - Thu Nhập Lên Tới 30 Triệu,Software Engineer
+199260,cong ty co phan rikai mind,Software Engineer,Lập Trình Viên Dot Net,Software Engineer
+204783,cong ty co phan htgsoft viet nam,Software Engineer,Lập Trình Viên Backend,Software Engineer
+204796,cong ty co phan htgsoft viet nam,Software Engineer,Nhân Viên Front-End Developer,Software Engineer
+204797,cong ty co phan htgsoft viet nam,Software Engineer,Lập Trình Viên.Net,Software Engineer
+204814,cong ty co phan htgsoft viet nam,Software Engineer,Thực Tập Sinh Backend,Software Engineer
+205757,truong trung cap bach khoa sai gon,Software Engineer,Giảng Viên CNTT (Lập Trình Máy Tính),Software Engineer
+208688,cong ty tnhh shinecommerce,Software Engineer,PHP / Wordpress Developer Upto 25M,Software Engineer
+209406,cong ty tnhh truyen thong quang cao ninhmedia agency,Software Engineer,Giáo Viên Dạy Lập Trình,Software Engineer
+212754,cong ty co phan dich vu ata nha trang,Software Engineer,Nhân Viên Tư Vấn Tuyển Sinh Khoá Học Lập Trình IT,Software Engineer
+214038,cong ty co phan smart solutions viet nam,Software Engineer,Lập Trình Viên Java,Software Engineer
+214050,cong ty co phan smart solutions viet nam,Software Engineer,Lập Trình Viên Angular,Software Engineer
+214066,cong ty co phan smart solutions viet nam,Software Engineer,Lập Trình Viên .Net,Software Engineer
+214262,cong ty co phan nhap khau va phan phoi american care,Software Engineer,Lập Trình Viên .Net (Backend),Software Engineer
+214702,cong ty tnhh thuong mai va dich vu dai phat,Software Engineer,Lập Trình Viên,Software Engineer
+216540,cong ty co phan phan mem linkq,Software Engineer,Nhân Viên Lập Trình,Software Engineer
+219375,cong ty co phan htgsoft viet nam,Software Engineer,Lập Trình Viên.Net,Software Engineer
+220357,cong ty co phan dich vu truyen thong da phuong tien viet nam,Software Engineer,Thực Tập Sinh Lập Trình Viên Javascript,Software Engineer
+220391,cong ty co phan dau tu digital kingdom,Software Engineer,Nhân Viên Lập Trình & Phân Tích Phần Mềm Hệ Thống,Software Engineer
+220867,cong ty tnhh world fusion viet nam,Software Engineer,Developer,Software Engineer
+222034,cong ty co phan truyen so lieu viet nam,Software Engineer,Lập Trình Viên .Net - Từ 01 Năm Kinh Nghiệm,Software Engineer
+222468,cong ty tnhh shinecommerce,Software Engineer,Junior Frontend Developer Upto 18M,Software Engineer
+224508,cong ty tnhh tap doan tiim,Software Engineer,Chuyên Viên Lập Trình PHP Fullstack,Software Engineer
+224843,cong ty tnhh lntsoft business solution,Software Engineer,Junior Software Developer,Software Engineer
+225911,athena,Software Engineer,Technical Support Software Engineer & Business Analyst,Software Engineer
+226829,cong ty tnhh giai phap cong nghe gia cat,Software Engineer,Nhân Viên Lập Trình Back - End / Lập Trình Hệ Thống Phần Mềm Erp,Software Engineer
+226895,talentnet corporation cong ty cp ket noi nhan tai,Software Engineer,Nhân Viên IT Frontend Developer (Vuejs) & Backend Developer (Nodejs) – Tại Đà Nẵng,Software Engineer
+227176,sey solutions co ltd,Software Engineer,Nhân Viên .Net Developer,Software Engineer
+228790,cong ty tnhh peroma viet nam,Data Analyst,Chuyên Viên Business Intelligence (Cần Giuộc - Long An),Data Analyst
+231631,cong ty cp xnk cong nghe inmax a chau,Software Engineer,"Nhân Viên Lập Trình,thiết Kế Web",Software Engineer
+232289,cong ty co phan htgsoft viet nam,Software Engineer,Lập Trình Viên.Net,Software Engineer
+236727,cong ty co phan truyen thong bright star,Software Engineer,Lập Trinh Viên,Software Engineer
+238138,cong ty tnhh cong nghe va thuong mai ngan giang,Software Engineer,Nhân Viên Thiết Kế Mạch – Lập Trình Nhúng,Software Engineer
+238508,cong ty co phan dau tu khai hoan holdings,Software Engineer,Head Of Front End Development,Software Engineer
+240066,cong ty co phan inn saigon,Data Analyst,Chuyên Viên Phân Tích Dữ Liệu,Data Analyst
+240699,cong ty tnhh transcosmos viet nam,Data Analyst,Data Analyst Leader / Supervisor,Data Analyst
+242124,cong ty tnhh ky thuat dien tu dong hoa a e,Software Engineer,Kỹ Sư Lập Trình Web,Software Engineer
+244640,cong ty tnhh transcosmos viet nam,Data Analyst,Trưởng Nhóm Phân Tích Dữ Liệu Call Center - Tại Tân Bình (Đi Làm Ngay),Data Analyst
+246245,cong ty co phan truyen thong du lich viet,Software Engineer,Nhân Viên Lập Trình,Software Engineer
+248201,cong ty tnhh transcosmos viet nam,Data Analyst,Trưởng Nhóm Phân Tích Dữ Liệu Call Center - Tại Tân Bình (Đi Làm Ngay),Data Analyst
+248226,cong ty tnhh transcosmos viet nam,Data Analyst,Data Analyst Leader / Supervisor - Tại Tân Bình,Data Analyst
+249322,thunder cloud studio,Software Engineer,Game Unreal Engine Developer (Ue4 Coder) - Upto 40 Triệu,Software Engineer
+252465,cong ty tnhh ky thuat dien tu dong hoa a e,Software Engineer,Kỹ Sư Lập Trình Web,Software Engineer
+252832,cong ty cp devitech,Software Engineer,Senior Back-End Developer (Upto 30.000.000),Software Engineer
+254345,cong ty co phan truong hoc cong nghe mindx,Software Engineer,Giáo Viên Lập Trình Fulltime [Hà Nội],Software Engineer
+256253,cong ty tnhh caerux lab,Software Engineer,Front-End Developer (Wordpress / Shopify),Software Engineer
+256692,cong ty trach nhiem huu han woosung mold viet nam,Software Engineer,Kỹ Sư Lập Trình Cad Cam (Đồng Nai),Software Engineer
+258200,cong ty co phan giai phap va dich vu ictvina,Software Engineer,Lập Trình Viên - IT Phần Mềm,Software Engineer
+258460,chi nhanh ii cong ty tnhh cao boi nam my tai ha noi,Software Engineer,Lập Trình Web & App,Software Engineer
+258556,cong ty co phan giai phap va dich vu ictvina,Software Engineer,Thực Tập Sinh - Lập Trình Viên,Software Engineer
+259132,cong ty tnhh dau tu cong nghe kdigi,Software Engineer,Fresher Front-End Developer,Software Engineer
+262018,cong ty tnhh ky thuat dien tu dong hoa a e,Software Engineer,Kỹ Sư Lập Trình Web,Software Engineer
+262912,cong ty co phan dau tu digital kingdom,Software Engineer,"Lập Trình Viên Mobile (Flutter & Swift , Cordova) _ Full Stack",Software Engineer
+262973,cong ty co phan dau tu digital kingdom,Software Engineer,Lập Trình Viên Angular,Software Engineer
+263044,cong ty tnhh vina x ray viet nam,Software Engineer,Kỹ Thuật Lập Trình Máy Tính,Software Engineer
+264411,cong ty co phan htgsoft viet nam,Data Analyst,Thực Tập Sinh Phân Tích Dữ Liệu,Software Engineer
+265750,cong ty tnhh inflow,Data Scientist,Head Of Data Science,Data Analyst
+266174,cong ty co phan dich vu truc tuyen cong dong viet,Software Engineer,Lập Trình .Net,Software Engineer
+266206,cong ty co phan bkav,Software Engineer,Thực Tập Sinh Lập Trình Java Spring Boot,Software Engineer
+267166,cong ty tnhh ky thuat shinsei viet nam,Software Engineer,Senior Programming Engineer / Kỹ Sư Lập Trình Ứng Dụng Có Kinh Nghiệm,Software Engineer
+267208,cong ty tnhh ky thuat shinsei viet nam,Software Engineer,Programming Engineering / Kỹ Sư Lập Trình Ứng Dụng,Software Engineer
+270120,cong ty co phan fhb viet nam,Software Engineer,Chuyên Viên Phát Triển Kinh Doanh (Business Developer) - Kđt Sala Thủ Đức,Software Engineer
+270923,cong ty tnhh cong nghe asilla viet nam,Software Engineer,Full-Stack Developer,Software Engineer
+272127,cong ty co phan asoft,Software Engineer,Trưởng Nhóm Lập Trình Phần Mềm -Tại Quận 12 (Đi Làm Ngay),Software Engineer
+272559,cong ty tnhh giao duc van hoa,Software Engineer,Wed Developer,Software Engineer
+272983,cong ty co phan t m d,Software Engineer,Nhân Viên Lập Trình & Phân Tích Phần Mềm Hệ Thống,Software Engineer
+273944,cong ty co phan truyen thong luat viet nam,Software Engineer,Nhân Viên Lập Trình Web .Net,Software Engineer
+274384,cong ty co phan chung khoan quoc te viet nam,Software Engineer,Nhân Viên Lập Trình & Phân Tích Phần Mềm Hệ Thống,Software Engineer
+274768,cong ty co phan dau tu thanh thanh cong,Data Engineer,Chuyên Viên Kỹ Thuật Dữ Liệu (Data Engineer),Data Analyst
+275152,cong ty co phan cong nghe quoc te mh solution,Software Engineer,Java Spring Boot Developer (Lập Trình Viên),Software Engineer
+279905,cong ty co phan cong nghe beetrust chi nhanh vung tau,Software Engineer,Nhân Viên Lập Trình Viên Full Stack Wordpress,Software Engineer
+280534,cong ty co phan dau tu digital kingdom,Software Engineer,Nhân Viên Lập Trình (Full-Stack Developer),Software Engineer
+285247,cong ty tnhh norang company,Software Engineer,Lập Trình Viên,Software Engineer
+286163,cong ty tnhh it consultis,Software Engineer,Front-End Developer,Software Engineer
+288661,cong ty tnhh solum vina,Software Engineer,Kỹ Sư Phần Mềm,Software Engineer
+289988,st engineering,Software Engineer,Fullstack Developer (Nodejs),Software Engineer
+290000,cong ty co phan cong nghe skybull viet nam,Software Engineer,Trưởng Phòng Lập Trình Game - Lead Dev Unity (Đi Làm Sau Tết),Software Engineer
+290636,cong ty co phan giai phap thuong mai a ba,Data Analyst,Nhân Viên Kế Hoạch Vận Tải - Khá Powerbi,Data Analyst
+290694,cong ty co phan dau tu digital kingdom,Software Engineer,Lập Trình Viên Mobile,Software Engineer
+291262,cong ty tnhh idfl viet nam,Software Engineer,Nhân Viên IT - Lập Trình Viên (Thực Tập Sinh / Bán Thời Gian),Software Engineer
+292109,cong ty tnhh mot thanh vien tu van dao tao dai huu,Software Engineer,Lập Trình Viên Web,Software Engineer
+292389,cong ty tnhh mot thanh vien sos,Software Engineer,"Lập Trình Viên Ios, Android Trên Thiết Bị Di Động",Software Engineer
+293216,cong ty co phan thuong mai cong nghe so topsmart,Software Engineer,Nhân Viên Lập Trình Website (Wp - Flatsome),Software Engineer
+296233,cong ty tnhh sekisho viet nam,Software Engineer,Fresher Full Stack Developer,Software Engineer
+298206,cong ty tnhh phan mem phu quang,Software Engineer,Lập Trình Viên Asp.Net Và SQL Server Database,Software Engineer
+300043,cong ty tnhh cong nghe n h a viet nam,Software Engineer,Rpa Developer,Software Engineer
+301492,cong ty tnhh xoai viet nam,Software Engineer,Software Engineer,Software Engineer
+304090,cong ty tnhh cong nghe asilla viet nam,AI/ML Engineer,Ai Engineer,AI/ML Engineer
+304431,ct tnhh kien truc va thuong mai eureka,Data Engineer,Nhân Viên Kiến Trúc Dữ Liệu,Software Engineer
+307893,cong ty co phan cong nghe thong tin dia ly ek,Data Scientist,Chuyên Viên Khoa Học Dữ Liệu,Data Analyst
+309489,cong ty co phan negaxy,Software Engineer,Unity Developer,Software Engineer
+309521,cong ty tnhh metacrew,Software Engineer,Game Developer,Software Engineer
+311193,cong ty co phan cong nghe thong tin dia ly ek,Data Scientist,Thực Tập Sinh Khoa Học Dữ Liệu,Data Analyst
+311454,cong ty co phan dien tu vien thong anh duong,Software Engineer,Nhân Viên Thiết Kế Website (Web Developer (Reactjs)),Software Engineer
+312272,cong ty tnhh telileo viet nam,Data Analyst,Data Entryist And Data Analyst,Data Analyst
+314966,cong ty tnhh xoai viet nam,Software Engineer,Software Engineer,Software Engineer
+316095,cong ty tnhh mot thanh vien sos,Software Engineer,"Lập Trình Viên Ios, Android Trên Thiết Bị Di Động",Software Engineer
+316913,cong ty co phan cong nghe htecom,Software Engineer,Lập Trình Viên PHP – Laravel,Software Engineer
+317365,cong ty co phan thiet bi dien vi na si no,Software Engineer,Kỹ Sư Lập Trình Nhúng - TPHCM Xe Đưa Đón,Software Engineer
+318971,cong ty tnhh da loc,Data Analyst,Chuyên Viên Phân Tích Dữ Liệu Ngành Hàng,Data Analyst
+321221,cong ty tnhh thuong mai du lich tue anh,Data Analyst,Data Analyst,Data Analyst
+322445,cong ty tnhh ah longquan,Software Engineer,Thực Tập Sinh Lập Trình Python,Software Engineer
+325550,cong ty co phan cong nghe ladipage viet nam,Software Engineer,Frontend Developer Thu Nhập Trên 15 Triệu,Software Engineer
+326289,cong ty co phan bravesoft viet nam,Software Engineer,"Web Developer (Nuxt, PHP)",Software Engineer
+328019,cong ty co phan cong nghe va dich vu y te so med on,Software Engineer,Lập Trình Viên Backend,Software Engineer
+328956,cong ty co phan tu van xay dung dien 2,Software Engineer,Kỹ Sư Lập Trình (Phát Triển Phần Mềm),Software Engineer
+329051,cong ty co phan tu van xay dung dien 2,Software Engineer,Kỹ Sư Phần Mềm (Phân Tích Nghiệp Vụ),Software Engineer
+329697,cong ty tnhh lien doanh vinh hung,Software Engineer,Product Developer (Merchandiser),Software Engineer
+329910,cong ty co phan bravesoft viet nam,Software Engineer,"Web Developer (Vuejs, Nuxt)",Software Engineer
+332109,transviet travel cong ty tnhh du lich tran viet,Software Engineer,Nhân Viên IT Phần Mềm (Lập Trình),Software Engineer
+334980,cong ty co phan bien bac,Software Engineer,Lập Trình Viên Web + Mobile,Software Engineer
+335325,cong ty co phan giai phap ngon song moi,Software Engineer,Middle .Net Developer - English Fluent - Flexitime,Software Engineer
+335762,ngan hang tnhh mot thanh vien shinhan viet nam,Data Analyst,Data Analyst - Ngân Hàng Shinhan HCM,Data Analyst
+336450,cong ty tnhh mot thanh vien tuong tac xa hoi,Software Engineer,Mid Senior Android Developer,Software Engineer
+336463,cong ty tnhh mot thanh vien tuong tac xa hoi,Software Engineer,Mid Senior Ios Developer,Software Engineer
+339238,cong ty tnhh icar viet nam,Software Engineer,Middle Nodejs Full Stack Developer,Software Engineer
+340714,cong ty tnhh giao duc van hoa,Software Engineer,Nhân Viên Fullstack Developer,Software Engineer
+346892,cong ty co phan dau tu digital kingdom,Software Engineer,Thực Tập Sinh Lập Trình Phần Mềm Ứng Dụng,Software Engineer
+346966,cong ty co phan dau tu digital kingdom,Software Engineer,Nhân Viên Lập Trình _ Full-Stack - Kinh Nghiệm Từ 2 Năm,Software Engineer
+350983,cong ty co phan sao viet,Software Engineer,Nữ Nhân Viên Làm Khai Thác Mẫu (Developer) (Không Cần Kinh Nghiệm),Software Engineer
+351747,cong ty tnhh idfl viet nam,Software Engineer,Business Developer,Software Engineer
+351917,cong ty co phan cong nghe htecom,Software Engineer,Lập Trình Viên,Software Engineer
+353983,cong ty co phan quoc te anh van hoi viet my,Software Engineer,Senior Backend Developers (Golang / Nodejs),Software Engineer
+354821,cong ty tnhh mot thanh vien tuong tac xa hoi,Software Engineer,Mid Senior Ios Developer,Software Engineer
+355751,cong ty co phan 40 gio,Software Engineer,Shopware Developer,Software Engineer
+355880,cong ty co phan dau tu tai chinh va cong nghe datatech,Software Engineer,Lập Trình Viên,Software Engineer
+357395,cong ty tnhh majorbird vietnam,Software Engineer,Odoo Developer (Lập Trình Viên Odoo),Software Engineer
+358077,cong ty co phan cong nghe htecom,Software Engineer,Lập Trình Viên,Software Engineer
+358631,cong ty tnhh ky thuat cong nghe bach viet,Software Engineer,Lập Trình Viên Ứng Dụng Kết Nối Với Autocad / Solidworks,Software Engineer
+359731,cong ty co phan anvy,Data Analyst,Sale Admin / Quản Trị Và Phân Tích Dữ Liệu Kinh Doanh (Excel Tốt),Data Analyst
+360591,cong ty co phan cong nghe thong tin dia ly ek,Data Engineer,Thực Tập Sinh Kỹ Sư Dữ Liệu,Data Analyst
+361413,cong ty tnhh komaspec viet nam,Software Engineer,ERP Project Developer,Software Engineer
+362576,cong ty tnhh ky thuat cong nghe bach viet,Software Engineer,Lập Trình Viên Ứng Dụng Kết Nối Với Autocad / Solidworks,Software Engineer
+366485,cong ty co phan nhan luc quoc te,Data Engineer,Data Engineer - Công Ty Cổ Phần Nhân Lực Quốc Tế Hri,Data Engineer
+366505,cong ty co phan nhan luc quoc te,Data Scientist,Chuyên Gia Khoa Học Dữ Liệu (Data Scientist) - Công Ty Cổ Phần Nhân Lực Quốc Tế Hri,Data Scientist
+366507,cong ty co phan nhan luc quoc te,Software Engineer,Kỹ Sư Lập Trình Mobile (Android) - Công Ty Cổ Phần Nhân Lực Quốc Tế Hri,Software Engineer
+366538,cong ty co phan nhan luc quoc te,Software Engineer,Developer Odoo - Công Ty Cổ Phần Nhân Lực Quốc Tế Hri,Software Engineer
+367411,cong ty co phan asoft,Software Engineer,Subleader Team Lập Trình,Software Engineer
+368083,cong ty tnhh thiet bi va cong nghe minh ha,Software Engineer,Nhân Viên Lập Trình Nhúng Và Máy Tính (Hà Nội),Software Engineer
+368472,cong ty tnhh may an loi,AI/ML Engineer,Công Nhân May Và Học May,Software Engineer
+369109,cong ty cp phan mem chuyen ngiep toan cau pngsoft,Software Engineer,Nhân Viên Lập Trình Fulltime (Backend / Frontend),Software Engineer
+370761,cong ty tnhh cong nghe 44+,Software Engineer,Nhân Viên Frontend React Js Làm Việc Tại Hà Nội,Software Engineer
+370764,cong ty tnhh cong nghe 44+,Software Engineer,Nhân Viên Backend Nodejs Làm Việc Tại Hà Nội,Software Engineer
+371115,cong ty tnhh cong nghe 44+,Software Engineer,Lập Trình Viên Ios,Software Engineer
+372844,chi nhanh binh duong cong ty co phan kids plaza,Software Engineer,Mobile Developer - React Native,Software Engineer
+373596,cong ty tnhh viet nam zero waste,Data Analyst,Data Analyst / Nhân Viên Phân Tích Dữ Liệu,Data Analyst
+373649,cong ty co phan cong nghe htecom,Software Engineer,Lập Trình Viên Dev App,Software Engineer
+374199,cong ty co phan cong nghe savis,Software Engineer,Lập Trình Viên Java,Software Engineer
+374471,chi nhanh binh duong cong ty co phan kids plaza,Software Engineer,Mobile Developer - React Native,Software Engineer
+374785,cong ty tnhh giai phap cong nghe guvi,Software Engineer,Nhân Viên Backend Nodejs,Software Engineer
+375006,cong ty co phan cong nghe cao ctech,Software Engineer,Lập Trình Viên Mobile,Software Engineer
+379041,chi nhanh binh duong cong ty co phan kids plaza,Software Engineer,Mobile Developer - React Native (Lập Trình Ứng Dụng Điện Thoại),Software Engineer
+379103,cong ty co phan cong nghe skybull viet nam,Software Engineer,Trưởng Phòng Lập Trình Game - Lead Dev Unity,Software Engineer
+379138,cong ty tnhh dien tu foster bac ninh,Data Analyst,Nhân Viên Phân Tích Dữ Liệu (IT),Software Engineer
+379148,cong ty tnhh hqsing,Software Engineer,Nhân Viên IT Fullstack Khu Vực Tp.HCM - Đi Làm Ngay,Software Engineer
+380045,cong ty co phan asoft,Software Engineer,Trưởng Nhóm Lập Trình Phần Mềm -Tại Quận 12 (Đi Làm Ngay),Software Engineer
+380329,cong ty tnhh giao duc va dao tao ieltspower,Software Engineer,Lập Trình Viên Odoo / Odoo Developer (Junior / Senior Level - Onsite),Software Engineer
+380755,cong ty co phan phan mem siten,Software Engineer,Full Stack Engineer (English Fluent),Software Engineer
+381422,cong ty tnhh cong nghe 44+,Software Engineer,Nhân Viên Ios Developer Làm Việc Tại Hà Nội,Software Engineer
+383343,fullhouse,Software Engineer,Tuyển Nhân Viên Bán Khóa Học Lập Trình,Software Engineer
+387091,chi nhanh binh duong cong ty co phan kids plaza,Software Engineer,"Backend Developer (Nodejs, PHP)",Software Engineer
+388660,cong ty co phan cong nghe va giai phap y te,Software Engineer,Web Developer,Software Engineer
+388723,cong ty tnhh tribeco binh duong,Data Analyst,Nhân Viên Phân Tích Dữ Liệu,Data Analyst
+388811,cong ty tnhh knk vina,Software Engineer,Nhân Viên Lập Trình C#,Software Engineer
+389925,cong ty tnhh tribeco binh duong,Data Analyst,Nhân Viên Phân Tích Dữ Liệu,Data Analyst
+390895,cong ty cp chung khoan dong nam a,Software Engineer,Lập Trình Viên Java,Software Engineer
+391181,cong ty co phan dau tu digital kingdom,Software Engineer,Lập Trình Viên _ Full Stack,Software Engineer
+392093,cong ty tnhh tulpo software,Software Engineer,Unity Developer,Software Engineer
+392398,cong ty co phan cong nghe thong tin checkmate,Software Engineer,Nhân Viên Junior Front-End Developer,Software Engineer
+392798,cong ty co phan cong nghe htecom,Software Engineer,Trưởng Phòng Lập Trình,Software Engineer
+392831,cong ty tnhh mtv kien thuc cong nghe trung tran,Software Engineer,Lập Trình Viên,Software Engineer
+393096,cong ty tnhh nghien cuu va phat trien asti vietnam,Software Engineer,Kỹ Sư Lập Trình Nhúng,Software Engineer
+394849,cong ty co phan tong hop viet nhat,Software Engineer,Lập Trình Viên Android,Software Engineer
+395002,cong ty co phan dich vu cong nghe tsc viet nam,Software Engineer,Lập Trình Viên,Software Engineer
+396005,cong ty co phan quoc te anh van hoi viet my,Data Analyst,Senior Data Analyst Executive (Finance),Data Analyst
+401163,cong ty tnhh thoi trang h a thuong hieu pantio,Data Engineer,Kỹ Sư Dữ Liệu (Data Engineer),Data Engineer
+402503,cong ty tnhh mot thanh vien wacontre,Software Engineer,Fresher Backend Developer (PHP / C#),Software Engineer
+402813,cong ty co phan co dien tomeco,Software Engineer,Lập Trình Viên (IT Developer) Tại Tiểu Ban Công Nghệ Thông Tin,Software Engineer
+404815,cong ty co phan truong hoc cong nghe mindx,Data Analyst,Chuyên Viên Phát Triển Khóa Học Data Analyst,Data Analyst
+406563,cong ty co phan printgo viet nam,Software Engineer,Nhân Viên Marketing Full - Stack,Software Engineer
+408232,cong ty co phan bravesoft viet nam,Software Engineer,Lập Trình Viên PHP Tiếng Nhật N2,Software Engineer
+411886,btaskee vietnam,Data Analyst,Data Analyst,Data Analyst
+411897,careerviet,Data Analyst,Data Analyst,Data Analyst
+411900,early start jsc,Data Analyst,Data Analyst,Data Analyst
+411902,cong ty co phan dau tu va phat trien dich vu citigym,Data Analyst,Data Analyst,Data Analyst
+411903,btaskee vietnam,Data Analyst,Data Analyst (Analytics & ML),Data Analyst
+411915,cong ty co phan thuan hai,Data Analyst,DATA ANALYST INTERN,Data Analyst
+411918,bao mat,Data Analyst,Data Analyst Internship,Data Analyst
+411924,viettel idc,Data Analyst,Data Analyst,Data Analyst
+411926,cong ty co phan infinity technologies global,Data Analyst,Data Analyst (Junior),Data Analyst
+411965,bao mat,Data Analyst,Data Analyst Trainee,Data Analyst
+411986,hr buzzmetrics,Data Analyst,[HCM] Công Ty Nghiên Cứu Thị Trường BUZZMETRICS Tuyển Dụng Nhân Viên Marketing Data Analyst Full-time 2026,Data Analyst
+412015,hieupt proxglobal,Data Analyst,[HN] Công Ty Prox Global Tuyển Dụng Thực Tập Sinh Data Analyst Full-time 2026,Software Engineer
+412025,cong ty tnhh dich vu cong nghe tp,Data Analyst,Intern Data Analyst,Data Analyst
+412027,cong ty co phan i group,Data Analyst,IT Data Analyst,Data Analyst
+412059,cong ty co phan buzzmetrics,Data Analyst,Marketing Data Analyst - Công ty Cổ phần Buzzmetrics,Software Engineer
+412212,btaskee vietnam,Data Analyst,Senior Data Analyst,Data Analyst
+412235,bss group,Data Analyst,Senior Data Analyst (Ecommerce Service),Data Analyst
+412254,viet my ssu,Data Analyst,TUYỂN DỤNG DATA ANALYST,Data Analyst
+412463,cong ty co phan truong hoc cong nghe mindx,Software Engineer,Giáo Viên Lập Trình Fulltime [HCM],Software Engineer
+412516,cong ty co phan truong hoc cong nghe mindx,Data Analyst,Giảng Viên Khoá Data Analyst,Data Analyst
+412518,cong ty co phan truong hoc cong nghe mindx,Software Engineer,"Giáo Viên Lập Trình Fulltime [Hà Nội, Hồ Chí Minh]",Software Engineer
+413045,cong ty co phan cong nghe va giai phap y te,Software Engineer,Back-End Developer,Software Engineer
+414184,cong ty tnhh giai phap nuoc va moi truong singapore,Software Engineer,Junior Backend Developer,Software Engineer
+415503,cong ty co phan giai phap ngon song moi,Software Engineer,Middle / Senior Frontend Developer (Reactjs & English),Software Engineer
+415580,cong ty co phan cong nghe skybull viet nam,Software Engineer,Lập Trình Viên Game - Unity Developer,Software Engineer
+415699,cong ty co phan vinhomes,Data Engineer,Senior Data Engineer,Data Engineer
+415761,cong ty co phan cong nghe aibat,Software Engineer,"Lập Trình Viên (PHP, Laravel, Vuejs) - Kinh Nghiệm 1 Năm",Software Engineer
+416483,cong ty co phan co dien tomeco,Software Engineer,Lập Trình Viên / IT Developer Tại Tiểu Ban Công Nghệ Thông Tin,Software Engineer
+417264,cong ty co phan thuong mai cong nghe so topsmart,Software Engineer,"Senior Backend / Frontend / Web Dev (Nodejs, PHP, C#, Reactjs, Vue)",Software Engineer
+417445,cong ty tnhh ky thuat dien tu linh long,Software Engineer,Kỹ Sư Phát Triển Hệ Thống Phần Mềm - Senior Software Engineer,Software Engineer
+417886,cong ty tnhh xoai viet nam,Data Analyst,Data Analyst,Data Analyst
+418142,cong ty co phan cong nghe aibat,Software Engineer,Lập Trình Viên Mobile Flutter (Junior),Software Engineer
+418799,cong ty co phan dau tu digital kingdom,Software Engineer,Lập Trình Viên Mobile (Full Stack),Software Engineer
+425332,cong ty co phan smart solutions viet nam,Software Engineer,Developer Full Stack,Software Engineer
+425555,cong ty tnhh mot thanh vien sos,Software Engineer,"Lập Trình Viên Ios, Android Trên Thiết Bị Di Động",Software Engineer
+428029,cong ty tnhh lap phuc,Software Engineer,Nhân Viên Lập Trình Cam,Software Engineer
+430795,cong ty tnhh hqsing,Software Engineer,Nhân Viên IT Fullstack Khu Vực Tp.HCM - Phỏng Vấn Đi Làm Ngay,Software Engineer
+434594,cong ty tnhh transcosmos viet nam,Data Analyst,Data Analytics & Business Intelligence Executive,Data Analyst
+435247,cong ty tnhh aram vina,Software Engineer,Kỹ Sư Phần Mềm (C# Developer) - Thu Nhập Upto 1500$,Software Engineer
+440519,cong ty co phan bao bi thong minh intbox,Software Engineer,Thợ Cắt Giấy Máy Tự Động (Máy Lập Trình),Software Engineer
+442693,cong ty co phan phan phoi thuong mai skylink retail,Software Engineer,Senior Developer (Game),Software Engineer
+445439,cong ty co phan dich vu cong nghe tsc viet nam,Software Engineer,Lập Trình Viên,Software Engineer
+446905,cong ty tnhh aram vina,Software Engineer,Kỹ Sư Phần Mềm (C# Developer) - Thu Nhập Upto 1500$,Software Engineer
+447040,cong ty tnhh majorbird vietnam,Software Engineer,Odoo Developer (Lập Trình Viên Odoo),Software Engineer
+448096,cong ty tnhh htkk viet nam,Software Engineer,Thực Tập Lập Trình Web Và Apple,Software Engineer
+450815,apero technologies group,Software Engineer,Fresher Android Developer,Software Engineer
+451832,cong ty tnhh leetray,Data Engineer,"Kỹ Sư Dữ Liệu, Kinh Nghiệm 2 Năm (Quận 10)",Data Analyst
+452329,cong ty tnhh chin media,Software Engineer,Lập Trình Viên Android,Software Engineer
+454019,cong ty co phan cong nghe va giai phap y te,Software Engineer,Developer,Software Engineer
+454354,cong ty tnhh tmdv cong nghe vps,Software Engineer,Website Developer Intern / PHP Intern,Software Engineer
+455472,cong ty co phan cong nghe cao ctech,Software Engineer,Web Developer,Software Engineer
+455860,cong ty tnhh mtg technology,Software Engineer,Junior Android Developer,Software Engineer
+457406,cong ty co phan thuong mai cong nghe so topsmart,Software Engineer,Nhân Viên Lập Trình Website Wp / Flatsome,Software Engineer
+457412,cong ty tnhh leetray,Data Engineer,Kỹ Sư Dữ Liệu,Data Analyst
+457911,cong ty co phan bao bi thong minh intbox,Software Engineer,Thợ Cắt Giấy Máy Tự Động (Máy Lập Trình),Software Engineer
+459481,cong ty tnhh dv tm giai phap ky thuat cong nghiep viet nam,Software Engineer,Kỹ Sư Lập Trình Hệ Thống Cho Giải Pháp Tự Động Hóa,Software Engineer
+460674,cong ty co phan dich vu cong nghe tsc viet nam,Software Engineer,Lập Trình Viên,Software Engineer
+461082,cong ty co phan cong nghe skybull viet nam,Data Analyst,Data Analyst - Chuyên Viên Phân Tích Dữ Liệu (Ngành Game),Data Analyst
+462541,cong ty tnhh mot thanh vien sos,Software Engineer,Lập Trình Viên,Software Engineer
+463343,fushan technology viet nam,Software Engineer,Kỹ Sư Công Nghệ Thông Tin - Asp.Net Developer,Software Engineer
+463368,fushan technology viet nam,Software Engineer,Kỹ Sư Công Nghệ Thông Tin - Reactjs Or Vuesjs Developer,Software Engineer
+464674,cong ty tnhh dau tu its,Data Analyst,Chuyên Viên Phân Tích / Data Analyst,Data Analyst
+467781,cong ty tnhh sejong dynamics vina,Software Engineer,Kỹ Sư Lập Trình Embedded Firmware,Software Engineer
+468093,cong ty tnhh evselab,Software Engineer,Thực Tập Sinh Lập Trình Nhúng Firmware Điều Khiển Nhúng Trên Nền Tảng Vi Điều Khiển,Software Engineer
+468764,cong ty tnhh transcosmos viet nam,Software Engineer,Lập Trình Viên (Senior Level),Software Engineer
+469481,prym fashion vietnam co ltd,Software Engineer,Operations Assitant (Background Merchandiser / Trims Developer),Software Engineer
+469895,cong ty co phan dau tu digital kingdom,Software Engineer,Lập Trình Viên _ Full Stack (Web),Software Engineer
+471829,cong ty co phan cong nghe va giai phap y te,Software Engineer,Nhân Viên Lập Trình (Web Developer),Software Engineer
+472311,cong ty tnhh cong nghe 44+,Software Engineer,Nhân Viên Mobile Native Developer - Làm Việc Tại Hà Nội,Software Engineer
+474323,cong ty tnhh mot thanh vien sos,Software Engineer,Lập Trình Viên,Software Engineer
+479036,cong ty tnhh asia pacific health tech,Software Engineer,Tuyển Dụng Fullstack Web Developer (Lập Trình Viên),Software Engineer
+479094,cong ty tnhh asia pacific health tech,Software Engineer,Tuyển Dụng Fullstack Web Developer (Lập Trình Viên),Software Engineer
+479164,cong ty tnhh a s t r,Software Engineer,RPA Developer,Software Engineer
+479408,cong ty co phan aika da nang,Software Engineer,NV Thiết Kế Web (Frontend Developer) – Kinh Nghiệm 1 Năm,Software Engineer
+484412,cong ty co phan scots english australia,AI/ML Engineer,Trưởng Nhóm Phát Triển Trí Tuệ Nhân Tạo (AI Senior Dev),AI/ML Engineer
+484451,cong ty co phan scots english australia,AI/ML Engineer,Chuyên Viên Phát Triển Trí Tuệ Nhân Tạo (Ai Dev),AI/ML Engineer
+484638,cong ty co phan tong hop viet nhat,Software Engineer,Kỹ Sư Lập Trình Aws (Software Engineer Be / Fe),Software Engineer
+491030,cong ty tnhh can sports viet nam,Software Engineer,Lập Trình Viên / Thiết Kế 3D- Đi Làm Ngay,Software Engineer
+491442,cong ty tnhh avery dennison ris viet nam,Data Analyst,Data Analyst (Planning),Data Analyst
+491962,cong ty co phan bravesoft viet nam,Software Engineer,Bridge Software Engineer,Software Engineer
+494460,cong ty co phan dich vu cong nghe tsc viet nam,Software Engineer,Nhân Viên Lập Trình Fullstack,Software Engineer
+495239,cong ty tnhh transcosmos viet nam,Software Engineer,Chuyên Viên Lập Trình,Software Engineer
+500985,cong ty tnhh mitek viet nam,Data Analyst,"HR Analysis Intern (Powerbi, Data Analysis)",Data Analyst
+505056,cong ty tnhh atixis viet nam,Software Engineer,Chuyên Viên Phát Triển Full Stack (Full Stack Development Executive),Software Engineer
+505477,cong ty tnhh transcosmos viet nam,Data Analyst,Data Analyst (Workforce Management Analyst),Data Analyst
+505638,talentnet corporation cong ty cp ket noi nhan tai,Data Analyst,Rtm Data Analyst,Data Analyst
+506774,cong ty co phan cong nghe skybull viet nam,Software Engineer,Lập Trình Viên Backend (Mảng Game),Software Engineer
+508501,cong ty co phan htc vien thong quoc te,Software Engineer,Lập Trình Viên .Net - Junior / Middle Full-Stack .Net Developer,Software Engineer
+513417,cong ty tnhh infox,Software Engineer,Lập Trình Viên,Software Engineer
+521340,cong ty tnhh tmdv cong nghe vps,Software Engineer,Website Developer / PHP,Software Engineer
+522116,cong ty tnhh dien tu foster bac ninh,Software Engineer,"Kỹ Sư Lập Trình C, Python, Ai",Software Engineer
+522607,cong ty co phan asoft,Software Engineer,Trưởng Nhóm Lập Trình Phần Mềm,Software Engineer
+524018,cong ty tnhh cong nghe sao vang viet nam,Software Engineer,Nhân Viên Lập Trình (Lập Trình Viên - Quận 12),Software Engineer
+524775,cong ty tnhh gremsy solutions,Software Engineer,Android Developer (Java / Kotlin),Software Engineer
+524872,cong ty co phan gmo z com runsystem,Software Engineer,Python Developer,Software Engineer
+524874,cong ty co phan gmo z com runsystem,Software Engineer,Python Developer,Software Engineer
+528726,cong ty co phan sao viet,Software Engineer,Nữ Nhân Viên Làm Khai Thác Mẫu (Developer),Software Engineer
+532215,cong ty tnhh workwise,Data Analyst,Cộng Tác Viên Phân Tích Dữ Liệu,Data Analyst
+532252,cong ty cp bong bach tuyet,Data Analyst,Nhân Viên Phân Tích Dữ Liệu Sản Xuất,Data Analyst
+532280,cong ty co phan cong nghe zen,Software Engineer,Thực Tập Sinh Frontend (Reactjs / Reactnative),Software Engineer
+532515,chi nhanh cong ty tnhh nha nuoc mot thanh vien thuong mai va xuat nhap khau viettel trung tam ban le,Software Engineer,Middle Mobile Developer,Software Engineer
+532534,chi nhanh cong ty co phan ipos vn tai thanh pho ho chi minh,Software Engineer,Frontend Developer,Software Engineer
+535300,cong ty tnhh hn media group,Software Engineer,Full Stack Developer - Chuyên Viên Lập Trình Website,Software Engineer
+536798,cong ty co phan tri tue nhan tao viet nam aiaivn,Software Engineer,Front-End Developer,Software Engineer
+536879,cong ty tnhh infox,Software Engineer,Lập Trình Viên,Software Engineer
+536966,cong ty tnhh transcosmos viet nam,Software Engineer,Chuyên Viên Lập Trình (Python Developer / Vba / Rpa),Software Engineer
+538271,cong ty co phan tap doan khai hung,Software Engineer,Chuyên Viên Lập Trình Phần Mềm Nhân Sự (Bất Động Sản),Software Engineer
+540174,cong ty co phan dich vu cong nghe tsc viet nam,Software Engineer,Nhân Viên Lập Trình (Fullstack),Software Engineer
+540493,cong ty co phan cong nghe mobiwork,Software Engineer,Lập Trình Viên Fullstack,Software Engineer
+540869,cong ty trach nhiem huu han doanh nghiep xa hoi the he so,Software Engineer,Giáo Viên - Trợ Giảng Dạy Lập Trình Cho Trẻ,Software Engineer
+541506,cong ty co phan o to do thanh do thanh auto corporation,Data Analyst,Chuyên Viên Phân Tích Dữ Liệu - Data Analyst,Data Analyst
+543162,cong ty co phan tin hoc smartway,Software Engineer,"Nodejs Developer (Nestjs, Typescript, Reactjs)",Software Engineer
+545314,cong ty co phan nexle,Software Engineer,Full Stack Developer (.Net / Reactjs),Software Engineer
+545410,cong ty co phan thiet bi cong nghiep geic,Software Engineer,Kỹ Sư Lập Trình Linux Embedded,Software Engineer
+546860,cong ty tnhh document easy,Software Engineer,Flutter Developer,Software Engineer
+547399,tnhh giai phap cong nghe pt solutions,Software Engineer,"Front End Developer (Vuejs, Vue3, HTML)",Software Engineer
+550772,cong ty co phan cong nghe vietrad,Software Engineer,Lập Trình Viên,Software Engineer
+553695,datawings vietnam cong ty tnhh doi canh du lieu viet nam,Software Engineer,Nhân Viên Lập Trình Java,Software Engineer
+555866,cong ty co phan teaser,Software Engineer,React Native Developer,Software Engineer
+558618,van phong dai dien cong ty tas global holdings pte ltd tai ha noi,Software Engineer,Web Developer - Fresher,Software Engineer
+561365,chi nhanh cong ty tnhh nha nuoc mot thanh vien thuong mai va xuat nhap khau viettel trung tam ban le,Software Engineer,Nhân Viên Lập Trình Web Sử Dụng Visual Studio C# Asp.Net - Phòng CNTT,Software Engineer
+561417,cong ty co phan dich vu cong nghe tsc viet nam,Software Engineer,Lập Trình Fullstack,Software Engineer
+563612,cong ty tnhh pegatron viet nam,Software Engineer,软件工程師 Kỹ Sư Phần Mềm - Thu Nhập 15-20M,Software Engineer
+563627,cong ty tnhh pegatron viet nam,Software Engineer,Smt程式&設備工程師 - Kỹ Sư Thiết Kế Và Lập Trình SMT,Software Engineer
+564991,cong ty tnhh dao tao ngoai ngu tin hoc hien chuyen,Software Engineer,Trợ Giảng Các Học Phần Tin Học Và Lập Trình,Software Engineer
+567951,cong ty co phan khoa hoc ky thuat tam duc,Software Engineer,"Fullstack Angular, PHP Developer",Software Engineer
+568117,adns,Software Engineer,PHP Developer,Software Engineer
+570146,cong ty tnhh adsdigi,Software Engineer,Developer - PHP,Software Engineer
+570622,cong ty co phan gmo z com runsystem,AI/ML Engineer,Thực Tập Sinh Ai Engineer,Software Engineer
+571425,cong ty co phan cong nghe ky thuat vtech,Software Engineer,Frontend Developer,Software Engineer
+571811,cong ty co phan thiet lap cong nghe thiet bi systems,Software Engineer,Kỹ Sư Lập Trình Phần Mềm - Tự Động Hóa,Software Engineer
+575074,cong ty co phan cong nghe tien phong,Software Engineer,Thực Tập Sinh Lập Trình - Intern,Software Engineer
+575846,cong ty tnhh san xuat thuong mai t t,Software Engineer,"Nhân Viên Vận Hành Máy Wash, Ozone, Máy Lập Trình",Software Engineer
+576395,p a vietnam co ltd,Software Engineer,Chuyên Viên Lập Trình PHP,Software Engineer
+576553,cong ty co phan giai phap cong nghe phan mem softone,Software Engineer,Thực Tập Sinh Lập Trình Viên (Developer Intern),AI/ML Engineer
+578521,cong ty tnhh cong nghe rbx,Software Engineer,Back End Developer (Crypto / Blockchain Domain),Software Engineer
+581289,cong ty tnhh mot thanh vien sos,Software Engineer,"Lập Trình Viên Asp.Net, C##",Software Engineer
+581911,cong ty co phan truyen thong luat viet nam,Software Engineer,Lập Trình Viên Phát Triển Ứng Dụng Web Fullstack,Software Engineer
+582087,cong ty co phan gmo z com runsystem,AI/ML Engineer,Machine Learning Researcher (Junior),AI/ML Engineer
+582996,cong ty tnhh dau tu 24invest,Software Engineer,Shopify Developer,Software Engineer
+583577,cong ty tnhh digisea,Software Engineer,Junior Rpa Developer,Software Engineer
+583619,cong ty tnhh dao tao ngoai ngu tin hoc hien chuyen,Software Engineer,Trợ Giảng Các Học Phần Tin Học Và Lập Trình Cơ Bản,Software Engineer
+583647,cong ty co phan tap doan dau tu cong nghe nam long,Software Engineer,Mobile Developer - React Native,Software Engineer
+585055,cong ty co phan san xuat va cong nghe nhua pha le,Data Analyst,Chuyên Viên Giải Pháp Dữ Liệu / Data Analyst / Power Bi Specialist,Data Analyst
+585285,chi nhanh cong ty tnhh nha nuoc mot thanh vien thuong mai va xuat nhap khau viettel trung tam ban le,Software Engineer,Nhân Viên Lập Trình Java,Software Engineer
+585452,cong ty tnhh dao tao ngoai ngu tin hoc hien chuyen,Software Engineer,Thực Tập Trợ Giảng Tin Học & Lập Trình,Software Engineer
+586356,cong ty tnhh xt solution,Software Engineer,Back-End Developer,Software Engineer
+586561,cong ty co phan truong hoc cong nghe mindx,Software Engineer,Chuyên Viên Tư Vấn Tuyển Sinh - Khóa Học Lập Trình,Software Engineer
+586574,cong ty co phan truong hoc cong nghe mindx,Software Engineer,Chuyên Viên Tư Vấn Tuyển Sinh - Khóa Học Lập Trình,Software Engineer
+587351,cong ty co phan cong nghe tien phong,Software Engineer,Thực Tập Sinh Lập Trình - Software Intern,Software Engineer
+591398,cong ty co phan nexle,Software Engineer,Full Stack Developer (.Net / Reactjs),Software Engineer
+591662,cong ty co phan cong nghe va giai phap y te,Software Engineer,Back-End Developer,Software Engineer
+592746,cong ty co phan thiet bi cong nghiep geic,Data Analyst,Chuyên Viên Phân Tích Dữ Liệu,Data Analyst
+595858,cong ty tnhh ilsung electric vina,Software Engineer,Kỹ Sư Lập Trình,Software Engineer
+596006,cong ty phan mem rikkeisoft,Software Engineer,[HCM] Công Ty Phần Mềm Rikkeisoft Tuyển Dụng Thực Tập Sinh Fullstack Developer Full-Time 2025,Software Engineer
+600673,cong ty tnhh mtv stride,Data Analyst,Senior Data Analyst,Data Analyst
+600787,cong ty tnhh pentasecurity vina,Software Engineer,"Fullstack Developer (Javascript, Java) - (17M - 40M)",Software Engineer
+601367,cong ty co phan apetechs,Software Engineer,Nhân Viên Lập Trình Mobile,Software Engineer
+602547,cong ty tnhh dich vu va giai tri gbc,Software Engineer,Trưởng Nhóm Lập Trình Viên,Software Engineer
+603169,hrchannels group,Software Engineer,Kỹ Sư Lập Trình (Tự Động Hóa),Software Engineer
+603852,cong ty vn9,Data Analyst,Data Analyst Intern,Data Analyst
+603853,cong ty vn9,Software Engineer,Frontend Developer,Software Engineer
+603885,cong ty tnhh daoukiwoom innovation,Software Engineer,Mobile Trading System Developer - Android/IOS,Software Engineer
+603895,cong ty co phan atomi digital,Software Engineer,Frontend Developer,Software Engineer
+603932,cong ty co phan phan mem revotech,Software Engineer,Lập Trình Viên Java Fullstack,Software Engineer
+603960,cong ty tnhh finan,Data Engineer,Data Engineer (Middle),Data Engineer
+603965,cong ty cp cong nghe va truyen thong dagoras,Software Engineer,Junior Fullstack Java Developer,Software Engineer
+603975,trung tam tinh cuoc va thanh khoan mobifone chi nhanh tong cong ty vien thong mobifone,Software Engineer,Lập Trình Back-End,Software Engineer
+603979,cong ty tnhh seta international viet nam,Software Engineer,Intern Java Developer,Software Engineer
+603988,cong ty cp phan mem mor,Software Engineer,Flutter Developer,Software Engineer
+603989,cong ty co phan so giao dich hang hoa viet nam,Software Engineer,Backend Developer,Software Engineer
+604006,cong ty tnhh gemcommerce,Data Analyst,Data Analyst,Data Analyst
+604072,cong ty co phan giai phap cong nghe ttc viet nam,Software Engineer,Lập Trình Viên Java,Software Engineer
+604080,cong ty tnhh mot thanh vien ung dung ky thuat va san xuat tecapro,Software Engineer,Lập Trình Viên Frontend,Software Engineer
+604096,cong ty cp phan mem mor,Software Engineer,Intern Frontend (ReactJS/ VueJS),Software Engineer
+604114,cong ty tnhh thuong mai va dich vu vien thong suntel thu do,Software Engineer,Lập Trình Camera AI,Software Engineer
+604124,cong ty cp giai phap cong nghe va nguon luc toprate,Software Engineer,Full Stack Developer (Java & Angular),Software Engineer
+604132,tma solutions,Software Engineer,.Net Developer,Software Engineer
+604159,cong ty co phan cong nghe windsoft viet nam,Software Engineer,Lập Trình Viên React.Js,Software Engineer
+604163,cong ty cp giai phap thanh toan viet nam vnpay,Software Engineer,Lập Trình Viên Android,Software Engineer
+604169,cong ty tnhh haposoft,Software Engineer,Web Developer,Software Engineer
+604185,cong ty cp cong nghe va truyen thong dagoras,Data Analyst,Chuyên Viên Phân Tích Dữ Liệu (Data Analyst),Data Analyst
+604194,unknown_d61777216c4a2d069feec65f1222b45eb5835562092a0cf92fb30ae34513af03,Software Engineer,ERP Developer,Software Engineer
+604215,unknown_77cca45e3e6af7bf13afc76cd80bae8846dca49686d45913fcbce3f4a72388f9,Software Engineer,Thực Tập Sinh Lập Trình Java,Software Engineer
+604228,zitga studios,Software Engineer,Middle Unity Developer,Software Engineer
+604232,cong ty co phan giai phap cong nghe ttc viet nam,Software Engineer,Fullstack Developer (Java - Angular),Software Engineer
+604244,cong ty co phan jvb viet nam,Software Engineer,Java Developer,Software Engineer
+604264,cong ty tnhh may mac bowker viet nam,Software Engineer,Front End Developer,Software Engineer
+604267,cong ty tnhh truong dinh holdings,AI/ML Engineer,Chuyên Viên AI (AI Engineer),AI/ML Engineer
+604280,unknown_f5b4f427ff1232fc0d26a24a0a8ececcb9409930a896573a7253ba14d81ed1b6,Software Engineer,WordPress Developer,Software Engineer
+604305,cong ty tnhh rivercrane viet nam,Software Engineer,Mobile Developer,Software Engineer
+604320,cong ty tnhh mot thanh vien ung dung ky thuat va san xuat tecapro,Software Engineer,Lập Trình Viên Backend,Software Engineer
+604336,cong ty co phan phan mem revotech,Software Engineer,Devlead (Java Fullstack),Software Engineer
+604338,cong ty co phan giai phap cong nghe viet nam,Software Engineer,Lập Trình Viên Java (Spring Boot),Software Engineer
+604355,cong ty co phan giai phap cong nghe va nguon luc toprate,Software Engineer,Reactjs Developer,Software Engineer
+604382,cong ty tnhh volio viet nam,Software Engineer,IOS Developer (Swift),Software Engineer
+604397,cong ty tai chinh co phan tin viet,Data Analyst,Nhân Viên Phân Tích Dữ Liệu - Ban Quản Trị Dữ Liệu (MIS),Data Analyst
+604411,cong ty co phan tap doan yeah1,Software Engineer,Senior Frontend Developer,Software Engineer
+604437,cong ty co phan xtransfrorm,Software Engineer,Backend Developer Java,Software Engineer
+604439,cong ty co phan giai phap cong nghe ttc viet nam,AI/ML Engineer,AI Engineer,AI/ML Engineer
+604449,cong ty tnhh giai tri da phuong tien epicmusicvn,Software Engineer,Fresher Software Developer,Software Engineer
+604461,cong ty tnhh gemcommerce,Software Engineer,Frontend Developer,Software Engineer
+604480,cong ty co phan cong nghe va truyen thong awing viet nam,Software Engineer,"Full-Stack Developer (.Net, ReactJs)",Software Engineer
+604499,cong ty tnhh lua a chau,AI/ML Engineer,AI Engineer Intern,AI/ML Engineer
+604500,cong ty co phan simbatech,Software Engineer,Lập Trình Viên Backend Java,Software Engineer
+604503,cong ty tnhh grapecity,Software Engineer,Software Developer,Software Engineer
+604513,elisoft co ltd,Software Engineer,Python Developer,Software Engineer
+604530,cong ty tnhh dau tu ky thuat cong nghe xanh,Software Engineer,Java Full Stack,Software Engineer
+604539,apero technologies group,Software Engineer,Middle iOS Developer,Software Engineer
+604549,unknown_f3ec93f629a7e7f9c1fb750d6e537bf6e955dc64d9a8ca8eb01ce4f1d1c41668,Software Engineer,"Kỹ Sư Phát Triển Mobile - Mobile Developer (React Native, Flutter)",Software Engineer
+604551,unknown_7ec74292ca567b84a506926d98d93aa569a1ada65409ca106e475f7bfb9fdff8,AI/ML Engineer,Kỹ Sư Phát Triển AI - AI Engineer,AI/ML Engineer
+604571,cong ty co phan giai phap cong nghe va tri tue nhan tao vietis,Software Engineer,Lập Trình Viên Backend (Python Django),Software Engineer
+604576,apero technologies group,Software Engineer,Team Leader iOS Developer,Software Engineer
+604621,cong ty tnhh draphony dx,Software Engineer,Intern Full-Stack Developer (MERN-Stack),Software Engineer
+604645,cong ty co phan dac data technology viet nam,Software Engineer,Java Developer,Software Engineer
+604652,cong ty tnhh giai phap tula,Software Engineer,Kỹ Sư Phần Mềm Nhúng - IoT Và Automation,Software Engineer
+604659,innovature,Data Engineer,Data Engineer (BI & Automation),Data Engineer
+604668,cong ty co phan thuong mai va dich vu cong nghe gtsc viet nam,Software Engineer,Lập Trình Viên Backend Developer,Software Engineer
+604669,cong ty tnhh majorbird vietnam,Software Engineer,Lập Trình Viên Odoo Developer,Software Engineer
+604678,cong ty tnhh agiletech viet nam,Software Engineer,Lập Trình Viên Java,Software Engineer
+604680,cong ty tnhh daoukiwoom innovation,Software Engineer,Backend Engineer (Java/MySQL/Spring),Software Engineer
+604695,cong ty cp kinh doanh f88,Software Engineer,Java Developer,Software Engineer
+604766,cong ty cp giai phap thanh toan viet nam vnpay,Software Engineer,Lập Trình Viên Java,Software Engineer
+604787,cong ty co phan the gioi so digiworld,Data Analyst,Chuyên Viên Phân Tích Số Liệu Quản Trị (BI),Data Analyst
+604794,cong ty cp giai phap thanh toan viet nam vnpay,Software Engineer,"Lập Trình Viên Java (Einvoice, Econtract, CA)",Software Engineer
+604805,cong ty tnhh dich vu tfs,Data Analyst,Junior Business Intelligence,Data Analyst
+604810,cong ty co phan appota,Software Engineer,Backend Developer,Software Engineer
+604824,cong ty tnhh khoa hoc cong nghe minh viet,Software Engineer,Backend Engineer,Software Engineer
+604831,cong ty sotk,Software Engineer,Python Developer (Middle),Software Engineer
+604853,cong ty co phan giai phap cong nghe ttc viet nam,Software Engineer,Lập Trình Viên Angular,Software Engineer
+604872,apero technologies group,Software Engineer,Middle Backend Developer,Software Engineer
+604917,cong ty tnhh cong nghe 44+,Software Engineer,Thực Tập Sinh Front End Developer (ReactJs),Software Engineer
+604935,cong ty co phan cong nghe va dich vu xgame,AI/ML Engineer,AI Engineer,AI/ML Engineer
+604937,cong ty op6,Software Engineer,Web Developer (Nextjs / Javascript),Software Engineer
+604939,cong ty co phan alliex viet nam,Software Engineer,".NET Developer (WinForms, WPF)",Software Engineer
+604968,cong ty tnhh phan mem libra,Software Engineer,Thực Tập Sinh Fullstack Developer,Software Engineer
+604978,unknown_4d2bc2832bd081d012da10fb1d91f487cf4f68670e1f6d9b68a07b53db9b2fcb,Data Analyst,Senior Business Intelligence Analyst,Data Analyst
+604986,talentbase vietnam company limited,Software Engineer,Fullstack Engineer,Software Engineer
+604994,cydeva technology solutions,Software Engineer,Intern Backend Python (Django REST Framework),Software Engineer
+605001,cong ty tnhh daoukiwoom innovation,Software Engineer,Server Developer (C Language),Software Engineer
+605005,cong ty tnhh hybrid technologies viet nam,Software Engineer,Java Developer (Middle),Software Engineer
+605058,cong ty tnhh silver maple,Software Engineer,Middle Frontend Developer (NextJs),Software Engineer
+605067,cong ty co phan unity sport,Software Engineer,Middle Odoo Developer,Software Engineer
+605079,cong ty co phan litgroup,Software Engineer,Fresher Python Developer (Backend),Software Engineer
+605088,cong ty co phan giai phap cong nghe va tri tue nhan tao vietis,Software Engineer,Fresher IT Developer,Software Engineer
+605093,cong ty co phan dich vu truyen thong da phuong tien viet nam,Software Engineer,Thực Tập Sinh Lập Trình Viên JavaScript,Software Engineer
+605126,cong ty co phan dau tu phat trien cong nghe ung dung toan cau hyperlogy,Software Engineer,Net Fullstack Developer,Software Engineer
+605161,cong ty tnhh metacrew,Software Engineer,Blockchain Developer,Software Engineer
+605163,cong ty tnhh namperfume,Software Engineer,Nhân Viên Backend,Software Engineer
+605209,cong ty co phan cong nghe finviet,Software Engineer,Senior NodeJS Backend Developer,Software Engineer
+605215,cong ty tnhh cong nghe toan cau aveo,Software Engineer,ReactJS Developer,Software Engineer
+605239,cong ty co phan phan mem revotech,Software Engineer,Lập Trình Viên Front-End (Vue),Software Engineer
+605242,cong ty co phan asoft,Software Engineer,Trưởng Nhóm Lập Trình ERP,Software Engineer
+605299,cong ty tnhh chartertech global,Software Engineer,Frontend/Mobile Technical Lead,Software Engineer
+605302,cong ty tnhh mot thanh vien phat trien dich vu cong nghe,Data Analyst,Nhân Viên Phân Tích Dữ Liệu,Data Analyst
+605358,cong ty cp phan mem mor,Software Engineer,Fullstack Developer,Software Engineer
+605362,panasonic vietnam co ltd,Software Engineer,Mobile Android App Developer,Software Engineer
+605370,heso co ltd,Software Engineer,ReactJS Developer,Software Engineer
+605385,cong ty co phan tap doan dau tu cong nghe nam long,Software Engineer,Frontend Developer,Software Engineer
+605401,cong ty cp giai phap thanh toan viet nam vnpay,Software Engineer,Lập Trình Viên Backend (Golang),Software Engineer
+605404,cong ty tnhh cong nghe data insight viet nam,Software Engineer,Kỹ Sư Lập Trình Front-End (Nền Tảng IoT),Software Engineer
+605428,alphaway technology,Software Engineer,React Native Developer,Software Engineer
+605451,cong ty tnhh giai phap phan mem acs,Software Engineer,VB6 Developer,Software Engineer
+605455,panasonic vietnam co ltd,Software Engineer,"Full-Stack Developer (NodeJS, Python)",Software Engineer
+605460,cong ty tnhh oneuniverse vn,Software Engineer,Game Programmer C++,Software Engineer
+605477,cong ty co phan tap doan karofi,Software Engineer,Senior Full Stack Developer - Odoo,Software Engineer
+605479,cong ty tnhh cong nghe gia dinh ftech co ltd,Software Engineer,Frontend Developer,Software Engineer
+605493,cong ty co phan cong nghe eup,Software Engineer,Middle Fullstack Developer,Software Engineer
+605507,unknown_9909b7f3329d193afd5f702035dacd650226b091041ee836fa846391eebd24e4,AI/ML Engineer,AI Engineer / Natural Language Processing (NLP),AI/ML Engineer
+605517,cong ty cp kinh doanh f88,Data Analyst,Senior Data Analyst,Data Analyst
+605530,cong ty co phan ico euro,AI/ML Engineer,Trợ Lý Về Trí Tuệ Nhân Tạo (AI),Data Analyst
+605536,cong ty tnhh volio viet nam,Software Engineer,Back-End Developer (Golang),Software Engineer
+605537,cong ty tnhh mtv sen vang viet nam,Software Engineer,"Lập Trình Viên Full-Stack Developer (ERP, MES)",Software Engineer
+605539,cong ty tnhh phan phoi synnex fpt,Software Engineer,Lập Trình Viên Java,Software Engineer
+605562,cong ty tnhh holdstation viet nam,Software Engineer,Blockchain Developer,Software Engineer
+605567,cong ty co phan asoft,Software Engineer,Nhân Viên Lập Trình Phần Mềm,Software Engineer
+605577,cong ty tnhh agiletech viet nam,Software Engineer,IOS Developer (Swift),Software Engineer
+605608,cong ty tnhh cong nghe rbx,Software Engineer,"Backend Developer (C/C++, Golang)",Software Engineer
+605614,cong ty co phan sintecha,Software Engineer,Kỹ Sư IT Fullstack Developer,Software Engineer
+605620,cong ty tnhh encycom,Software Engineer,AI Application Developer,Software Engineer
+605630,cong ty co phan giai phap phan mem biplus viet nam,Software Engineer,Frontend Developer (ReactJS/Angular),Software Engineer
+605659,cong ty co phan phan mem revotech,Software Engineer,Lập Trình Viên Mobile (Swift IOS/ Kotlin Android),Software Engineer
+605693,viettel idc,Data Analyst,Nhân viên Phân tích Dữ liệu - Data Analyst,Data Analyst
+605720,cong ty co phan dau tu thuong mai xuat nhap khau ngoc duc,Software Engineer,Frontend Developer (ReactJS/Laravel Blade),Software Engineer
+605724,cong ty co phan cong nghe insgame,Software Engineer,Backend Developer,Software Engineer
+605743,cong ty co phan giai phap cong nghe va tri tue nhan tao vietis,AI/ML Engineer,AI Engineer,AI/ML Engineer
+605744,cong ty tnhh technoasia,Software Engineer,Web Developer,Software Engineer
+605754,cong ty tnhh seta international viet nam,Software Engineer,Junior Java Developer,Software Engineer
+605776,apero technologies group,Software Engineer,Game Developer,Software Engineer
+605821,unknown_c46f6b6bcf1f87db7f38c332307341518aff616295435c22e54087945c3b50e1,Software Engineer,Kỹ Sư Phát Triển Fullstack,Software Engineer
+605833,cong ty co phan everstar global,Software Engineer,Lập Trình Viên Front-End,Software Engineer
+605834,cong ty co phan cong nghe eup,Software Engineer,Flutter Developer,Software Engineer
+605838,cong ty vts,Software Engineer,Lập Trình Viên Python Django,Software Engineer
+605850,cong ty co phan benh vien da khoa quoc te gsv,Software Engineer,Junior Frontend Developer,Software Engineer
+605853,tma solutions,Software Engineer,.NET Developer,Software Engineer
+605856,cong ty tnhh dich vu thuong mai dien tu ido,Software Engineer,Lập Trình Viên Backend Developer (Golang),Software Engineer
+605865,panasonic system networks vietnam co ltd,Software Engineer,.Net Developer (Middle),Software Engineer
+605904,cong ty co phan teaser,Software Engineer,React Native Developer,Software Engineer
+605911,cong ty tnhh dau tu ky thuat cong nghe xanh,Software Engineer,Dev Full Stack,Software Engineer
+605917,cong ty co phan du lieu toan cau,Software Engineer,Lập Trình Python,Software Engineer
+605924,cong ty co phan cong nghe sotatek viet nam,Software Engineer,Node.js/React.js Developer,Software Engineer
+605935,cong ty co phan cong nghe nexdata,AI/ML Engineer,AI Engineer – Computer Vision,AI/ML Engineer
+605957,cong ty co phan teaser,Software Engineer,React Native Developer,Software Engineer
+605981,cong ty cp phan mem mor,Software Engineer,Lập Trình Viên NodeJS AWS,Software Engineer
+605984,ipos vn,Software Engineer,Intern Python Developer,Software Engineer
+606003,azoom vietnam inc,Software Engineer,Leader/Senior Fullstack Developer,Software Engineer
+606006,cong ty co phan appota,Software Engineer,Golang Developer,Software Engineer
+606058,tnhh cong nghe skylab viet nam,Software Engineer,PHP Backend Developer,Software Engineer
+606069,cong ty tnhh gremsy solutions,Software Engineer,Android Developer,Software Engineer
+606098,cong ty tnhh giai phap phan mem services engine,Software Engineer,Back-End Developer,Software Engineer
+606104,cong ty co phan asoft,Software Engineer,Lập Trình AI,AI/ML Engineer
+606123,cong ty co phan giai phap cong nghe viet nam,Software Engineer,Lập Trình Viên Full-Stack .Net,Software Engineer
+606143,unknown_b84f1d4fc8aac80041cf0d2e3c60a84b9b6d0c42366c27c3b07730fa34ebe125,Software Engineer,Python Developer (Junior),Software Engineer
+606148,cong ty cp cong nghe va truyen thong dagoras,Data Scientist,Nhân viên Data Scientist,AI/ML Engineer
+606182,open reach tech hanoi,Software Engineer,Backend Developer (NodeJs),Software Engineer
+606183,cong ty vcsvn,Software Engineer,Front End Developer,Software Engineer
+606193,cong ty tnhh lisod viet nam,Software Engineer,Middle/Senior Fullstack Developer (PHP/Laravel),Software Engineer
+606196,cong ty tnhh phan mem va dich vu cong nghe sts,Software Engineer,Intern Developer,Software Engineer
+606218,panasonic vietnam co ltd,Software Engineer,Backend/Cloud Engineer,Software Engineer
+606238,cong ty co phan giai phap cong nghe ttc viet nam,Software Engineer,Java Developer - Domain Bank,Software Engineer
+606249,cong ty cp giai phap thanh toan viet nam vnpay,Software Engineer,Lập Trình Viên IOS,Software Engineer
+606271,cong ty co phan giai phap cong nghe ttc viet nam,Software Engineer,Lập Trình Viên Java,Software Engineer
+606278,trung tam tinh cuoc va thanh khoan mobifone chi nhanh tong cong ty vien thong mobifone,Software Engineer,Lập Trình Front-End,Software Engineer
+606301,cong ty co phan everstar global,Software Engineer,Lập Trình Viên Back-End,Software Engineer
+606306,heso co ltd,Software Engineer,Java Developer,Software Engineer
+606315,cong ty cp cong nghe va truyen thong dagoras,Data Analyst,Nhân Viên Phân Tích Dữ Liệu (Mảng Viễn Thông),Data Analyst
+606348,cong ty tnhh balance internet viet nam,Software Engineer,Braze Developer,Software Engineer
+606370,cong ty cp kinh doanh f88,Software Engineer,Senior Mobile Developer (Flutter),Software Engineer
+606374,cong ty co phan cong nghe insgame,Software Engineer,Full-Stack Web Developer,Software Engineer
+606418,cong ty co phan cong nghe eup,Software Engineer,Junior Fullstack Developer,Software Engineer
+606448,cong ty cp kinh doanh f88,Data Engineer,Data Engineer,Data Engineer
+606452,super game,Software Engineer,Junior Unity Developer,Software Engineer
+606477,cong ty xn7,Software Engineer,BackEnd Developer (NodeJS),Software Engineer
+606505,cong ty co phan cong nghe nami,Software Engineer,Back-End Developer,Software Engineer
+606510,cong ty co phan giai phap phan mem biplus viet nam,Software Engineer,Java Developer,Software Engineer
+606528,cong ty tnhh cong nghe ezcloud toan cau,Software Engineer,Lập Trình Viên .Net,Software Engineer
+606533,cong ty kv7,Software Engineer,Lập Trình Viên .NET,Software Engineer
+606536,cong ty co phan mpgroup,Software Engineer,Lập Trình Viên .Net Middle,Software Engineer
+606543,cong ty co phan giai phap cong nghe ttc viet nam,Software Engineer,"Fullstack Developer (Java, Angular)",Software Engineer
+606616,cong ty cp phan mem mor,AI/ML Engineer,Senior AI Engineer,AI/ML Engineer
+606640,cong ty phan mem siten,Software Engineer,Lập Trình Viên Java,Software Engineer
+606643,cong ty tnhh webcash viet nam,Software Engineer,Developer Manager,Software Engineer
+606647,cong ty tnhh live group viet nam,Software Engineer,Fullstack Developer,Software Engineer
+606661,cong ty co phan adnx,Software Engineer,Lập Trình Viên,Software Engineer
+606699,cong ty co phan atomi digital,Software Engineer,"Lập Trình Viên Fullstack (BE Java, .Net, FE Reactjs)",Software Engineer
+606700,cong ty tnhh agiletech viet nam,Software Engineer,Lập Trình Viên Fullstack,Software Engineer
+606706,cong ty co phan phan mem dau cong,Software Engineer,Nhân Viên Lập Trình Unity,Software Engineer
+606741,cong ty cp giai phap cong nghe va nguon luc toprate,Software Engineer,Java Developer,Software Engineer
+606746,tap doan novaon,Software Engineer,Thực Tập Sinh Fullstack Developer,Software Engineer
+606800,cong ty tnhh seta international viet nam,Software Engineer,Python Backend Developer,Software Engineer
+606825,cong ty co phan atomi digital,Software Engineer,Lập Trình Viên Android (Domain Bank),Software Engineer
+606845,unknown_f231edcf6e7f19d3b25c03de1e0d8350cd701885f7a460d5138c705402514535,Software Engineer,Thực Tập Sinh RPA Developer,Software Engineer
+606849,cong ty vcsvn,Software Engineer,Lập Trình Viên AI,AI/ML Engineer
+606865,cong ty tnhh optisix,Software Engineer,Senior Backend Developer (Python),Software Engineer
+606866,cong ty co phan truyen thong van hoa viet,Software Engineer,Lập Trình Viên Backend PHP,Software Engineer

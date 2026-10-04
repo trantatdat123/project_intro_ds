@@ -1,6 +1,21 @@
-# TinixAI dataset download, title filtering and notebook
+# Data and preprocessing
 pandas>=2.0.0
+numpy>=1.24.0
 pyarrow>=15.0.0
 huggingface_hub>=0.23.0
 tqdm>=4.66.0
+beautifulsoup4>=4.12.0
+flashtext>=2.7
+# Models, embeddings and clustering
+scikit-learn>=1.6.0
+joblib>=1.3.0
+lightgbm>=4.0.0
+shap>=0.45.0
+sentence-transformers>=3.0.0
+networkx>=3.1
+umap-learn>=0.5.5
+hdbscan>=0.8.33
+# Figures and notebooks
+matplotlib>=3.9.0
+nbformat>=5.9.0
 ipykernel>=6.25.0

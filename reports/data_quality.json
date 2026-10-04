@@ -1,0 +1,44 @@
+{
+  "input_rows": 14034,
+  "cleaned_rows": 14034,
+  "duplicate_ids_removed": 0,
+  "duplicate_content_rows": 1254,
+  "role_counts": {
+    "Other": 8682,
+    "Software Engineer": 4271,
+    "Data Analyst": 550,
+    "AI/ML Engineer": 259,
+    "Data Engineer": 175,
+    "Data Scientist": 97
+  },
+  "label_status_counts": {
+    "unmapped": 8637,
+    "single": 5352,
+    "ambiguous": 45
+  },
+  "salary_status_counts": {
+    "parsed": 11868,
+    "unknown_currency": 1147,
+    "negotiable": 835,
+    "invalid_range": 175,
+    "no_amount": 8,
+    "non_monthly": 1
+  },
+  "salary_eligible_rows": 11859,
+  "classification_eligible_rows": 5352,
+  "experience_missing_rows": 1149,
+  "jobs_with_skills": 8695,
+  "usd_to_vnd_rate": 25500,
+  "limit": null,
+  "split_counts": {
+    "train": 8294,
+    "validation": 3175,
+    "test": 2565
+  },
+  "split_companies": {
+    "test": 1174,
+    "train": 3520,
+    "validation": 1174
+  },
+  "dataset_fingerprint": "c3c030de43509edf2c5bed1e570577fb7240e5a4c8f83e7f4edff16a30cd6862"
+}

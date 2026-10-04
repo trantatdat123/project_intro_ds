@@ -1,0 +1,264 @@
+﻿feature,mean_abs_shap_log,mean_shap_log
+categorical__seniority_Junior,0.16662928851523445,-0.03833139389418944
+numeric__experience_min,0.10651270358226245,0.022538505594399662
+numeric__skill_count,0.07081194455320894,0.010109622900450718
+categorical__seniority_Unspecified,0.06527170792756594,0.01706137441621941
+categorical__job_position_Nhân viên,0.04478522416031547,0.006259577516491767
+numeric__missingindicator_experience_min,0.03955987088013207,-0.0011618913846443734
+categorical__location_group_Hà Nội,0.038084124297024256,0.001593223273214701
+numeric__year,0.03545495236171911,-0.004642046671746241
+categorical__education_level_Đại học,0.02808073527739681,0.0014876449435097395
+categorical__job_position_Cộng tác viên,0.026119022546866273,-0.0009447279028159581
+categorical__job_position_Nhân Viên,0.022744672998770973,-0.003914280818815209
+skills__skill_SQL Server,0.019243150399108497,-0.002973608601639909
+skills__skill_CSS,0.018075356753485695,-0.0015834800824880385
+skills__skill_PHP,0.01742571119432326,0.004235241907003033
+categorical__seniority_Senior,0.01422420641575072,-0.005329879134536896
+skills__skill_JavaScript,0.013737088309881391,0.002162635054763147
+categorical__role_standard_AI/ML Engineer,0.01179562940837979,0.001300771320308001
+skills__skill_Docker,0.011395002942946153,-0.00021728523508064614
+skills__skill_AWS,0.011014462784192368,-0.005094210097628176
+skills__skill_Python,0.010370861574150503,-0.00040998074310974567
+skills__skill_HTML,0.009539715568547689,0.00039377711918388975
+skills__skill_OOP,0.009324919198756897,6.504124725734572e-05
+skills__skill_Azure,0.009221068016890883,-0.0002841108689870914
+skills__skill_Spring,0.008834664325462444,0.0011973621587115489
+skills__skill_Excel,0.008468927095052389,-0.0005618971737875861
+categorical__education_level_Không,0.00765710224238211,-0.000734424060249411
+skills__skill_Machine Learning,0.007328106122432739,-0.0008513011295147679
+skills__skill_Agile,0.00727669729127397,-0.001928266427955257
+skills__skill_WordPress,0.006840409992774553,0.001374596532167506
+skills__skill_Java,0.006413132461549033,-0.00013899720087993687
+skills__skill_PyTorch,0.0063116066658518025,0.001514108996210717
+skills__skill_Kubernetes,0.005864916878297212,-0.0013750288966160318
+skills__skill_TypeScript,0.005599044858657112,0.0011693010650178984
+skills__skill_jQuery,0.0053196480863379565,0.0005399372315244389
+skills__skill_GitHub,0.004858591078550117,-9.514312677756916e-05
+skills__skill_Node.js,0.004680162456126871,-0.0005649359701365297
+skills__skill_Laravel,0.004513086530648583,-0.0014213036375165455
+skills__skill_Android,0.004467220785028694,5.325370117600069e-05
+skills__skill_PostgreSQL,0.004174055538978085,7.281746630384342e-05
+skills__skill_Design Patterns,0.003969617217261233,-0.0007133319816836669
+skills__skill_React,0.0038807095992021206,-0.0013418013676156331
+skills__skill_Golang,0.003819206547735562,0.0008072411725218105
+categorical__location_group_Khác/Chưa xác định,0.0037081937452507993,0.0009251792593922192
+skills__skill_SOLID,0.0037004413534716617,0.00034463506813573445
+skills__skill_SQL,0.0036758491365812183,0.00016563814304434058
+skills__skill_Microservices,0.0035723808821293544,-4.211044740361764e-06
+categorical__role_standard_Software Engineer,0.0033269776234103095,0.0007216402862669018
+skills__skill_Git,0.0031890949587643374,-0.00045022293058159357
+skills__skill_Unit Testing,0.0031462149099020166,-0.00012446592416233044
+skills__skill_MySQL,0.003118262317930806,0.0004145059971862753
+skills__skill_REST API,0.0030886516921801383,0.001598424886120624
+categorical__location_group_Hồ Chí Minh,0.0030552737161769644,2.187421286619162e-05
+categorical__education_level_Cao đẳng,0.0029411649681430636,-0.0007479460318199239
+skills__skill_Deep Learning,0.0028285844493101077,-0.0009935184822077987
+skills__skill_C#,0.0028272209041590103,-0.00012809722443124914
+skills__skill_Unity,0.002804491111116915,-0.0015410973402046695
+skills__skill_Bootstrap,0.002784732390832885,-0.0007091960649376298
+skills__skill_CI/CD,0.0027654522962528866,-0.001230494760381864
+skills__skill_Spring Boot,0.0027647327288154028,0.00012460883810231496
+skills__skill_Angular,0.0025466386616184496,0.0004795761477961455
+skills__skill_Redis,0.0025239935203135266,-0.00035729549205663593
+skills__skill_Elasticsearch,0.002393196231315637,0.00018479990303020945
+categorical__location_group_Bình Dương,0.002284578855402128,-0.0006464402779835229
+skills__skill_MongoDB,0.002267342838222033,0.00032894128263656706
+skills__skill_Swift,0.0022224044590461157,-0.0005445859179813106
+skills__skill_GitLab,0.0021898358700009678,0.0001716587854495808
+skills__skill_NestJS,0.0019870281270436383,0.0008114376278846225
+skills__skill_Redux,0.001833951544963066,-0.0008097608139970803
+categorical__location_group_Nhiều địa điểm,0.0016836951365103048,0.0001347525587450506
+skills__skill_Next.js,0.001624192580902443,0.00022110891058990358
+skills__skill_Jira,0.0016104245354581236,-9.396756157756391e-05
+skills__skill_Scrum,0.001579233045488275,0.00046976578428689994
+categorical__role_standard_Data Analyst,0.0014095905137102046,0.0002793614681086686
+skills__skill_Firebase,0.001386151122253928,0.0005135124311172944
+skills__skill_R,0.0013810664072558356,0.00015231173396130628
+skills__skill_C++,0.001251953483006638,-0.0004200234767904213
+skills__skill_Flutter,0.0012129530351552452,0.00029304450757262836
+skills__skill_GCP,0.0012105042766616379,-0.00022533452802694763
+skills__skill_Tableau,0.001129343554175299,-1.8285418843439073e-06
+skills__skill_Django,0.0010786652837578732,-0.0001583494618870537
+skills__skill_Entity Framework,0.0010351347853446429,-3.846925225023698e-05
+skills__skill_OAuth,0.0009327983301911208,-1.891308129491587e-05
+skills__skill_TensorFlow,0.0009257775522877431,0.0003152655855220365
+skills__skill_Express,0.000851886057648788,7.244614767309218e-05
+skills__skill_Data Warehouse,0.0007946626988190354,0.00028527918850434835
+skills__skill_Vue.js,0.0007372380070616899,0.0004993877503729296
+skills__skill_Kafka,0.0007128616492895765,0.00018730564974348037
+skills__skill_NLP,0.0006845423044193888,-0.00015155848140399099
+skills__skill_Data Modeling,0.0006383240110955786,-0.00022661279962110024
+skills__skill_React Native,0.0005774113459668177,1.713441758491978e-05
+skills__skill_Linux,0.0004695443204456059,0.0002285181971041846
+skills__skill_SVN,0.000453901369463693,-0.00010738698647313906
+skills__skill_GraphQL,0.0003535312449024633,7.319837547276766e-05
+skills__skill_.NET,0.0003501934067388516,-9.118632293153207e-07
+skills__skill_ETL,0.0003422937086015064,-8.476932103548682e-05
+skills__skill_iOS,0.0003410282768066754,7.421420810262814e-05
+skills__skill_RabbitMQ,0.00028287872678322857,0.00013832699330899688
+categorical__location_group_Đà Nẵng,0.0002725846718133153,-8.03402958874241e-05
+skills__skill_Power BI,0.00024139579086912156,3.569384223593358e-05
+skills__skill_LLM,0.00023920689903340022,-3.5512863285796535e-05
+skills__skill_Sass,0.00017134331550384843,8.01901640260795e-06
+skills__skill_Integration Testing,0.0001678467768260886,-0.0001678467768260886
+skills__skill_JWT,0.0001270296319192737,-4.645509524676826e-07
+categorical__job_position_Chưa cập nhật,0.00011548983795490036,8.06186920173512e-06
+skills__skill_Kotlin,0.00011367502775508772,-7.744168055881065e-05
+skills__skill_Spark,0.00010329682633694194,1.6367474130375e-05
+skills__skill_Hibernate,9.208655376683794e-05,-2.263346763074654e-05
+categorical__job_position_Chuyên gia,8.858685820278605e-05,3.549373203878575e-05
+skills__skill_WebSocket,7.771136725036048e-05,-1.7109209361825265e-05
+categorical__role_standard_Data Engineer,7.429644124227246e-05,3.137768569508738e-05
+categorical__education_level_Trung cấp,6.802354787537252e-05,2.7028243570580876e-05
+skills__skill_Bash,0.0,0.0
+skills__skill_BERT,0.0,0.0
+skills__skill_Adobe XD,0.0,0.0
+categorical__job_position_Trưởng phòng,0.0,0.0
+skills__skill_Vite,0.0,0.0
+skills__skill_Vector Database,0.0,0.0
+skills__skill_WPF,0.0,0.0
+skills__skill_Webpack,0.0,0.0
+skills__skill_UML,0.0,0.0
+skills__skill_Unreal Engine,0.0,0.0
+skills__skill_Ubuntu,0.0,0.0
+skills__skill_Airflow,0.0,0.0
+skills__skill_ActiveMQ,0.0,0.0
+categorical__job_position_Unknown,0.0,0.0
+skills__skill_ARM,0.0,0.0
+skills__skill_ASP.NET Core,0.0,0.0
+skills__skill_Windows Server,0.0,0.0
+categorical__job_position_Trưởng nhóm,0.0,0.0
+skills__skill_WinForms,0.0,0.0
+skills__skill_VBA,0.0,0.0
+categorical__location_group_Hải Phòng,0.0,0.0
+categorical__location_group_Cần Thơ,0.0,0.0
+categorical__location_group_Bắc Ninh,0.0,0.0
+categorical__role_standard_Data Scientist,0.0,0.0
+skills__skill_Google Sheets,0.0,0.0
+skills__skill_GitLab CI,0.0,0.0
+skills__skill_Generative AI,0.0,0.0
+skills__skill_GitHub Actions,0.0,0.0
+skills__skill_Figma,0.0,0.0
+skills__skill_FastAPI,0.0,0.0
+skills__skill_FPGA,0.0,0.0
+skills__skill_Flask,0.0,0.0
+skills__skill_Databricks,0.0,0.0
+skills__skill_Data Quality,0.0,0.0
+skills__skill_Data Lake,0.0,0.0
+skills__skill_Dynamics 365,0.0,0.0
+skills__skill_ELT,0.0,0.0
+skills__skill_ELK Stack,0.0,0.0
+skills__skill_DynamoDB,0.0,0.0
+skills__skill_ESP32,0.0,0.0
+skills__skill_Blockchain,0.0,0.0
+skills__skill_Bitbucket,0.0,0.0
+skills__skill_BigQuery,0.0,0.0
+skills__skill_CCNA,0.0,0.0
+skills__skill_Cassandra,0.0,0.0
+skills__skill_CentOS,0.0,0.0
+skills__skill_Clean Architecture,0.0,0.0
+skills__skill_ClickHouse,0.0,0.0
+skills__skill_Cloud Computing,0.0,0.0
+skills__skill_Computer Vision,0.0,0.0
+skills__skill_Confluence,0.0,0.0
+skills__skill_Cypress,0.0,0.0
+skills__skill_DB2,0.0,0.0
+skills__skill_DDD,0.0,0.0
+skills__skill_Dart,0.0,0.0
+skills__skill_Data Governance,0.0,0.0
+categorical__job_position_Mới Tốt Nghiệp,0.0,0.0
+categorical__job_position_Senior,0.0,0.0
+categorical__job_position_Quản Lý / Giám Sát,0.0,0.0
+categorical__job_position_Trưởng Nhóm / Giám Sát,0.0,0.0
+categorical__job_position_Thực tập sinh,0.0,0.0
+categorical__job_position_Trưởng Nhóm,0.0,0.0
+categorical__job_position_Thực Tập Sinh,0.0,0.0
+categorical__job_position_Sinh Viên/ Thực Tập Sinh,0.0,0.0
+categorical__job_position_Junior,0.0,0.0
+categorical__job_position_Kỹ thuật viên / Kỹ sư,0.0,0.0
+categorical__job_position_Giám đốc,0.0,0.0
+categorical__job_position_Nhân Viên/ Chuyên Viên,0.0,0.0
+skills__skill_Unix,0.0,0.0
+skills__skill_LangChain,0.0,0.0
+skills__skill_Lakehouse,0.0,0.0
+skills__skill_Less,0.0,0.0
+skills__skill_MariaDB,0.0,0.0
+skills__skill_Magento,0.0,0.0
+skills__skill_MQTT,0.0,0.0
+skills__skill_MLflow,0.0,0.0
+skills__skill_MLOps,0.0,0.0
+skills__skill_Looker,0.0,0.0
+skills__skill_LlamaIndex,0.0,0.0
+skills__skill_Jest,0.0,0.0
+skills__skill_Kanban,0.0,0.0
+skills__skill_Julia,0.0,0.0
+skills__skill_Jenkins,0.0,0.0
+skills__skill_Hive,0.0,0.0
+skills__skill_IIS,0.0,0.0
+skills__skill_Hugging Face,0.0,0.0
+skills__skill_Hadoop,0.0,0.0
+skills__skill_Grafana,0.0,0.0
+skills__skill_RAG,0.0,0.0
+skills__skill_Qt,0.0,0.0
+skills__skill_Qlik,0.0,0.0
+skills__skill_Prompt Engineering,0.0,0.0
+skills__skill_Power Query,0.0,0.0
+skills__skill_Pandas,0.0,0.0
+skills__skill_Pinecone,0.0,0.0
+skills__skill_Postman,0.0,0.0
+skills__skill_OpenCV,0.0,0.0
+skills__skill_Oracle Database,0.0,0.0
+skills__skill_OpenAI API,0.0,0.0
+skills__skill_PL/SQL,0.0,0.0
+skills__skill_Nuxt.js,0.0,0.0
+skills__skill_ONNX,0.0,0.0
+skills__skill_Objective-C,0.0,0.0
+skills__skill_Odoo,0.0,0.0
+skills__skill_Nginx,0.0,0.0
+skills__skill_NumPy,0.0,0.0
+skills__skill_Matplotlib,0.0,0.0
+skills__skill_Metabase,0.0,0.0
+skills__skill_JUnit,0.0,0.0
+skills__skill_Keras,0.0,0.0
+skills__skill_STM32,0.0,0.0
+skills__skill_SQLite,0.0,0.0
+skills__skill_SAP,0.0,0.0
+skills__skill_SAP ABAP,0.0,0.0
+skills__skill_Ruby on Rails,0.0,0.0
+skills__skill_Redshift,0.0,0.0
+skills__skill_Rust,0.0,0.0
+skills__skill_Raspberry Pi,0.0,0.0
+skills__skill_RTOS,0.0,0.0
+skills__skill_Ruby,0.0,0.0
+skills__skill_Solidity,0.0,0.0
+skills__skill_Snowflake,0.0,0.0
+skills__skill_Shopify,0.0,0.0
+skills__skill_Shell,0.0,0.0
+skills__skill_Selenium,0.0,0.0
+skills__skill_Seaborn,0.0,0.0
+skills__skill_SciPy,0.0,0.0
+skills__skill_Scala,0.0,0.0
+skills__skill_SSIS,0.0,0.0
+skills__skill_Salesforce,0.0,0.0
+skills__skill_SSRS,0.0,0.0
+categorical__seniority_Middle,0.0,0.0
+categorical__education_level_Cử nhân,0.0,0.0
+categorical__education_level_Chứng chỉ,0.0,0.0
+categorical__seniority_Lead,0.0,0.0
+categorical__location_group_Đồng Nai,0.0,0.0
+skills__skill_Symfony,0.0,0.0
+skills__skill_Superset,0.0,0.0
+categorical__education_level_Trung học,0.0,0.0
+categorical__job_position_Chuyên Viên- Nhân Viên,0.0,0.0
+categorical__seniority_Management,0.0,0.0
+skills__skill_TDD,0.0,0.0
+skills__skill_TCP/IP,0.0,0.0
+skills__skill_T-SQL,0.0,0.0
+skills__skill_Terraform,0.0,0.0
+skills__skill_TensorRT,0.0,0.0
+skills__skill_Tailwind CSS,0.0,0.0
+skills__skill_Tomcat,0.0,0.0
+skills__skill_dbt,0.0,0.0
+skills__skill_Transformers,0.0,0.0
+skills__skill_gRPC,0.0,0.0
+skills__skill_scikit-learn,0.0,0.0

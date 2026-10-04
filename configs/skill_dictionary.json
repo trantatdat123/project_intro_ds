@@ -1,0 +1,600 @@
+{
+  "Python": [
+    "python3",
+    "python 3"
+  ],
+  "Java": [
+    "java 8",
+    "java 11",
+    "java 17"
+  ],
+  "JavaScript": [
+    "javascript",
+    "js",
+    "ecmascript"
+  ],
+  "TypeScript": [
+    "typescript",
+    "ts"
+  ],
+  "C++": [
+    "cpp",
+    "c plus plus"
+  ],
+  "C#": [
+    "csharp",
+    "c sharp"
+  ],
+  ".NET": [
+    "dotnet",
+    "dot net",
+    "asp.net",
+    "asp net"
+  ],
+  "PHP": [],
+  "Golang": [
+    "go language",
+    "go programming"
+  ],
+  "Ruby": [],
+  "Rust": [],
+  "R": [
+    "r programming",
+    "r language"
+  ],
+  "Scala": [],
+  "Swift": [],
+  "Kotlin": [],
+  "Dart": [],
+  "Objective-C": [
+    "objective c"
+  ],
+  "MATLAB": [],
+  "Julia": [],
+  "Perl": [],
+  "Bash": [
+    "bash scripting"
+  ],
+  "PowerShell": [],
+  "Shell": [
+    "shell scripting"
+  ],
+  "SQL": [],
+  "PL/SQL": [
+    "pl sql"
+  ],
+  "T-SQL": [
+    "tsql",
+    "t sql"
+  ],
+  "HTML": [
+    "html5"
+  ],
+  "CSS": [
+    "css3"
+  ],
+  "Sass": [
+    "scss"
+  ],
+  "Less": [
+    "less css"
+  ],
+  "React": [
+    "reactjs",
+    "react.js"
+  ],
+  "React Native": [
+    "react-native"
+  ],
+  "Next.js": [
+    "nextjs",
+    "next js"
+  ],
+  "Vue.js": [
+    "vuejs",
+    "vue js",
+    "vue"
+  ],
+  "Nuxt.js": [
+    "nuxtjs",
+    "nuxt js"
+  ],
+  "Angular": [
+    "angularjs",
+    "angular.js"
+  ],
+  "Svelte": [],
+  "jQuery": [],
+  "Redux": [],
+  "Tailwind CSS": [
+    "tailwind"
+  ],
+  "Bootstrap": [],
+  "Webpack": [],
+  "Vite": [],
+  "Node.js": [
+    "nodejs",
+    "node js"
+  ],
+  "Express": [
+    "expressjs",
+    "express.js"
+  ],
+  "NestJS": [
+    "nest.js",
+    "nest js"
+  ],
+  "Django": [],
+  "Flask": [],
+  "FastAPI": [
+    "fast api"
+  ],
+  "Spring": [
+    "spring framework"
+  ],
+  "Spring Boot": [
+    "springboot"
+  ],
+  "Hibernate": [],
+  "Laravel": [],
+  "Symfony": [],
+  "Ruby on Rails": [
+    "rails"
+  ],
+  "ASP.NET Core": [
+    "asp net core",
+    "aspnet core"
+  ],
+  "Entity Framework": [
+    "ef core"
+  ],
+  "Flutter": [],
+  "Android": [],
+  "iOS": [],
+  "Unity": [
+    "unity3d"
+  ],
+  "Unreal Engine": [
+    "unreal"
+  ],
+  "Godot": [],
+  "Qt": [],
+  "WPF": [],
+  "WinForms": [
+    "windows forms"
+  ],
+  "Electron": [],
+  "WordPress": [],
+  "Magento": [],
+  "Shopify": [],
+  "MySQL": [],
+  "PostgreSQL": [
+    "postgres",
+    "pgsql"
+  ],
+  "SQL Server": [
+    "mssql",
+    "ms sql server",
+    "microsoft sql server"
+  ],
+  "Oracle Database": [
+    "oracle db",
+    "oracle sql"
+  ],
+  "SQLite": [],
+  "MariaDB": [],
+  "MongoDB": [
+    "mongo db"
+  ],
+  "Redis": [],
+  "Cassandra": [],
+  "DynamoDB": [],
+  "Elasticsearch": [
+    "elastic search"
+  ],
+  "OpenSearch": [],
+  "Neo4j": [],
+  "ClickHouse": [],
+  "Snowflake": [],
+  "BigQuery": [
+    "big query"
+  ],
+  "Redshift": [
+    "amazon redshift"
+  ],
+  "Databricks": [],
+  "DuckDB": [],
+  "InfluxDB": [],
+  "Firebase": [],
+  "Supabase": [],
+  "DB2": [
+    "ibm db2"
+  ],
+  "Hadoop": [],
+  "Spark": [
+    "apache spark",
+    "pyspark"
+  ],
+  "Hive": [
+    "apache hive"
+  ],
+  "Flink": [
+    "apache flink"
+  ],
+  "Kafka": [
+    "apache kafka"
+  ],
+  "Airflow": [
+    "apache airflow"
+  ],
+  "dbt": [
+    "data build tool"
+  ],
+  "Talend": [],
+  "Informatica": [],
+  "SSIS": [],
+  "SSAS": [],
+  "SSRS": [],
+  "ETL": [],
+  "ELT": [],
+  "Data Warehouse": [
+    "data warehousing",
+    "kho du lieu",
+    "kho dữ liệu"
+  ],
+  "Data Lake": [],
+  "Lakehouse": [],
+  "Data Modeling": [
+    "data modelling",
+    "mô hình dữ liệu"
+  ],
+  "Data Governance": [
+    "quản trị dữ liệu"
+  ],
+  "Data Quality": [
+    "chất lượng dữ liệu"
+  ],
+  "Power BI": [
+    "powerbi",
+    "power-bi"
+  ],
+  "Tableau": [],
+  "Looker": [],
+  "Qlik": [
+    "qlikview",
+    "qlik sense"
+  ],
+  "Metabase": [],
+  "Superset": [
+    "apache superset"
+  ],
+  "Excel": [
+    "microsoft excel",
+    "ms excel"
+  ],
+  "Power Query": [],
+  "DAX": [],
+  "VBA": [],
+  "Google Sheets": [],
+  "Pandas": [],
+  "NumPy": [],
+  "SciPy": [],
+  "scikit-learn": [
+    "sklearn",
+    "scikit learn"
+  ],
+  "Statsmodels": [],
+  "Matplotlib": [],
+  "Seaborn": [],
+  "Plotly": [],
+  "TensorFlow": [
+    "tensorflow",
+    "tensor flow"
+  ],
+  "PyTorch": [
+    "pytorch",
+    "torch"
+  ],
+  "Keras": [],
+  "XGBoost": [],
+  "LightGBM": [
+    "light gbm"
+  ],
+  "CatBoost": [],
+  "OpenCV": [
+    "open cv"
+  ],
+  "Hugging Face": [
+    "huggingface"
+  ],
+  "Transformers": [
+    "huggingface transformers"
+  ],
+  "NLTK": [],
+  "spaCy": [],
+  "Gensim": [],
+  "ONNX": [],
+  "TensorRT": [],
+  "CUDA": [],
+  "cuDNN": [],
+  "MLflow": [
+    "ml flow"
+  ],
+  "Kubeflow": [],
+  "DVC": [
+    "data version control"
+  ],
+  "Weights & Biases": [
+    "wandb",
+    "weights and biases"
+  ],
+  "BentoML": [],
+  "Ray": [],
+  "SageMaker": [
+    "amazon sagemaker"
+  ],
+  "Vertex AI": [],
+  "Machine Learning": [
+    "học máy",
+    "machine-learning"
+  ],
+  "Deep Learning": [
+    "học sâu",
+    "deep-learning"
+  ],
+  "NLP": [
+    "natural language processing",
+    "xử lý ngôn ngữ tự nhiên"
+  ],
+  "Computer Vision": [
+    "thị giác máy tính"
+  ],
+  "LLM": [
+    "large language model",
+    "large language models"
+  ],
+  "Generative AI": [
+    "genai",
+    "generative artificial intelligence"
+  ],
+  "RAG": [
+    "retrieval augmented generation"
+  ],
+  "LangChain": [],
+  "LlamaIndex": [
+    "llama index"
+  ],
+  "OpenAI API": [
+    "openai"
+  ],
+  "BERT": [],
+  "YOLO": [],
+  "Stable Diffusion": [],
+  "Prompt Engineering": [
+    "prompt engineer"
+  ],
+  "Fine-tuning": [
+    "fine tuning",
+    "finetuning"
+  ],
+  "MLOps": [
+    "ml ops"
+  ],
+  "AIOps": [],
+  "Vector Database": [
+    "vector db"
+  ],
+  "FAISS": [],
+  "Milvus": [],
+  "Pinecone": [],
+  "Weaviate": [],
+  "AWS": [
+    "amazon web services"
+  ],
+  "Azure": [
+    "microsoft azure"
+  ],
+  "GCP": [
+    "google cloud",
+    "google cloud platform"
+  ],
+  "Alibaba Cloud": [],
+  "Cloud Computing": [
+    "điện toán đám mây"
+  ],
+  "Docker": [],
+  "Kubernetes": [
+    "k8s"
+  ],
+  "OpenShift": [],
+  "Helm": [],
+  "Terraform": [],
+  "Ansible": [],
+  "Pulumi": [],
+  "CloudFormation": [],
+  "Jenkins": [],
+  "GitHub Actions": [],
+  "GitLab CI": [
+    "gitlab ci/cd"
+  ],
+  "CircleCI": [],
+  "Argo CD": [
+    "argocd"
+  ],
+  "CI/CD": [
+    "ci cd",
+    "cicd",
+    "continuous integration",
+    "continuous delivery"
+  ],
+  "Git": [],
+  "GitHub": [],
+  "GitLab": [],
+  "Bitbucket": [],
+  "SVN": [
+    "subversion"
+  ],
+  "Linux": [
+    "gnu/linux"
+  ],
+  "Ubuntu": [],
+  "CentOS": [],
+  "Debian": [],
+  "Red Hat": [
+    "rhel"
+  ],
+  "Windows Server": [],
+  "Unix": [],
+  "Nginx": [],
+  "Apache HTTP": [
+    "apache http server"
+  ],
+  "Tomcat": [],
+  "IIS": [],
+  "RabbitMQ": [],
+  "ActiveMQ": [],
+  "MQTT": [],
+  "gRPC": [],
+  "REST API": [
+    "restful",
+    "rest api",
+    "restful api"
+  ],
+  "GraphQL": [],
+  "WebSocket": [
+    "websockets"
+  ],
+  "OAuth": [
+    "oauth2",
+    "oauth 2"
+  ],
+  "JWT": [
+    "json web token"
+  ],
+  "Microservices": [
+    "microservice"
+  ],
+  "Event-driven Architecture": [
+    "event driven architecture"
+  ],
+  "Design Patterns": [
+    "design pattern"
+  ],
+  "SOLID": [],
+  "OOP": [
+    "object oriented programming",
+    "lập trình hướng đối tượng"
+  ],
+  "Clean Architecture": [],
+  "DDD": [
+    "domain driven design"
+  ],
+  "TDD": [
+    "test driven development"
+  ],
+  "BDD": [
+    "behavior driven development"
+  ],
+  "Unit Testing": [
+    "unit test",
+    "unit tests"
+  ],
+  "Integration Testing": [
+    "integration test"
+  ],
+  "Selenium": [],
+  "Playwright": [],
+  "Cypress": [],
+  "Appium": [],
+  "Robot Framework": [],
+  "JUnit": [],
+  "TestNG": [],
+  "Pytest": [],
+  "Jest": [],
+  "Mocha": [],
+  "JMeter": [],
+  "Postman": [],
+  "SoapUI": [],
+  "Load Testing": [
+    "performance testing"
+  ],
+  "Cucumber": [],
+  "SonarQube": [],
+  "Scrum": [],
+  "Agile": [],
+  "Kanban": [],
+  "Jira": [],
+  "Confluence": [],
+  "Figma": [],
+  "Adobe XD": [],
+  "UML": [],
+  "BPMN": [],
+  "SAP": [],
+  "SAP ABAP": [
+    "abap"
+  ],
+  "SAP FICO": [],
+  "Salesforce": [],
+  "ServiceNow": [],
+  "Odoo": [],
+  "Dynamics 365": [
+    "microsoft dynamics"
+  ],
+  "TCP/IP": [
+    "tcp ip"
+  ],
+  "DNS": [],
+  "DHCP": [],
+  "VPN": [],
+  "VLAN": [],
+  "Cisco": [],
+  "CCNA": [],
+  "CCNP": [],
+  "Fortinet": [
+    "fortigate"
+  ],
+  "Palo Alto": [],
+  "Firewall": [
+    "firewalls"
+  ],
+  "OWASP": [],
+  "SIEM": [],
+  "Splunk": [],
+  "Wireshark": [],
+  "Burp Suite": [],
+  "Penetration Testing": [
+    "pentest",
+    "penetration test"
+  ],
+  "ISO 27001": [
+    "iso27001"
+  ],
+  "Prometheus": [],
+  "Grafana": [],
+  "Datadog": [],
+  "Zabbix": [],
+  "ELK Stack": [
+    "elk"
+  ],
+  "Embedded Systems": [
+    "embedded system"
+  ],
+  "RTOS": [],
+  "FreeRTOS": [],
+  "ARM": [
+    "arm cortex"
+  ],
+  "ESP32": [],
+  "STM32": [],
+  "Arduino": [],
+  "Raspberry Pi": [],
+  "I2C": [],
+  "SPI": [],
+  "UART": [],
+  "Verilog": [],
+  "VHDL": [],
+  "FPGA": [],
+  "Blockchain": [],
+  "Solidity": [],
+  "Web3": []
+}

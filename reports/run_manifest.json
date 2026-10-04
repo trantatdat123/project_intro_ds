@@ -1,0 +1,59 @@
+{
+  "completed_at_utc": "2026-10-03T18:16:28.887291+00:00",
+  "stage": "all",
+  "rows": 14034,
+  "config": {
+    "input": "data/processed/tinixai_it_ai_data_jobs.parquet",
+    "random_state": 42,
+    "usd_to_vnd_rate": 25500,
+    "skill_min_frequency": 20,
+    "classification_models": [
+      "tfidf_logistic",
+      "tfidf_svm",
+      "tfidf_mlp"
+    ],
+    "regression_models": [
+      "lightgbm",
+      "random_forest",
+      "ridge"
+    ],
+    "salary_train_quantiles": [
+      0.01,
+      0.99
+    ],
+    "embeddings": {
+      "enabled": true,
+      "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+      "batch_size": 4,
+      "max_seq_length": 256
+    },
+    "clustering": {
+      "n_clusters": 8,
+      "min_cluster_size": 35,
+      "n_neighbors": 20,
+      "n_components": 15
+    },
+    "graph": {
+      "min_skill_count": 50,
+      "min_cooccurrence": 20
+    },
+    "shap_sample_size": 150
+  },
+  "limit": null,
+  "dataset_fingerprint": "c3c030de43509edf2c5bed1e570577fb7240e5a4c8f83e7f4edff16a30cd6862",
+  "source_revision": "679c3a17347ff6ce769d9bf510c122a087493cf6",
+  "python": "3.14.2",
+  "libraries": {
+    "pandas": "3.0.2",
+    "numpy": "2.4.1",
+    "scikit-learn": "1.8.0",
+    "lightgbm": "4.7.0",
+    "shap": "0.52.0",
+    "sentence-transformers": "5.5.1",
+    "torch": "2.10.0",
+    "umap-learn": "0.5.12",
+    "hdbscan": "0.8.44",
+    "flashtext": "2.7"
+  }
+}
