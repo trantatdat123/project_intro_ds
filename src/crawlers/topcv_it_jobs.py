@@ -1,4 +1,4 @@
-"""TopCV: sitemap -> lọc IT/Data -> file link -> crawl -> JSONL.
+"""TopCV: sitemap -> lọc IT/Data -> file link -> JSONL theo schema TinixAI.
 
 Chỉ lấy link IT/CNTT/Data Science có lastmod năm 2026 (mặc định).
 Import và gọi các hàm từ notebooks/topcv_it_jobs.ipynb.
@@ -20,7 +20,7 @@ import xml.etree.ElementTree as ET
 from collections import deque
 from collections.abc import Iterable
 from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
-from datetime import datetime, timezone
+from datetime import datetime
 from pathlib import Path
 from urllib.parse import unquote, urljoin, urlsplit, urlunsplit
 
@@ -32,6 +32,11 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 RAW_DIR = PROJECT_ROOT / "data/raw/topcv"
 RAW_JSONL = RAW_DIR / "topcv_jobs_raw.jsonl"
 JOBS_SITEMAP_URL = "https://www.topcv.vn/sitemap/jobs.xml"
+TINIXAI_COLUMNS = (
+    "id", "job_title", "company_name", "salary", "location", "job_type",
+    "job_industry", "experience_level", "education_level", "job_position",
+    "job_description", "benefits", "requirements", "year",
+)
 
 # Khớp nguyên từ/cụm từ; không dùng "bi" đơn lẻ vì trùng "thiết bị".
 IT_TERMS = [
@@ -412,29 +417,32 @@ def parse_detail(text: str, listing: dict) -> dict:
         organization = organization[0] if organization else {}
     employment = posting.get("employmentType")
     employment = employment[0] if isinstance(employment, list) and employment else employment
+    job_type = find_label_value(soup, "Loại hình làm việc") or {
+        "FULL_TIME": "Toàn thời gian",
+        "PART_TIME": "Bán thời gian",
+        "INTERN": "Thực tập",
+    }.get(employment, clean_text(employment))
+    posted = str(posting.get("datePosted") or "")
+    try:
+        year = datetime.fromisoformat(posted.replace("Z", "+00:00")).year
+    except ValueError:
+        year = None
 
     return {
-        **listing,
-        "crawled_at": datetime.now(timezone.utc).isoformat(),
-        "title": clean_text(posting.get("title") or posting.get("name")),
-        "company": clean_text(organization.get("name") if isinstance(organization, dict) else organization),
-        "salary_jsonld": clean_text(str(salary_jsonld)) if salary_jsonld is not None else "",
-        "location_label": find_label_value(soup, "Địa điểm"),
-        "address_region": clean_text(address.get("addressRegion")),
-        "employment_type": employment or "",
-        "job_type_label": find_label_value(soup, "Loại hình làm việc"),
-        "industry": clean_text(posting.get("industry")),
-        "experience_label": find_label_value(soup, "Kinh nghiệm"),
-        "experience_months": ((posting.get("experienceRequirements") or {}).get("monthsOfExperience")
-                              if isinstance(posting.get("experienceRequirements"), dict) else None),
-        "education_label": find_label_value(soup, "Học vấn"),
-        "position": clean_text(posting.get("occupationalCategory")) or find_label_value(soup, "Cấp bậc"),
+        "id": int(listing["job_id"]),
+        "job_title": clean_text(posting.get("title") or posting.get("name")),
+        "company_name": clean_text(organization.get("name") if isinstance(organization, dict) else organization),
+        "salary": clean_text(str(salary_jsonld)) if salary_jsonld is not None else "",
+        "location": find_label_value(soup, "Địa điểm") or clean_text(address.get("addressRegion")),
+        "job_type": job_type,
+        "job_industry": clean_text(posting.get("industry")),
+        "experience_level": find_label_value(soup, "Kinh nghiệm"),
+        "education_level": find_label_value(soup, "Học vấn"),
+        "job_position": clean_text(posting.get("occupationalCategory")) or find_label_value(soup, "Cấp bậc"),
         "job_description": sections.get("description", ""),
-        "requirements": sections.get("requirements", ""),
         "benefits": sections.get("benefits", "") or clean_text(posting.get("jobBenefits")),
-        "skills": clean_text(posting.get("skills")),
-        "date_posted": posting.get("datePosted", ""),
-        "valid_through": posting.get("validThrough", ""),
+        "requirements": sections.get("requirements", ""),
+        "year": year,
     }
 
 
@@ -449,7 +457,7 @@ def load_done_ids() -> set[int]:
             try:
                 record = json.loads(line)
                 if record.get("job_description"):
-                    done.add(int(record["job_id"]))
+                    done.add(int(record["id"]))
             except (json.JSONDecodeError, AttributeError, KeyError, ValueError):
                 continue
     return done

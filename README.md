@@ -33,16 +33,18 @@ Mở `notebooks/topcv_it_jobs.ipynb` và chạy các cell:
 
 1. Nạp crawler và đặt `YEAR = 2026`, `WORKERS = 2`, `DELAY = 2.0`.
 2. Quét sitemap, lọc IT/CNTT/Data Science và năm 2026, lưu TXT.
-3. Đọc TXT, crawl chi tiết và lưu JSONL. Chạy lại cell crawl để tiếp tục; tin lỗi vẫn được thử lại.
+3. Đọc TXT, crawl chi tiết và lưu JSONL với đúng 14 cột gốc của TinixAI. Chạy lại cell crawl để tiếp tục; tin lỗi vẫn được thử lại.
+4. Chạy cell xuất CSV/Parquet khi cần dùng bảng dữ liệu; thứ tự và tên cột giống TinixAI.
 
 Năm dựa trên `lastmod` của sitemap, không phải ngày đăng; URL thiếu ngày bị bỏ qua. Bộ từ khóa ngành nằm trong `IT_TERMS` của crawler, được khớp với slug URL ngay khi lấy link. File Python chỉ cung cấp hàm để notebook import.
 
 ### File lưu
 
 - Link: `data/raw/topcv/topcv_sitemap_it_data_urls_2026.txt` (tên thay đổi theo năm).
-- Dữ liệu crawl: `data/raw/topcv/topcv_jobs_raw.jsonl` (mỗi dòng một tin, dùng chung giữa các năm).
+- Dữ liệu crawl: `data/raw/topcv/topcv_jobs_raw.jsonl` (mỗi dòng một tin, 14 cột gốc TinixAI, dùng chung giữa các năm).
+- Bảng xuất: `data/processed/topcv_jobs.csv` và `data/processed/topcv_jobs.parquet`.
 
-File link được thay thế sau khi quét thành công; JSONL được ghi nối tiếp. Crawler chỉ lưu dữ liệu crawl, không còn bước `build` hay xuất theo format TinixAI.
+File link được thay thế sau khi quét thành công; JSONL được ghi nối tiếp. Các cột là `id`, `job_title`, `company_name`, `salary`, `location`, `job_type`, `job_industry`, `experience_level`, `education_level`, `job_position`, `job_description`, `benefits`, `requirements`, `year`. `year` lấy từ `datePosted` trên trang chi tiết, không phải `lastmod` của sitemap; nếu ngày đăng thiếu hoặc không hợp lệ thì để trống. ID của TopCV và TinixAI thuộc hai hệ riêng, cần thêm nguồn khi gộp hai tập dữ liệu.
 
 Trong notebook chỉ cần `YEAR`, `WORKERS`, `DELAY`. Khi đã có file link đã lọc, bỏ qua cell sitemap và chạy cell crawl:
 
