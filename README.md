@@ -26,3 +26,28 @@ data/
 Notebook đọc từng batch để giảm RAM, giữ các cột gốc và thêm nhóm/cụm từ đã khớp. Kết quả lưu thành CSV và Parquet; metadata ghi phiên bản nguồn, bộ lọc và số dòng. Một tin có thể khớp nhiều nhóm nhưng chỉ được ghi một lần.
 
 Cột `year` được giữ nguyên từ nguồn. Dataset phát hành theo CC BY-NC 4.0; nguồn và thông tin ghi công nằm trên dataset card.
+
+## Crawl tin TopCV
+
+Mở `notebooks/topcv_it_jobs.ipynb` và chạy các cell:
+
+1. Nạp crawler và đặt `YEAR = 2026`, `WORKERS = 2`, `DELAY = 2.0`.
+2. Quét sitemap, lọc IT/CNTT/Data Science và năm 2026, lưu TXT.
+3. Đọc TXT, crawl chi tiết và lưu JSONL. Chạy lại cell crawl để tiếp tục; tin lỗi vẫn được thử lại.
+
+Năm dựa trên `lastmod` của sitemap, không phải ngày đăng; URL thiếu ngày bị bỏ qua. Bộ từ khóa ngành nằm trong `IT_TERMS` của crawler, được khớp với slug URL ngay khi lấy link. File Python chỉ cung cấp hàm để notebook import.
+
+### File lưu
+
+- Link: `data/raw/topcv/topcv_sitemap_it_data_urls_2026.txt` (tên thay đổi theo năm).
+- Dữ liệu crawl: `data/raw/topcv/topcv_jobs_raw.jsonl` (mỗi dòng một tin, dùng chung giữa các năm).
+
+File link được thay thế sau khi quét thành công; JSONL được ghi nối tiếp. Crawler chỉ lưu dữ liệu crawl, không còn bước `build` hay xuất theo format TinixAI.
+
+Trong notebook chỉ cần `YEAR`, `WORKERS`, `DELAY`. Khi đã có file link đã lọc, bỏ qua cell sitemap và chạy cell crawl:
+
+```python
+crawler.get_job_urls_from_sitemap(2026)
+urls = crawler.load_job_urls(2026)
+crawler.crawl_from_links(urls)
+```
