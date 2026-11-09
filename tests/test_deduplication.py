@@ -40,7 +40,7 @@ class TestDeduplication(unittest.TestCase):
             }
         ]
         df = pd.DataFrame(data)
-        deduped, removed, audit = deduplicate_merged(df)
+        deduped, removed, audit = deduplicate_merged(df, save_audit=False)
         
         self.assertEqual(len(deduped), 2)
         self.assertEqual(len(removed), 1)

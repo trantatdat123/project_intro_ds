@@ -102,10 +102,10 @@ def _normalize_title_for_dedup(title: Any) -> str:
     s = re.sub(r'[^a-z0-9\sàáảãạăằắẳẵặâầấẩẫậèéẻẽẹêềếểễệìíỉĩịòóỏõọôồốổỗộơờớởỡợùúủũụưừứửữựỳýỷỹỵđ]', ' ', s)
     return re.sub(r'\s+', ' ', s).strip()
 
-def deduplicate_merged(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+def deduplicate_merged(df: pd.DataFrame, save_audit: bool = True) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     """
     Check and remove duplicates within and across sources using normalized composite keys.
-    Saves deduplication audit report to reports/tables/deduplication_audit.csv.
+    Saves deduplication audit report to reports/tables/deduplication_audit.csv if save_audit is True.
     Returns (deduped_df, removed_records_df, audit_summary_df).
     """
     df_clean = df.copy()
@@ -163,10 +163,11 @@ def deduplicate_merged(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame, pd
         {"Metric": "Remaining Unique Records - Total", "Count": remaining_total, "Percentage": round(remaining_total / len(df_clean) * 100, 2)}
     ]
     audit_df = pd.DataFrame(audit_rows)
-    audit_path = REPORTS_DIR / "tables" / "deduplication_audit.csv"
-    audit_path.parent.mkdir(parents=True, exist_ok=True)
-    audit_df.to_csv(audit_path, index=False, encoding='utf-8')
-    print(f"[Deduplication] Removed {total_removed} duplicate postings ({tinixai_dups} in TinixAI, {topcv_dups} in TopCV, {cross_dups} cross-source). Audit saved to {audit_path}")
+    if save_audit:
+        audit_path = REPORTS_DIR / "tables" / "deduplication_audit.csv"
+        audit_path.parent.mkdir(parents=True, exist_ok=True)
+        audit_df.to_csv(audit_path, index=False, encoding='utf-8')
+        print(f"[Deduplication] Removed {total_removed} duplicate postings ({tinixai_dups} in TinixAI, {topcv_dups} in TopCV, {cross_dups} cross-source). Audit saved to {audit_path}")
     
     return deduped, removed_records, audit_df
 
