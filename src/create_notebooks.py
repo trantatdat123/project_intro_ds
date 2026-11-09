@@ -1,4 +1,4 @@
-"""Script to generate all 5 required Jupyter notebooks for JobLens Vietnam with executed outputs and updated APIs."""
+"""Script to generate all 5 required Jupyter notebooks for JobLens Vietnam with explicit IPython imports."""
 import json
 from pathlib import Path
 
@@ -64,6 +64,7 @@ nb1_cells = [
 from pathlib import Path
 import pandas as pd
 import numpy as np
+from IPython.display import display
 
 # Add project root to sys.path
 PROJECT_ROOT = Path('.').resolve().parent if Path('.').resolve().name == 'notebooks' else Path('.').resolve()
@@ -101,14 +102,14 @@ print(f"Raw merged records: {len(merged_raw)}")
 merged_deduped, removed_records, dedup_audit = deduplicate_merged(merged_raw)
 print(f"Unique postings retained: {len(merged_deduped)} (removed {len(removed_records)} duplicates)")
 print("\\nDeduplication Audit Breakdown:")
-display(dedup_audit) if 'display' in dir() else print(dedup_audit.to_string(index=False))
+display(dedup_audit)
 """),
     md_cell("""## 3. Location Normalization and Audit
 Fix the previous location normalization bug where Hanoi locations containing 'quận' were erroneously mapped to Ho Chi Minh City.
 """),
     code_cell("""loc_audit_df = generate_location_audit(merged_deduped)
 print(f"Location audit records affected: {len(loc_audit_df)} unique strings ({loc_audit_df['affected_records'].sum()} postings)")
-display(loc_audit_df.head(10)) if 'display' in dir() else print(loc_audit_df.head(10).to_string(index=False))
+display(loc_audit_df.head(10))
 
 cleaned_df = clean_dataframe(merged_deduped)
 print("\\nNormalized Regional Distribution:")
@@ -119,17 +120,17 @@ Parse salaries, categorize disclosure types, and validate bounds independently (
 """),
     code_cell("""parsed_df, salary_cats, salary_audit = process_salaries(cleaned_df)
 print("=== Salary Disclosure Categories ===")
-display(salary_cats) if 'display' in dir() else print(salary_cats.to_string(index=False))
+display(salary_cats)
 
 print("\\n=== Salary Parsing Audit Summary ===")
-display(salary_audit) if 'display' in dir() else print(salary_audit.to_string(index=False))
+display(salary_audit)
 """),
     md_cell("""## 5. Rule-Based Job Role Generation (Weak Supervision)
 Construct heuristic role pseudo-labels from `job_title` using hierarchical regex rules.
 """),
     code_cell("""labeled_df, label_dist, label_mapping = generate_labels(parsed_df)
 print("=== Job Role Label Distribution ===")
-display(label_dist) if 'display' in dir() else print(label_dist.to_string(index=False))
+display(label_dist)
 """)
 ]
 
@@ -153,6 +154,7 @@ from pathlib import Path
 import json
 import numpy as np
 import pandas as pd
+from IPython.display import display
 
 PROJECT_ROOT = Path('.').resolve().parent if Path('.').resolve().name == 'notebooks' else Path('.').resolve()
 if str(PROJECT_ROOT) not in sys.path:
@@ -216,6 +218,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from IPython.display import display, Image
 
 PROJECT_ROOT = Path('.').resolve().parent if Path('.').resolve().name == 'notebooks' else Path('.').resolve()
 if str(PROJECT_ROOT) not in sys.path:
@@ -243,7 +246,7 @@ print(y_cls.value_counts())
 """),
     code_cell("""results_df = pd.read_csv(config.REPORTS_DIR / "tables" / "classification_results.csv")
 print("=== Classification Models Comparison (Held-Out Test Set) ===")
-display(results_df) if 'display' in dir() else print(results_df.to_string(index=False))
+display(results_df)
 """),
     md_cell("""## 3. Confusion Matrix and Classification Report
 """),
@@ -251,12 +254,11 @@ display(results_df) if 'display' in dir() else print(results_df.to_string(index=
 if cr_path.exists():
     cr_df = pd.read_csv(cr_path)
     print("=== Per-Class Classification Report (Best Model on Test Set) ===")
-    display(cr_df) if 'display' in dir() else print(cr_df.to_string(index=False))
+    display(cr_df)
 
 cm_path = config.REPORTS_DIR / "figures" / "confusion_matrix.png"
 if cm_path.exists():
-    from IPython.display import Image, display as ipy_display
-    ipy_display(Image(filename=str(cm_path)))
+    display(Image(filename=str(cm_path)))
 """)
 ]
 
@@ -282,6 +284,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from IPython.display import display, Image
 
 PROJECT_ROOT = Path('.').resolve().parent if Path('.').resolve().name == 'notebooks' else Path('.').resolve()
 if str(PROJECT_ROOT) not in sys.path:
@@ -297,23 +300,21 @@ ablation_results = pd.read_csv(config.REPORTS_DIR / "tables" / "ablation_results
 temporal_results = pd.read_csv(config.REPORTS_DIR / "tables" / "temporal_validation_results.csv")
 
 print("=== Full Model Comparison (Configuration E4 on Held-Out Test Set) ===")
-display(reg_results) if 'display' in dir() else print(reg_results.to_string(index=False))
+display(reg_results)
 
 print("\\n=== Reconciled Ablation Study Summary (E1, E2, E3, E4) ===")
-display(ablation_results) if 'display' in dir() else print(ablation_results.to_string(index=False))
+display(ablation_results)
 
 print("\\n=== Temporal Validation (Train <=2025, Test 2026) ===")
-display(temporal_results) if 'display' in dir() else print(temporal_results.to_string(index=False))
+display(temporal_results)
 """),
     md_cell("""## 2. Regression Diagnostic Visualizations
 """),
-    code_cell("""from IPython.display import Image, display as ipy_display
-
-for plot_name in ['actual_vs_predicted.png', 'residual_plot.png', 'feature_importance.png', 'ablation_comparison.png']:
+    code_cell("""for plot_name in ['actual_vs_predicted.png', 'residual_plot.png', 'feature_importance.png', 'ablation_comparison.png']:
     p = config.REPORTS_DIR / 'figures' / plot_name
     if p.exists():
         print(f"\\n--- {plot_name} ---")
-        ipy_display(Image(filename=str(p)))
+        display(Image(filename=str(p)))
 """)
 ]
 
@@ -341,6 +342,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from IPython.display import display, Image
 
 PROJECT_ROOT = Path('.').resolve().parent if Path('.').resolve().name == 'notebooks' else Path('.').resolve()
 if str(PROJECT_ROOT) not in sys.path:
@@ -352,25 +354,23 @@ import src.config as config
 """),
     code_cell("""clustering_results = pd.read_csv(config.REPORTS_DIR / "tables" / "clustering_results.csv")
 print("=== Clustering Benchmark Results (Fair Comparison Table) ===")
-display(clustering_results) if 'display' in dir() else print(clustering_results.to_string(index=False))
+display(clustering_results)
 """),
     md_cell("""## 2. Discovered Cluster Profiles and Distinct Keywords
 """),
     code_cell("""kw_df = pd.read_csv(config.REPORTS_DIR / "tables" / "cluster_keywords.csv")
 print("=== Discovered Cluster Profiles & Technical Keywords ===")
-display(kw_df) if 'display' in dir() else print(kw_df.to_string(index=False))
+display(kw_df)
 """),
     md_cell("""## 3. Clustering Visualizations
 """),
-    code_cell("""from IPython.display import Image, display as ipy_display
-
-for plot_name in ['elbow_curve.png', 'silhouette_comparison.png', 'pca_clusters.png', 'cluster_distribution.png']:
+    code_cell("""for plot_name in ['elbow_curve.png', 'silhouette_comparison.png', 'pca_clusters.png', 'cluster_distribution.png']:
     p = config.REPORTS_DIR / 'figures' / plot_name
     if p.exists():
         print(f"\\n--- {plot_name} ---")
-        ipy_display(Image(filename=str(p)))
+        display(Image(filename=str(p)))
 """)
 ]
 
 create_notebook(nb5_cells, NOTEBOOKS_DIR / "05_Job_Clustering.ipynb")
-print("All 5 Jupyter notebooks generated successfully with updated API and clean visualization workflows!")
+print("All 5 Jupyter notebooks regenerated with explicit IPython display imports!")
