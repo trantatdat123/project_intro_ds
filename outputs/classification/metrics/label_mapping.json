@@ -1,0 +1,10 @@
+{
+  "AI / ML Engineer": 0,
+  "Data Scientist": 1,
+  "Data Engineer": 2,
+  "Data Analyst / BI": 3,
+  "QA / Tester": 4,
+  "DevOps / Cloud": 5,
+  "IT Support / Network / Security": 6,
+  "Software Engineer": 7
+}

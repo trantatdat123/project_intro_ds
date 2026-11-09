@@ -1,0 +1,29 @@
+{
+  "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "embedding_dim": 384,
+  "normalized": true,
+  "classification_regression_records": 7184,
+  "classification_embedding_shape": [
+    7184,
+    384
+  ],
+  "clustering_records": 14307,
+  "clustering_embedding_shape": [
+    14307,
+    384
+  ],
+  "sample_cls_ids": [
+    "tinixai_1",
+    "tinixai_2",
+    "tinixai_3",
+    "tinixai_4",
+    "tinixai_5"
+  ],
+  "sample_clustering_ids": [
+    "tinixai_1",
+    "tinixai_2",
+    "tinixai_3",
+    "tinixai_4",
+    "tinixai_5"
+  ]
+}

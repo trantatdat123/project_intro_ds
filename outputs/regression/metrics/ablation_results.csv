@@ -1,0 +1,13 @@
+Config,Model,MAE (Million VND),RMSE (Million VND),R2 Score
+E1,Ridge,6.06,9.54,0.2364
+E1,Random Forest,5.81,9.38,0.2616
+E1,XGBoost,5.8,9.3,0.2736
+E2,Ridge,5.97,9.38,0.262
+E2,Random Forest,5.65,9.16,0.2959
+E2,XGBoost,5.56,8.99,0.3217
+E3,Ridge,5.63,8.99,0.3218
+E3,Random Forest,5.67,9.17,0.2935
+E3,XGBoost,5.41,8.9,0.3354
+E4,Ridge,5.59,8.94,0.3288
+E4,Random Forest,5.55,9.09,0.3063
+E4,XGBoost,5.34,8.81,0.348

@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Data files (keep raw tracked if desired, or ignore large artifacts)
+embeddings/*.npy
+outputs/**/models/*.joblib
+.keras/
+
+# OS
+.DS_Store
+Thumbs.db
+
