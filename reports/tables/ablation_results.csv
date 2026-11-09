@@ -1,13 +1,13 @@
-Config,Model,MAE (Million VND),RMSE (Million VND),R2 Score
-E1,Ridge,6.06,9.54,0.2364
-E1,Random Forest,5.81,9.38,0.2616
-E1,XGBoost,5.8,9.3,0.2736
-E2,Ridge,5.97,9.38,0.262
-E2,Random Forest,5.65,9.16,0.2959
-E2,XGBoost,5.56,8.99,0.3217
-E3,Ridge,5.63,8.99,0.3218
-E3,Random Forest,5.67,9.17,0.2935
-E3,XGBoost,5.41,8.9,0.3354
-E4,Ridge,5.59,8.94,0.3288
-E4,Random Forest,5.55,9.09,0.3063
-E4,XGBoost,5.34,8.81,0.348
+Config,Model,MAE (Million VND),RMSE (Million VND),R2 Score,Val MAE (Million VND),Val R2 Score
+E1,Ridge,6.05,9.24,0.2797,6.46,0.2087
+E1,Random Forest,5.76,8.86,0.3371,5.99,0.3164
+E1,XGBoost,5.76,8.86,0.337,5.98,0.3183
+E2,Ridge,5.9,9.07,0.3065,6.25,0.252
+E2,Random Forest,5.62,8.97,0.321,5.58,0.3813
+E2,XGBoost,5.53,8.76,0.3532,5.66,0.3659
+E3,Ridge,5.48,8.6,0.3757,6.01,0.3069
+E3,Random Forest,5.64,8.96,0.3221,6.02,0.303
+E3,XGBoost,5.35,8.71,0.3597,5.64,0.385
+E4,Ridge,5.45,8.57,0.3801,5.91,0.3272
+E4,Random Forest,5.4,8.77,0.3507,5.74,0.3545
+E4,XGBoost,5.24,8.71,0.3604,5.34,0.429

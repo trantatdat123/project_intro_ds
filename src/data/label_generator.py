@@ -1,4 +1,21 @@
-"""Standardized job role label generator using hierarchical regex matching."""
+"""
+Rule-Based / Weakly Supervised Job Role Label Generator.
+
+Methodology Note:
+The labels generated in this module are rule-based heuristic pseudo-labels (weak supervision),
+not human-annotated ground truth. They are derived from regular expression matching against
+the raw `job_title` column using standard Vietnamese and international IT role taxonomy.
+
+Known Limitations:
+1. Lexical ambiguity: Job titles that combine multiple keywords (e.g. 'Data Engineer / Backend')
+   are mapped to the first matching rule according to the predefined precedence.
+2. Heuristic noise: Variations, typos, or emerging job titles not captured by regex
+   are categorized as 'Other / Unassigned' and excluded from supervised classification.
+3. Supervised Model Interpretation: In this setting, the supervised classification model
+   learns to predict the role category given the unmasked `job_description` (without title).
+   Evaluation metrics (Accuracy, Macro-F1) measure the model's agreement with the rule-based
+   taxonomic definitions rather than absolute human consensus.
+"""
 import re
 import json
 from typing import Tuple, Dict, Any
@@ -33,7 +50,7 @@ ROLE_RULES = [
 ]
 
 def map_job_title_to_role(title: Any) -> str:
-    """Map raw job title to standardized job role using hierarchical rules."""
+    """Map raw job title to standardized job role using hierarchical heuristic regex rules."""
     if title is None or pd.isna(title):
         return "Other / Unassigned"
         
@@ -47,7 +64,7 @@ def map_job_title_to_role(title: Any) -> str:
 
 def generate_labels(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame, Dict[str, int]]:
     """
-    Generate job role labels for the dataframe, filter unassigned,
+    Generate rule-based heuristic labels for the dataframe, filter unassigned,
     and save label distribution and mapping.
     """
     labeled_df = df.copy()
@@ -68,6 +85,5 @@ def generate_labels(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame, Dict[
     with open(mapping_path, 'w', encoding='utf-8') as f:
         json.dump(label_mapping, f, ensure_ascii=False, indent=2)
         
-    print(f"[LabelGenerator] Generated labels across {len(dist)} categories. Saved to {dist_path}")
+    print(f"[LabelGenerator] Generated rule-based labels across {len(dist)} categories. Saved to {dist_path}")
     return labeled_df, dist, label_mapping
-

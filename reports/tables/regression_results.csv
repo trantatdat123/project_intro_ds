@@ -1,7 +1,7 @@
-Config,Model,MAE (Million VND),RMSE (Million VND),R2 Score
-E4,Dummy (Median Baseline),6.93,11.23,-0.059
-E4,Linear Regression,5.77,9.01,0.3177
-E4,Ridge Regression,5.59,8.94,0.3288
-E4,Random Forest Regressor,5.48,9.05,0.3119
-E4,Extra Trees Regressor,5.29,8.88,0.3386
-E4,XGBoost Regressor,5.24,8.67,0.3683
+Config,Model,MAE (Million VND),RMSE (Million VND),R2 Score,Val MAE (Million VND),Val R2 Score
+E4,Dummy (Median Baseline),7.21,11.3,-0.0772,7.12,-0.0649
+E4,Linear Regression,5.58,8.58,0.3782,5.91,0.3343
+E4,Ridge Regression,5.45,8.57,0.3801,5.91,0.3272
+E4,Random Forest Regressor,5.4,8.77,0.3507,5.74,0.3545
+E4,Extra Trees Regressor,5.3,8.88,0.335,5.56,0.3786
+E4,XGBoost Regressor,5.24,8.71,0.3604,5.34,0.429

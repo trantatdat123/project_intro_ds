@@ -27,7 +27,9 @@ CLUSTERING_OUTPUTS = OUTPUTS_DIR / "clustering"
 
 # Model Hyperparameters & Global Constants
 RANDOM_STATE = 42
-TEST_SIZE = 0.2
+TRAIN_SIZE = 0.8
+VAL_SIZE = 0.1
+TEST_SIZE = 0.1
 SBERT_MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 SBERT_BATCH_SIZE = 64
 SBERT_EMBEDDING_DIM = 384

@@ -1,8 +1,10 @@
-parse_status,count,percentage
-valid,11292,78.93
-unspecified,2507,17.52
-implausible_low,207,1.45
-invalid_numbers,143,1.0
-missing,112,0.78
+salary_category,count,percentage
+range,10454,74.47
+unspecified,2554,18.19
+exact,424,3.02
+implausible_low,262,1.87
+invalid,161,1.15
+missing,110,0.78
+upper_bound_only,38,0.27
 implausible_high,28,0.2
-no_numbers_found,18,0.13
+lower_bound_only,6,0.04

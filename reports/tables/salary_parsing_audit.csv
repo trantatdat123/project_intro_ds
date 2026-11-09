@@ -1,0 +1,14 @@
+Metric,Value
+Total Job Postings Analyzed,14037
+Unspecified / Negotiable (Thỏa thuận),2554 (18.2%)
+Disclosed Salary Range (Min - Max),10454 (74.5%)
+Exact Fixed Salary Disclosed,424 (3.0%)
+Upper Bound Only Disclosed ('Up to'),38 (0.3%)
+Lower Bound Only Disclosed ('From'),6 (0.0%)
+Implausible Outliers Excluded (<3M or >150M VND),290
+Total Valid Samples for Regression,10922 (77.8%)
+Plausible Monthly Salary Mean (Million VND),17.86
+Plausible Monthly Salary Median (Million VND),15.00
+Plausible Monthly Salary Std (Million VND),11.08
+Plausible Monthly Salary Min (Million VND),3.00
+Plausible Monthly Salary Max (Million VND),150.00

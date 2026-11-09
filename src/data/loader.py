@@ -1,10 +1,13 @@
 """Data loading and integration module for JobLens Vietnam."""
+import re
+import hashlib
+from typing import Tuple, Dict, Any, List
+from pathlib import Path
 import pandas as pd
 import numpy as np
-from pathlib import Path
-from typing import Tuple, Dict, Any
 
-from src.config import RAW_DATA_DIR, PROCESSED_DATA_DIR
+from src.config import RAW_DATA_DIR, PROCESSED_DATA_DIR, REPORTS_DIR
+from src.data.cleaner import clean_text, normalize_location
 
 COMMON_COLUMNS = [
     'unique_job_id',
@@ -81,29 +84,97 @@ def standardize_and_merge(df_tinixai: pd.DataFrame, df_topcv: pd.DataFrame) -> p
     merged = pd.concat([t_aligned, c_aligned], ignore_index=True)
     return merged
 
-def deduplicate_merged(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
-    """Check and remove duplicates within and across sources, preserving audit records."""
-    # Deduplication key based on normalized title, company, and prefix of description
+def _normalize_company_for_dedup(name: Any) -> str:
+    """Normalize company name by stripping common legal and industry form prefixes/suffixes."""
+    if not name or pd.isna(name):
+        return ""
+    s = clean_text(name).lower()
+    s = re.sub(r'\b(công ty cổ phần|công ty tnhh|công ty|cty cp|cty tnhh|cp|tnhh|jsc|ltd|corp|corporation|group|công nghệ|technology|phần mềm|software)\b', ' ', s)
+    s = re.sub(r'[^a-z0-9\sàáảãạăằắẳẵặâầấẩẫậèéẻẽẹêềếểễệìíỉĩịòóỏõọôồốổỗộơờớởỡợùúủũụưừứửữựỳýỷỹỵđ]', ' ', s)
+    return re.sub(r'\s+', ' ', s).strip()
+
+def _normalize_title_for_dedup(title: Any) -> str:
+    """Normalize job title by stripping bracketed location tags."""
+    if not title or pd.isna(title):
+        return ""
+    s = clean_text(title).lower()
+    s = re.sub(r'\[.*?\]|\(.*?\)', ' ', s)
+    s = re.sub(r'[^a-z0-9\sàáảãạăằắẳẵặâầấẩẫậèéẻẽẹêềếểễệìíỉĩịòóỏõọôồốổỗộơờớởỡợùúủũụưừứửữựỳýỷỹỵđ]', ' ', s)
+    return re.sub(r'\s+', ' ', s).strip()
+
+def deduplicate_merged(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """
+    Check and remove duplicates within and across sources using normalized composite keys.
+    Saves deduplication audit report to reports/tables/deduplication_audit.csv.
+    Returns (deduped_df, removed_records_df, audit_summary_df).
+    """
     df_clean = df.copy()
-    norm_title = df_clean['job_title'].fillna('').astype(str).str.lower().str.strip()
-    norm_comp = df_clean['company_name'].fillna('').astype(str).str.lower().str.strip()
-    norm_desc = df_clean['job_description'].fillna('').astype(str).str.lower().str.slice(0, 100)
     
-    dup_mask = (norm_title != '') & (norm_comp != '') & (norm_desc != '') & \
-               df_clean.duplicated(subset=['job_title', 'company_name', 'location'], keep='first')
-               
+    # 1. Normalized composite keys
+    norm_title = df_clean['job_title'].apply(_normalize_title_for_dedup)
+    norm_comp = df_clean['company_name'].apply(_normalize_company_for_dedup)
+    norm_desc = df_clean['job_description'].apply(clean_text).str.lower().str.strip()
+    norm_desc_prefix = norm_desc.str.slice(0, 150)
+    
+    # Composite key: normalized title + normalized company + normalized description prefix
+    composite_key = norm_title + "|||" + norm_comp + "|||" + norm_desc_prefix
+    
+    # A record is considered duplicate if the composite key is already seen (keeping first)
+    # Filter empty keys
+    is_valid_key = (norm_title != '') & (norm_desc_prefix.str.len() > 20)
+    
+    # Deduplication mask
+    dup_mask = is_valid_key & composite_key.duplicated(keep='first')
+    
     removed_records = df_clean[dup_mask].copy()
     deduped = df_clean[~dup_mask].reset_index(drop=True)
-    return deduped, removed_records
+    
+    # Statistics breakdown
+    raw_tinixai = int((df_clean['source'] == 'tinixai').sum())
+    raw_topcv = int((df_clean['source'] == 'topcv').sum())
+    
+    # Within TinixAI duplicates
+    t_mask = df_clean['source'] == 'tinixai'
+    tinixai_dups = int((is_valid_key & t_mask & composite_key[t_mask].duplicated(keep='first')).sum())
+    
+    # Within TopCV duplicates
+    c_mask = df_clean['source'] == 'topcv'
+    topcv_dups = int((is_valid_key & c_mask & composite_key[c_mask].duplicated(keep='first')).sum())
+    
+    # Cross-source duplicates: records in TopCV whose key was already present in TinixAI
+    tinixai_keys = set(composite_key[t_mask & is_valid_key])
+    cross_dups = int((is_valid_key & c_mask & composite_key.isin(tinixai_keys)).sum())
+    
+    total_removed = len(removed_records)
+    remaining_total = len(deduped)
+    remaining_tinixai = int((deduped['source'] == 'tinixai').sum())
+    remaining_topcv = int((deduped['source'] == 'topcv').sum())
+    
+    audit_rows = [
+        {"Metric": "Raw Records - TinixAI", "Count": raw_tinixai, "Percentage": round(raw_tinixai / len(df_clean) * 100, 2)},
+        {"Metric": "Raw Records - TopCV", "Count": raw_topcv, "Percentage": round(raw_topcv / len(df_clean) * 100, 2)},
+        {"Metric": "Raw Records - Total", "Count": len(df_clean), "Percentage": 100.0},
+        {"Metric": "Duplicates Removed - Within TinixAI", "Count": tinixai_dups, "Percentage": round(tinixai_dups / len(df_clean) * 100, 2)},
+        {"Metric": "Duplicates Removed - Within TopCV", "Count": topcv_dups, "Percentage": round(topcv_dups / len(df_clean) * 100, 2)},
+        {"Metric": "Duplicates Removed - Cross-Source (TopCV matching TinixAI)", "Count": cross_dups, "Percentage": round(cross_dups / len(df_clean) * 100, 2)},
+        {"Metric": "Total Duplicate Records Removed", "Count": total_removed, "Percentage": round(total_removed / len(df_clean) * 100, 2)},
+        {"Metric": "Remaining Unique Records - TinixAI", "Count": remaining_tinixai, "Percentage": round(remaining_tinixai / remaining_total * 100, 2)},
+        {"Metric": "Remaining Unique Records - TopCV", "Count": remaining_topcv, "Percentage": round(remaining_topcv / remaining_total * 100, 2)},
+        {"Metric": "Remaining Unique Records - Total", "Count": remaining_total, "Percentage": round(remaining_total / len(df_clean) * 100, 2)}
+    ]
+    audit_df = pd.DataFrame(audit_rows)
+    audit_path = REPORTS_DIR / "tables" / "deduplication_audit.csv"
+    audit_path.parent.mkdir(parents=True, exist_ok=True)
+    audit_df.to_csv(audit_path, index=False, encoding='utf-8')
+    print(f"[Deduplication] Removed {total_removed} duplicate postings ({tinixai_dups} in TinixAI, {topcv_dups} in TopCV, {cross_dups} cross-source). Audit saved to {audit_path}")
+    
+    return deduped, removed_records, audit_df
 
 def integrate_and_save() -> pd.DataFrame:
     """Execute full integration step and save merged_jobs.csv."""
     df_tinixai, df_topcv = load_raw_datasets()
     merged = standardize_and_merge(df_tinixai, df_topcv)
-    deduped, removed = deduplicate_merged(merged)
-    
-    output_path = PROCESSED_DATA_DIR / 'merged_jobs.csv'
-    deduped.to_csv(output_path, index=False, encoding='utf-8')
-    print(f"[Loader] Merged {len(merged)} records down to {len(deduped)} (removed {len(removed)} duplicates). Saved to {output_path}")
+    deduped, removed, _ = deduplicate_merged(merged)
+    out_path = PROCESSED_DATA_DIR / "merged_jobs.csv"
+    deduped.to_csv(out_path, index=False, encoding='utf-8')
     return deduped
-

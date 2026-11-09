@@ -5,13 +5,16 @@ Demonstrates live prediction for a new Job Description:
 - Task 3: Cluster Assignment & Skill Recommendations
 """
 import sys
+from pathlib import Path
+
+# MUST import src.config first to set PyTorch/Transformers environment variables and disable TensorFlow
+import src.config as config
+
 import joblib
 import numpy as np
 import pandas as pd
-from pathlib import Path
 from sentence_transformers import SentenceTransformer
 
-import src.config as config
 from src.data.cleaner import clean_text, normalize_location, normalize_job_position, normalize_job_type
 from src.features.sbert_encoder import load_sbert_model
 
@@ -59,7 +62,14 @@ def predict_job(
     # 3. TASK 1: Job Role Classification
     cls_model = cls_artifact["model"]
     le = cls_artifact["label_encoder"]
-    pred_class_idx = cls_model.predict(desc_emb)[0]
+    
+    if cls_artifact.get("tfidf_vectorizer") is not None:
+        tfidf_vec = cls_artifact["tfidf_vectorizer"]
+        X_cls = tfidf_vec.transform([clean_desc])
+    else:
+        X_cls = desc_emb
+        
+    pred_class_idx = cls_model.predict(X_cls)[0]
     predicted_role = le.inverse_transform([pred_class_idx])[0]
     
     # 4. TASK 2: Salary Prediction
@@ -158,3 +168,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

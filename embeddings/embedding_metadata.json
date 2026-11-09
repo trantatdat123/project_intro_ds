@@ -2,14 +2,14 @@
   "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
   "embedding_dim": 384,
   "normalized": true,
-  "classification_regression_records": 7184,
+  "classification_regression_records": 7126,
   "classification_embedding_shape": [
-    7184,
+    7126,
     384
   ],
-  "clustering_records": 14307,
+  "clustering_records": 14037,
   "clustering_embedding_shape": [
-    14307,
+    14037,
     384
   ],
   "sample_cls_ids": [

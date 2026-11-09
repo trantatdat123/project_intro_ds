@@ -1,4 +1,4 @@
-"""Script to generate all 5 required Jupyter notebooks for JobLens Vietnam."""
+"""Script to generate all 5 required Jupyter notebooks for JobLens Vietnam with executed outputs and updated APIs."""
 import json
 from pathlib import Path
 
@@ -52,12 +52,13 @@ nb1_cells = [
 
 ### Objective:
 1. Inspect the two raw datasets: `tinixai_it_ai_data_jobs.csv` and `topcv_jobs.csv`.
-2. Standardize column schemas, assign global unique IDs (`unique_job_id`), and tag source provenance.
-3. Perform intra-source and cross-source deduplication.
+2. Standardize column schemas, assign global unique IDs (`unique_job_id`), and track source provenance.
+3. Perform intra-source and cross-source deduplication with normalized composite keys (`reports/tables/deduplication_audit.csv`).
 4. Clean text fields (stripping HTML, unescaping characters, preserving essential technical tokens like `C++`, `SQL`, `Python`, `AWS`).
-5. Parse salary expressions into VND/month (`salary_min_vnd`, `salary_max_vnd`, `salary_mean_vnd`) with currency conversion and validation.
-6. Generate standardized `job_role_label` categories using hierarchical keyword matching.
-7. Export processed subsets for downstream classification, regression, and clustering.
+5. Audit and normalize regional locations with explicit city detection first (`reports/tables/location_fix_audit.csv`).
+6. Parse salary expressions into VND/month with independent bounds and disclosure categories (`reports/tables/salary_parsing_audit.csv`).
+7. Generate standardized rule-based `job_role_label` categories (weak supervision taxonomy).
+8. Export processed subsets for downstream classification, regression, and clustering.
 """),
     code_cell("""import sys
 from pathlib import Path
@@ -71,7 +72,7 @@ if str(PROJECT_ROOT) not in sys.path:
 
 import src.config as config
 from src.data.loader import load_raw_datasets, inspect_dataset, standardize_and_merge, deduplicate_merged
-from src.data.cleaner import clean_dataframe
+from src.data.cleaner import clean_dataframe, generate_location_audit
 from src.data.salary_parser import process_salaries
 from src.data.label_generator import generate_labels
 """),
@@ -92,84 +93,60 @@ print(f"Shape: {info_topcv['rows']} rows x {info_topcv['cols']} columns")
 print(f"Missing values:\\n{pd.Series(info_topcv['missing_values'])}")
 """),
     md_cell("""## 2. Standardize Schema and Deduplicate
-We map both datasets into a common 16-attribute schema, synthesize `unique_job_id`, and check for duplicates within and across platforms.
+We map both datasets into a common 16-attribute schema, synthesize `unique_job_id`, and remove duplicates using normalized composite keys.
 """),
     code_cell("""merged_raw = standardize_and_merge(df_tinixai, df_topcv)
 print(f"Raw merged records: {len(merged_raw)}")
 
-merged_deduped, removed = deduplicate_merged(merged_raw)
-print(f"Records after deduplication: {len(merged_deduped)} (removed {len(removed)} duplicate postings)")
+merged_deduped, removed_records, dedup_audit = deduplicate_merged(merged_raw)
+print(f"Unique postings retained: {len(merged_deduped)} (removed {len(removed_records)} duplicates)")
+print("\\nDeduplication Audit Breakdown:")
+display(dedup_audit) if 'display' in dir() else print(dedup_audit.to_string(index=False))
+"""),
+    md_cell("""## 3. Location Normalization and Audit
+Fix the previous location normalization bug where Hanoi locations containing 'quận' were erroneously mapped to Ho Chi Minh City.
+"""),
+    code_cell("""loc_audit_df = generate_location_audit(merged_deduped)
+print(f"Location audit records affected: {len(loc_audit_df)} unique strings ({loc_audit_df['affected_records'].sum()} postings)")
+display(loc_audit_df.head(10)) if 'display' in dir() else print(loc_audit_df.head(10).to_string(index=False))
 
-merged_deduped[['unique_job_id', 'source', 'job_title', 'company_name', 'salary', 'location']].head(5)
+cleaned_df = clean_dataframe(merged_deduped)
+print("\\nNormalized Regional Distribution:")
+print(cleaned_df['norm_location'].value_counts())
 """),
-    md_cell("""## 3. Text Cleaning & Normalization
-Apply `clean_dataframe` to strip HTML tags, normalize whitespace, and preserve tech terms (e.g., C++, .NET, Python, SQL). Also normalize structured features: location regions, experience years, job position hierarchy, and year.
+    md_cell("""## 4. Salary Parsing and Independent Validation
+Parse salaries, categorize disclosure types, and validate bounds independently ($3\\text{M} \\le \\text{min} \\le \\text{max} \\le 150\\text{M}$).
 """),
-    code_cell("""cleaned_df = clean_dataframe(merged_deduped)
-print("Sample cleaned text snippet:")
-print(cleaned_df[['job_title', 'norm_location', 'exp_years', 'norm_experience', 'year_clean']].head(5))
-"""),
-    md_cell("""## 4. Salary Parsing and Auditing
-Convert salary strings into `salary_min_vnd`, `salary_max_vnd`, and `salary_mean_vnd`. Apply USD conversion (1 USD = 25,000 VND), parse millions/triệu, and filter implausible bounds (3M - 150M VND/month).
-"""),
-    code_cell("""parsed_df, salary_audit = process_salaries(cleaned_df)
-print("=== Salary Parsing Audit Status ===")
-print(salary_audit.to_string(index=False))
+    code_cell("""parsed_df, salary_cats, salary_audit = process_salaries(cleaned_df)
+print("=== Salary Disclosure Categories ===")
+display(salary_cats) if 'display' in dir() else print(salary_cats.to_string(index=False))
 
-valid_salaries = parsed_df[parsed_df['salary_parse_status'] == 'valid']['salary_mean_vnd'] / 1_000_000
-print("\\nValid Salary Statistics (Million VND/month):")
-print(valid_salaries.describe().round(2))
+print("\\n=== Salary Parsing Audit Summary ===")
+display(salary_audit) if 'display' in dir() else print(salary_audit.to_string(index=False))
 """),
-    md_cell("""## 5. Job Role Label Generation
-Apply hierarchical regex rules to `job_title` to assign ground truth roles for classification. Note: `job_title` is strictly withheld from the classification feature set.
+    md_cell("""## 5. Rule-Based Job Role Generation (Weak Supervision)
+Construct heuristic role pseudo-labels from `job_title` using hierarchical regex rules.
 """),
     code_cell("""labeled_df, label_dist, label_mapping = generate_labels(parsed_df)
 print("=== Job Role Label Distribution ===")
-print(label_dist.to_string(index=False))
-"""),
-    md_cell("""## 6. Export Task-Specific Subsets
-Save the finalized data files to `data/processed/` for downstream modeling:
-- `merged_jobs.csv`: Integrated raw jobs.
-- `cleaned_jobs.csv`: Master cleaned dataset.
-- `classification_data.csv`: Valid job role labels.
-- `regression_data.csv`: Valid numeric salaries.
-- `clustering_data.csv`: Valid composite texts.
-"""),
-    code_cell("""# Save master files
-labeled_df.to_csv(config.PROCESSED_DATA_DIR / "cleaned_jobs.csv", index=False)
-
-# Classification subset
-cls_df = labeled_df[(labeled_df['job_role_label'] != 'Other / Unassigned') & (labeled_df['job_description'].str.strip() != '')]
-cls_df.to_csv(config.PROCESSED_DATA_DIR / "classification_data.csv", index=False)
-
-# Regression subset
-reg_df = labeled_df[(labeled_df['salary_parse_status'] == 'valid') & (labeled_df['job_description'].str.strip() != '')]
-reg_df.to_csv(config.PROCESSED_DATA_DIR / "regression_data.csv", index=False)
-
-# Clustering subset
-cl_df = labeled_df[labeled_df['job_description'].str.strip() != '']
-cl_df.to_csv(config.PROCESSED_DATA_DIR / "clustering_data.csv", index=False)
-
-print(f"Exported:\\n- Cleaned: {len(labeled_df)}\\n- Classification: {len(cls_df)}\\n- Regression: {len(reg_df)}\\n- Clustering: {len(cl_df)}")
+display(label_dist) if 'display' in dir() else print(label_dist.to_string(index=False))
 """)
 ]
 
 create_notebook(nb1_cells, NOTEBOOKS_DIR / "01_Data_Integration_Preprocessing.ipynb")
 
 # ==============================================================================
-# NOTEBOOK 2: SBERT Embedding Generation
+# NOTEBOOK 2: SBERT Embedding
 # ==============================================================================
 nb2_cells = [
-    md_cell("""# Notebook 02: Sentence-BERT (SBERT) Multilingual Embeddings
+    md_cell("""# Notebook 02: Sentence-BERT (SBERT) Dense Embeddings
 **Project:** JobLens Vietnam - Labor Market Analysis & Skill Trends  
 **Course:** Introduction to Data Science  
 
 ### Objective:
-1. Explain the selection of `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`.
-2. Demonstrate batch encoding for Vietnamese/English technical job descriptions.
-3. Validate embedding dimensions (384-dimensional dense vectors) and unit normalization.
-4. Align embeddings with tabular datasets using `unique_job_id` keys.
-5. Save cached `.npy` arrays and metadata tracking file.
+1. Encode multilingual recruitment texts using pre-trained `paraphrase-multilingual-MiniLM-L12-v2`.
+2. Generate 384-dimensional dense semantic vectors.
+3. Verify embedding caching, L2 normalization, and row alignment via `unique_job_id`.
 """),
     code_cell("""import sys
 from pathlib import Path
@@ -183,48 +160,31 @@ if str(PROJECT_ROOT) not in sys.path:
 
 import src.config as config
 from src.features.text_processor import prepare_classification_regression_text, prepare_clustering_text
-from src.features.sbert_encoder import load_sbert_model, encode_texts, save_embedding_metadata
+from src.features.sbert_encoder import encode_texts, save_embedding_metadata
 """),
-    md_cell("""## 1. Load Pretrained SBERT Model
-We utilize `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`, an efficient 12-layer Transformer supporting 50+ languages including Vietnamese and English. It balances embedding quality with CPU inference efficiency.
-"""),
-    code_cell("""model = load_sbert_model()
-print(f"Loaded SBERT model: {config.SBERT_MODEL_NAME}")
-print(f"Embedding dimension: {model.get_sentence_embedding_dimension()}")
-print(f"Max sequence length: {model.max_seq_length}")
-"""),
-    md_cell("""## 2. Load Processed Datasets and Text Representations
-We extract:
-1. `job_description` for Classification and Regression.
-2. `job_title + job_description + requirements` for Unsupervised Clustering.
-"""),
-    code_cell("""cleaned_df = pd.read_csv(config.PROCESSED_DATA_DIR / "cleaned_jobs.csv")
-print(f"Cleaned master records: {len(cleaned_df)}")
-
-# Prepare text lists
-desc_texts, desc_ids = prepare_classification_regression_text(cleaned_df)
-print(f"Sample description text (first 150 chars):\\n{desc_texts[0][:150]}...")
-"""),
-    md_cell("""## 3. Verify or Compute Embeddings
-Load cached embeddings from `embeddings/sbert_embeddings.npy` and `embeddings/sbert_clustering_embeddings.npy` if already generated.
+    md_cell("""## 1. Inspect Embeddings Cache
+Check the cached embedding matrices on disk.
 """),
     code_cell("""sbert_path = config.EMBEDDINGS_DIR / "sbert_embeddings.npy"
-embeddings, _ = encode_texts(desc_texts, desc_ids, sbert_path, batch_size=config.SBERT_BATCH_SIZE)
+cluster_sbert_path = config.EMBEDDINGS_DIR / "sbert_clustering_embeddings.npy"
 
-print(f"SBERT Embeddings shape: {embeddings.shape}")
-print(f"Vector dtype: {embeddings.dtype}")
-print(f"Sample vector norm (should be ~1.0 if normalized): {np.linalg.norm(embeddings[0]):.4f}")
+if sbert_path.exists():
+    emb = np.load(sbert_path)
+    print(f"Master / Classification / Regression Embeddings: {emb.shape}, dtype={emb.dtype}")
+    print(f"Sample L2 vector norm: {np.linalg.norm(emb[0]):.4f}")
+
+if cluster_sbert_path.exists():
+    c_emb = np.load(cluster_sbert_path)
+    print(f"Clustering Composite Embeddings: {c_emb.shape}, dtype={c_emb.dtype}")
 """),
-    md_cell("""## 4. Embedding Metadata and Diagnostics
-Inspect `embedding_metadata.json` which tracks dimensionality, sample identifiers, and row alignment.
+    md_cell("""## 2. Embedding Alignment Metadata
+Inspect `embedding_metadata.json` for provenance tracking.
 """),
     code_cell("""meta_path = config.EMBEDDINGS_DIR / "embedding_metadata.json"
 if meta_path.exists():
     with open(meta_path, 'r', encoding='utf-8') as f:
         meta = json.load(f)
     print(json.dumps(meta, indent=2, ensure_ascii=False))
-else:
-    print("Metadata file will be created by the main pipeline.")
 """)
 ]
 
@@ -239,24 +199,23 @@ nb3_cells = [
 **Course:** Introduction to Data Science  
 
 ### Objective:
-1. Formulate a multi-class text classification problem predicting `job_role_label` from `job_description`.
-2. Address class imbalance across 8 job role categories.
-3. Apply stratified 80/20 train/test split (random seed = 42).
-4. Train and compare 5 distinct algorithm families on SBERT embeddings:
-   - Logistic Regression (Balanced)
-   - Linear Support Vector Machine (Linear SVM)
-   - K-Nearest Neighbors (KNN with Cosine metric)
+1. Predict `job_role_label` from unmasked `job_description` (without title).
+2. Methodology: Weak supervision context — heuristic regex labels, not human ground truth.
+3. Apply stratified 80/10/10 train/val/test split.
+4. Classical Baseline: TF-IDF + Logistic Regression (fit strictly on train).
+5. SBERT Models:
+   - Logistic Regression
+   - Linear SVM
+   - K-Nearest Neighbors (k=5, cosine metric)
    - Random Forest Classifier
    - XGBoost Classifier
-5. Evaluate models using Accuracy, Precision, Recall, Macro-F1 (primary metric), and Weighted-F1.
-6. Display Confusion Matrix and analyze misclassifications.
+6. Model selection on Validation set; final evaluation on held-out Test set.
 """),
     code_cell("""import sys
 from pathlib import Path
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 PROJECT_ROOT = Path('.').resolve().parent if Path('.').resolve().name == 'notebooks' else Path('.').resolve()
 if str(PROJECT_ROOT) not in sys.path:
@@ -266,13 +225,11 @@ import src.config as config
 from src.models.classification import run_classification_experiments
 """),
     md_cell("""## 1. Load Classification Dataset and Embeddings
-We load `classification_data.csv` and slice the corresponding SBERT embedding matrix using aligned `unique_job_id` keys.
 """),
     code_cell("""df_cls = pd.read_csv(config.PROCESSED_DATA_DIR / "classification_data.csv")
 sbert_all = np.load(config.EMBEDDINGS_DIR / "sbert_embeddings.npy")
 cleaned_df = pd.read_csv(config.PROCESSED_DATA_DIR / "cleaned_jobs.csv")
 
-# Map unique_job_id to embedding row index
 id_to_idx = {uid: idx for idx, uid in enumerate(cleaned_df['unique_job_id'])}
 cls_indices = [id_to_idx[uid] for uid in df_cls['unique_job_id']]
 X_cls = sbert_all[cls_indices]
@@ -282,24 +239,21 @@ print(f"Classification samples: {X_cls.shape[0]}, Feature dimension: {X_cls.shap
 print("\\nClass Distribution:")
 print(y_cls.value_counts())
 """),
-    md_cell("""## 2. Execute Model Training and Evaluation
-We execute all 5 models. Class weighting is incorporated to prevent majority classes (e.g., Software Engineer) from dominating specialized roles (Data Scientist, AI Engineer).
+    md_cell("""## 2. Execute Benchmark with 80/10/10 Split and TF-IDF Baseline
 """),
-    code_cell("""results_df, best_model, metadata = run_classification_experiments(X_cls, y_cls)
-print("=== Classification Model Comparison Table ===")
-display(results_df) if 'display' in dir() else print(results_df)
+    code_cell("""results_df = pd.read_csv(config.REPORTS_DIR / "tables" / "classification_results.csv")
+print("=== Classification Models Comparison (Held-Out Test Set) ===")
+display(results_df) if 'display' in dir() else print(results_df.to_string(index=False))
 """),
-    md_cell("""## 3. Detailed Classification Report and Confusion Matrix
-Inspect per-class precision, recall, and F1 scores for the top-performing model.
+    md_cell("""## 3. Confusion Matrix and Classification Report
 """),
-    code_cell("""cr_path = config.CLASSIFICATION_OUTPUTS / 'metrics' / 'classification_report.csv'
+    code_cell("""cr_path = config.REPORTS_DIR / "tables" / "classification_report.csv"
 if cr_path.exists():
     cr_df = pd.read_csv(cr_path)
-    print("=== Per-Class Classification Report (Best Model) ===")
+    print("=== Per-Class Classification Report (Best Model on Test Set) ===")
     display(cr_df) if 'display' in dir() else print(cr_df.to_string(index=False))
 
-# Display Confusion Matrix Plot
-cm_path = config.CLASSIFICATION_OUTPUTS / 'plots' / 'confusion_matrix.png'
+cm_path = config.REPORTS_DIR / "figures" / "confusion_matrix.png"
 if cm_path.exists():
     from IPython.display import Image, display as ipy_display
     ipy_display(Image(filename=str(cm_path)))
@@ -318,26 +272,10 @@ nb4_cells = [
 
 ### Objective:
 1. Predict monthly salary in Million VND (`salary_mean_vnd`) using multi-modal features.
-2. Combine 384-dimensional SBERT text embeddings with structured features:
-   - `job_role_label`
-   - `exp_years` (numerical experience)
-   - `norm_location` (regional location)
-   - `norm_position` (job position hierarchy)
-   - `norm_job_type` (employment type)
-   - `year_clean` (mandatory year feature)
-3. Evaluate 6 regression algorithms:
-   - Dummy Regressor (Median baseline)
-   - Linear Regression
-   - Ridge Regression
-   - Random Forest Regressor
-   - Extra Trees Regressor
-   - XGBoost Regressor
-4. Conduct required **Ablation Study**:
-   - E1: Structured features without Year
-   - E2: Structured features with Year
-   - E3: SBERT + Structured features without Year
-   - E4: SBERT + Structured features with Year
-5. Analyze Actual vs Predicted salary, residuals, and feature importances.
+2. 80/10/10 split with strict zero leakage (preprocessors fit strictly on train split).
+3. Evaluate 6 regression algorithms on full configuration E4.
+4. Reconciled Ablation Study across E1, E2, E3, and E4.
+5. Longitudinal / Temporal Validation (Train: <=2025, Test: 2026).
 """),
     code_cell("""import sys
 from pathlib import Path
@@ -352,39 +290,27 @@ if str(PROJECT_ROOT) not in sys.path:
 import src.config as config
 from src.models.regression import run_regression_experiments
 """),
-    md_cell("""## 1. Load Regression Dataset and Embeddings
-Filter records with valid numerical monthly salaries and retrieve corresponding SBERT description embeddings.
+    md_cell("""## 1. Load Results and Diagnostic Tables
 """),
-    code_cell("""df_reg = pd.read_csv(config.PROCESSED_DATA_DIR / "regression_data.csv")
-sbert_all = np.load(config.EMBEDDINGS_DIR / "sbert_embeddings.npy")
-cleaned_df = pd.read_csv(config.PROCESSED_DATA_DIR / "cleaned_jobs.csv")
+    code_cell("""reg_results = pd.read_csv(config.REPORTS_DIR / "tables" / "regression_results.csv")
+ablation_results = pd.read_csv(config.REPORTS_DIR / "tables" / "ablation_results.csv")
+temporal_results = pd.read_csv(config.REPORTS_DIR / "tables" / "temporal_validation_results.csv")
 
-id_to_idx = {uid: idx for idx, uid in enumerate(cleaned_df['unique_job_id'])}
-reg_indices = [id_to_idx[uid] for uid in df_reg['unique_job_id']]
-sbert_reg = sbert_all[reg_indices]
+print("=== Full Model Comparison (Configuration E4 on Held-Out Test Set) ===")
+display(reg_results) if 'display' in dir() else print(reg_results.to_string(index=False))
 
-print(f"Regression samples: {len(df_reg)}")
-print("Salary target summary (Million VND/month):")
-print((df_reg['salary_mean_vnd'] / 1_000_000).describe().round(2))
+print("\\n=== Reconciled Ablation Study Summary (E1, E2, E3, E4) ===")
+display(ablation_results) if 'display' in dir() else print(ablation_results.to_string(index=False))
+
+print("\\n=== Temporal Validation (Train <=2025, Test 2026) ===")
+display(temporal_results) if 'display' in dir() else print(temporal_results.to_string(index=False))
 """),
-    md_cell("""## 2. Model Training and Ablation Study
-We train all 6 regressors on configuration E4 (full multi-modal feature set) and evaluate ablation configurations E1 through E4.
-"""),
-    code_cell("""reg_results, ablation_results, best_model, metadata = run_regression_experiments(df_reg, sbert_reg)
-
-print("=== Full Model Comparison (Configuration E4) ===")
-display(reg_results) if 'display' in dir() else print(reg_results)
-
-print("\\n=== Ablation Study Summary (E1, E2, E3, E4) ===")
-display(ablation_results) if 'display' in dir() else print(ablation_results)
-"""),
-    md_cell("""## 3. Regression Diagnostic Plots
-Examine the Actual vs Predicted scatter plot, residual error distributions, feature importances, and ablation comparison.
+    md_cell("""## 2. Regression Diagnostic Visualizations
 """),
     code_cell("""from IPython.display import Image, display as ipy_display
 
 for plot_name in ['actual_vs_predicted.png', 'residual_plot.png', 'feature_importance.png', 'ablation_comparison.png']:
-    p = config.REGRESSION_OUTPUTS / 'plots' / plot_name
+    p = config.REPORTS_DIR / 'figures' / plot_name
     if p.exists():
         print(f"\\n--- {plot_name} ---")
         ipy_display(Image(filename=str(p)))
@@ -397,7 +323,7 @@ create_notebook(nb4_cells, NOTEBOOKS_DIR / "04_Salary_Regression.ipynb")
 # NOTEBOOK 5: Job Clustering
 # ==============================================================================
 nb5_cells = [
-    md_cell("""# Notebook 05: Unsupervised Job and Skill Clustering
+    md_cell("""# Notebook 05: Unsupervised Job Profile and Skill Clustering
 **Project:** JobLens Vietnam - Labor Market Analysis & Skill Trends  
 **Course:** Introduction to Data Science  
 
@@ -405,13 +331,10 @@ nb5_cells = [
 1. Discover latent job archetypes and skill groupings without ground-truth labels.
 2. Input text: composite representation (`job_title + job_description + requirements`).
 3. Embeddings: SBERT Multilingual dense vectors (384 dimensions).
-4. Run 4 clustering algorithm families:
-   - K-Means across cluster counts $K \\in [3, 4, 5, 6, 8, 10]$
-   - Agglomerative Hierarchical Clustering (Cosine metric)
-   - DBSCAN (density-based clustering with noise identification)
-   - Gaussian Mixture Model (GMM on PCA-reduced dimensions)
-5. Evaluate using Silhouette Score (Cosine), Davies-Bouldin Index, and Calinski-Harabasz Score.
-6. Extract top discriminating keywords and assign human-interpretable cluster profiles.
+4. Run K-Means sweep on full dataset ($k \\in [3, 4, 5, 6, 8, 10]$).
+5. Fair head-to-head comparison on standardized sample (N=3,000) across K-Means, Agglomerative, DBSCAN, and GMM.
+6. Evaluate using Silhouette Score (Cosine), Davies-Bouldin Index, Calinski-Harabasz Score, ARI, and NMI.
+7. Extract technical keywords with Vietnamese + English stopword removal and assign distinct, non-colliding cluster profiles.
 """),
     code_cell("""import sys
 from pathlib import Path
@@ -424,42 +347,25 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 import src.config as config
-from src.features.text_processor import prepare_clustering_text
-from src.models.clustering import run_clustering_experiments
 """),
-    md_cell("""## 1. Load Clustering Dataset and Composite Embeddings
-We load `clustering_data.csv` and the corresponding `sbert_clustering_embeddings.npy` matrix.
+    md_cell("""## 1. Load Clustering Benchmark Metrics
 """),
-    code_cell("""df_cluster = pd.read_csv(config.PROCESSED_DATA_DIR / "clustering_data.csv")
-cluster_embeddings = np.load(config.EMBEDDINGS_DIR / "sbert_clustering_embeddings.npy")
-composite_texts, _ = prepare_clustering_text(df_cluster)
-
-print(f"Clustering samples: {cluster_embeddings.shape[0]}, Dimensions: {cluster_embeddings.shape[1]}")
-print(f"Sample composite text (first 150 chars):\\n{composite_texts[0][:150]}...")
+    code_cell("""clustering_results = pd.read_csv(config.REPORTS_DIR / "tables" / "clustering_results.csv")
+print("=== Clustering Benchmark Results (Fair Comparison Table) ===")
+display(clustering_results) if 'display' in dir() else print(clustering_results.to_string(index=False))
 """),
-    md_cell("""## 2. Execute Clustering Algorithms and Evaluation
-Compute clustering metrics across K-Means, Agglomerative, DBSCAN, and GMM.
+    md_cell("""## 2. Discovered Cluster Profiles and Distinct Keywords
 """),
-    code_cell("""clustering_results, assignments, best_km_model, metadata = run_clustering_experiments(
-    df_cluster, cluster_embeddings, composite_texts
-)
-
-print("=== Clustering Evaluation Metrics Comparison ===")
-display(clustering_results) if 'display' in dir() else print(clustering_results)
+    code_cell("""kw_df = pd.read_csv(config.REPORTS_DIR / "tables" / "cluster_keywords.csv")
+print("=== Discovered Cluster Profiles & Technical Keywords ===")
+display(kw_df) if 'display' in dir() else print(kw_df.to_string(index=False))
 """),
-    md_cell("""## 3. Discovered Cluster Profiles and Top Keywords
-Inspect the interpreted cluster archetypes, their top 10 keywords, and job volumes.
+    md_cell("""## 3. Clustering Visualizations
 """),
-    code_cell("""kw_path = config.CLUSTERING_OUTPUTS / 'metrics' / 'cluster_keywords.csv'
-if kw_path.exists():
-    kw_df = pd.read_csv(kw_path)
-    print("=== Discovered Cluster Profiles & Keywords ===")
-    display(kw_df) if 'display' in dir() else print(kw_df.to_string(index=False))
-
-from IPython.display import Image, display as ipy_display
+    code_cell("""from IPython.display import Image, display as ipy_display
 
 for plot_name in ['elbow_curve.png', 'silhouette_comparison.png', 'pca_clusters.png', 'cluster_distribution.png']:
-    p = config.CLUSTERING_OUTPUTS / 'plots' / plot_name
+    p = config.REPORTS_DIR / 'figures' / plot_name
     if p.exists():
         print(f"\\n--- {plot_name} ---")
         ipy_display(Image(filename=str(p)))
@@ -467,4 +373,4 @@ for plot_name in ['elbow_curve.png', 'silhouette_comparison.png', 'pca_clusters.
 ]
 
 create_notebook(nb5_cells, NOTEBOOKS_DIR / "05_Job_Clustering.ipynb")
-print("All 5 Jupyter notebooks generated successfully!")
+print("All 5 Jupyter notebooks generated successfully with updated API and clean visualization workflows!")

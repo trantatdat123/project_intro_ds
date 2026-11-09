@@ -1,0 +1,11 @@
+Metric,Count,Percentage
+Raw Records - TinixAI,13964,90.28
+Raw Records - TopCV,1503,9.72
+Raw Records - Total,15467,100.0
+Duplicates Removed - Within TinixAI,1404,9.08
+Duplicates Removed - Within TopCV,17,0.11
+Duplicates Removed - Cross-Source (TopCV matching TinixAI),9,0.06
+Total Duplicate Records Removed,1430,9.25
+Remaining Unique Records - TinixAI,12560,89.48
+Remaining Unique Records - TopCV,1477,10.52
+Remaining Unique Records - Total,14037,90.75

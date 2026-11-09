@@ -1,11 +1,9 @@
-Cluster_ID,Interpreted_Name,Top_10_Keywords,Job_Count
-0,Cluster 0: QA / QC & Testing,"test, kiểm thử, thử, kiểm, và, and, các, testing, có, tester",471
-1,Cluster 1: Và / And,"và, and, các, có, triển, với, nghiệm, phát triển, việc, phát",2291
-2,Cluster 2: Máy / Các,"máy, các, mạng, hệ, hệ thống, thống, và, công, thiết bị, bị",2725
-3,Cluster 3: Hàng / Khách,"hàng, khách, khách hàng, doanh, và, kinh doanh, kinh, các, bán, tư vấn",2120
-4,Cluster 4: AI & Machine Learning,"ai, and, và, các, có, learning, to, mô hình, triển, công",631
-5,Cluster 5: Data Analytics & BI,"android, và, game, các, dụng, ios, có, ứng dụng, ứng, mobile",630
-6,Cluster 6: Cnc / Gia Công,"cnc, gia công, máy, vẽ, trình, bản vẽ, lập trình, lập, công, phay",683
-7,Cluster 7: Và / Các,"và, các, có, and, công, triển, trình, việc, phần, hệ",2301
-8,Cluster 8: And / Công,"and, công, và, việc, có, các, to, làm, kinh, viên",1486
-9,Cluster 9: Data Analytics & BI,"dữ, dữ liệu, data, liệu, and, và, các, phân tích, phân, tích",969
+Cluster_ID,Interpreted_Name,Top_10_Keywords,Representative_Job_Titles,Job_Count,Percentage
+0,Cluster 0: Web & Fullstack Software Engineering,"web, php, backend, api, java, javascript, css, net, html, developer",Frontend Developer; Backend Developer; Lập Trình Viên,2508,17.87
+1,Cluster 1: Software Sales & IT Solutions Consulting,"marketing, sales, online, sale, demo, cntt, duy, laptop, cung, nhanh",Nhân Viên Kinh Doanh Phần Mềm; Nhân Viên Tư Vấn Phần Mềm; Nhân Viên Triển Khai Phần Mềm,2063,14.7
+2,Cluster 2: QA & Software Quality Testing,"test, testing, tester, test case, case, manual, test test, automation, testcase, bug",Manual Tester; Automation Tester; Nhân Viên Kiểm Thử Phần Mềm (Tester),472,3.36
+3,Cluster 3: Enterprise Applications & IT Development,"it, cntt, anh, c, tinh, nhanh, data, web, time, khoa",Nhân Viên IT; Lập Trình Viên; Nhân Viên IT Phần Mềm,1707,12.16
+4,"Cluster 4: Data Analytics, Engineering & BI","data, sql, cntt, erp, bi, duy, analyst, it, anh, business",Data Analyst; Data Engineer; DevOps Engineer,2355,16.78
+5,Cluster 5: Industrial Automation & CNC Programming,"cnc, phay, phay cnc, cnc cnc, cnc phay, mastercam, autocad, cam, cad, dao",Lập Trình Viên CNC; Nhân Viên Lập Trình CNC; Nhân Viên Lập Trình Máy CNC,712,5.07
+6,Cluster 6: IT Helpdesk & Network Administration,"it, cntt, camera, server, lan, windows, wifi, helpdesk, internet, email",Nhân Viên IT; Nhân Viên IT Helpdesk; IT Helpdesk,2696,19.21
+7,Cluster 7: AI Engineering & Mobile/Game Development,"android, ios, c, game, mobile, flutter, learning, python, api, duy",AI Engineer; Mobile Developer; Unity Developer,1524,10.86
