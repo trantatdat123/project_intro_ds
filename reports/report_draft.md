@@ -64,18 +64,18 @@ Dự án đã được **kiểm toán toàn diện mã nguồn (code audit), s�
   * *Lương cận dưới ("Từ / Min"):* 11 tin (0.08%).
   * *Lương phi thực tế (<3M hoặc >150M VNĐ):* 400 tin (2.85%) $\rightarrow$ Loại bỏ.
   * *Lỗi định dạng số / Không tìm thấy số:* 286 tin (2.04%) $\rightarrow$ Loại bỏ.
-* **Tổng số mẫu hồi quy hợp lệ:** **10,922 tin tuyển dụng (77.81%)**, lưu tại `data/processed/regression_data.csv`. Mức lương trung bình thị trường là **20.91 triệu VNĐ/tháng**, trung vị là **18.50 triệu VNĐ/tháng**.
+* **Tổng số mẫu hồi quy hợp lệ:** **10,922 tin tuyển dụng (77.81%)**, lưu tại `data/processed/regression_data.csv`. Mức lương trung bình thị trường là **17.86 triệu VNĐ/tháng**, trung vị là **15.00 triệu VNĐ/tháng** (IQR: 11.5M – 21.0M VNĐ).
 
 ### 2.4 Nhãn Nghề Heuristic Dưới Dạng Weak Supervision
 * Nhãn nghề `job_role_label` được sinh từ cột `job_title` bằng các luật Regex phân tầng (từ hẹp đến rộng):
-  1. `AI / ML Engineer`: 273 tin (1.94%)
-  2. `Data Scientist`: 85 tin (0.61%)
-  3. `Data Engineer`: 201 tin (1.43%)
-  4. `Data Analyst / BI`: 527 tin (3.75%)
-  5. `QA / Tester`: 447 tin (3.18%)
-  6. `DevOps / Cloud`: 464 tin (3.31%)
-  7. `IT Support / Network / Security`: 1,200 tin (8.55%)
-  8. `Software Engineer`: 3,929 tin (27.99%)
+  1. `Software Engineer`: 3,960 tin (28.21% / 55.57% tập kỹ thuật)
+  2. `IT Support / Network / Security`: 1,141 tin (8.13% / 16.01% tập kỹ thuật)
+  3. `Data Analyst / BI`: 536 tin (3.82% / 7.52% tập kỹ thuật)
+  4. `DevOps / Cloud`: 465 tin (3.31% / 6.52% tập kỹ thuật)
+  5. `QA / Tester`: 443 tin (3.16% / 6.22% tập kỹ thuật)
+  6. `AI / ML Engineer`: 280 tin (1.99% / 3.93% tập kỹ thuật)
+  7. `Data Engineer`: 202 tin (1.44% / 2.83% tập kỹ thuật)
+  8. `Data Scientist`: 99 tin (0.71% / 1.39% tập kỹ thuật)
 * Các tin không thuộc chuyên môn CNTT rõ ràng (6,911 tin ~ 49.23%) được gán `Other / Unassigned` và loại khỏi bài toán Phân loại.
 * **Tập dữ liệu phân loại:** **7,126 tin tuyển dụng**, lưu tại `data/processed/classification_data.csv`.
 
@@ -136,8 +136,12 @@ Dự án đã được **kiểm toán toàn diện mã nguồn (code audit), s�
 | **Extra Trees Regressor** | 5.30 | 8.88 | 0.3350 | 5.56 | 0.3786 |
 | **Random Forest Regressor** | 5.40 | 8.77 | 0.3507 | 5.74 | 0.3545 |
 | **Ridge Regression** | 5.45 | 8.57 | 0.3801 | 5.91 | 0.3272 |
-| **Linear Regression** | 5.51 | 8.64 | 0.3703 | 5.99 | 0.3101 |
-| **Dummy (Median Baseline)** | 8.35 | 11.23 | -0.0634 | 8.67 | -0.0601 |
+| **Linear Regression** | 5.58 | 8.58 | 0.3782 | 5.91 | 0.3343 |
+| **Dummy (Median Baseline)** | 7.21 | 11.30 | -0.0772 | 7.12 | -0.0649 |
+
+* *Biểu đồ so sánh trực quan hiệu năng các mô hình hồi quy:* `reports/figures/regression_model_comparison.png`
+* *Biểu đồ tương quan thực tế vs dự đoán:* `reports/figures/regression_actual_vs_predicted.png`
+* *Biểu đồ phân phối phần dư:* `reports/figures/regression_residuals_distribution.png`
 
 * **Nghiên cứu suy giảm tái đồng bộ (Reconciled Ablation Study E1 - E4):**
   * **E1 (Đặc trưng bảng không có Năm):** XGBoost đạt Test MAE = 5.76M, $R^2 = 0.3370$.
@@ -148,6 +152,7 @@ Dự án đã được **kiểm toán toàn diện mã nguồn (code audit), s�
 * **Đánh giá theo thời gian (Temporal Validation - Train $\le 2025$, Test 2026):**
   * Mô hình huấn luyện trên dữ liệu lịch sử ($\le 2025$, $N=8,054$) khi dự đoán trên thị trường năm 2026 ($N=2,868$) đạt Test MAE là **7.94M VNĐ (Ridge)** và **7.99M VNĐ (XGBoost)**.
   * Hiện tượng tăng sai số từ 5.24M lên ~7.99M phản ánh chính xác khoảng cách tổng quát hóa thời gian (Temporal Generalization Gap), bắt nguồn từ đợt tăng lương thị trường và biến động ngân sách tuyển dụng năm 2026 so với giai đoạn trước.
+  * *Biểu đồ trực quan khoảng cách thời gian (Temporal Gap):* `reports/figures/temporal_validation_comparison.png`
 
 ---
 
@@ -166,6 +171,9 @@ Dự án đã được **kiểm toán toàn diện mã nguồn (code audit), s�
 | Agglomerative ($k=8$, Sample $N=3000$) | 8 | 0.1159 | 1.4338 | 2.81 | 0.0027 | 0.0084 |
 | GMM ($k=8$, Sample $N=3000$) | 8 | 0.0874 | 3.5195 | 93.39 | 0.1263 | 0.2791 |
 | DBSCAN ($\text{eps}=0.45$, Sample $N=3000$) | 1 | N/A | N/A | N/A | N/A | N/A |
+
+* *Biểu đồ so sánh đối đầu công bằng 4 thuật toán phân cụm:* `reports/figures/clustering_algorithm_comparison.png`
+* *Biểu đồ phân bố cụm trong không gian 2D PCA:* `reports/figures/clustering_pca_clusters.png`
 
 * **8 Nhóm Hình Mẫu Tuyển Dụng Sau Khi Lọc Stopword Triệt Để (`reports/tables/cluster_keywords.csv`):**
   1. **Cluster 0: Web & Fullstack Software Engineering** (2,508 tin - 17.87%): `web`, `php`, `backend`, `api`, `java`, `javascript`, `css`, `.net`, `html`, `developer`.

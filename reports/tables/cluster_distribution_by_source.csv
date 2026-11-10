@@ -1,0 +1,11 @@
+cluster_id,cluster_name,tinixai_count,topcv_count,total_count,percentage
+0,Web & Fullstack Software Engineering,2331,177,2508,17.87
+1,Software Sales & IT Solutions Consulting,1813,250,2063,14.70
+2,QA & Software Quality Testing,351,121,472,3.36
+3,Enterprise Applications & IT Development,1561,146,1707,12.16
+4,"Data Analytics, Engineering & BI",2037,318,2355,16.78
+5,Industrial Automation & CNC Programming,651,61,712,5.07
+6,IT Helpdesk & Network Administration,2461,235,2696,19.21
+7,AI Engineering & Mobile/Game Development,1355,169,1524,10.86
+Total,All 8 Clusters Combined,12560,1477,14037,100.00
+

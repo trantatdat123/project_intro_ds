@@ -1,0 +1,10 @@
+Metric,Count,Note
+Raw TopCV Postings (data/raw/topcv_jobs.csv),1503,Initial crawled raw dataset
+Duplicates Removed within TopCV,17,Identified by composite key normalization
+Duplicates Cross-Source (TopCV matching TinixAI),9,Postings already present in TinixAI
+Remaining Unique TopCV Postings,1477,"1,503 - 17 - 9 = 1,477"
+Remaining Unique TinixAI Postings,12560,"13,964 - 1,404 within-source = 12,560"
+Total Postings in Master Cleaned Dataset,14037,"12,560 + 1,477 = 14,037"
+Total Postings in Clustering Dataset (clustering_data.csv),14037,Composite text non-empty: 100%
+Total Postings Assigned to 8 Clusters (Sum Cluster 0-7),14037,Cluster 0-7 sum exactly matches master corpus
+Net Discrepancy between Clusters and Cleaned Corpus,0,"Perfect 100% alignment, 0 missing records"

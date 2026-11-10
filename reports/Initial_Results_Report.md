@@ -119,8 +119,8 @@ The salary parser in `src/data/salary_parser.py` was enhanced to validate lower 
 | **Implausible Outliers (<3M or >150M VND)** | 400 | 2.85% | Filtered out as extreme outliers |
 | **Invalid / Unparseable Numbers** | 286 | 2.04% | Filtered out |
 | **Total Valid Samples for Regression** | **10,922** | **77.81%** | **Retained in `regression_data.csv`** |
-| *Plausible Monthly Salary Mean* | *20.91 Million VND* | - | Std: 10.94 Million VND |
-| *Plausible Monthly Salary Median* | *18.50 Million VND* | - | IQR: 13.0M – 25.0M VND |
+| *Plausible Monthly Salary Mean* | *17.86 Million VND* | - | Std: 11.08 Million VND |
+| *Plausible Monthly Salary Median* | *15.00 Million VND* | - | IQR: 11.5M – 21.0M VND |
 | *Plausible Monthly Salary Min / Max* | *3.00M / 150.00M VND* | - | Strict plausible domain |
 
 ### 3.3 Rule-Based Job Role Taxonomy (Weak Supervision Note)
@@ -135,14 +135,14 @@ The salary parser in `src/data/salary_parser.py` was enhanced to validate lower 
 | Job Role Category | Count | Percentage (%) | Role Description & Scope |
 | :--- | :--- | :--- | :--- |
 | Other / Unassigned | 6,911 | 49.23% | Non-technical or ambiguous titles (excluded from classification) |
-| **Software Engineer** | **3,929** | **27.99%** | Fullstack, Backend, Frontend, Web, Mobile Developers |
-| **IT Support / Network / Security** | **1,200** | **8.55%** | Helpdesk, Systems, Network, and Information Security |
-| **Data Analyst / BI** | **527** | **3.75%** | Business Intelligence, Reporting, SQL, Power BI, Tableau |
-| **DevOps / Cloud** | **464** | **3.31%** | SRE, Cloud Infrastructure, CI/CD, Kubernetes, AWS |
-| **QA / Tester** | **447** | **3.18%** | Manual / Automation QC, Software Test Engineers |
-| **AI / ML Engineer** | **273** | **1.94%** | Machine Learning, Deep Learning, Computer Vision, NLP |
-| **Data Engineer** | **201** | **1.43%** | Big Data, Data Pipelines, ETL, Data Warehousing |
-| **Data Scientist** | **85** | **0.61%** | Statistical Modeling, Predictive Analytics |
+| **Software Engineer** | **3,960** | **28.21%** | Fullstack, Backend, Frontend, Web, Mobile Developers |
+| **IT Support / Network / Security** | **1,141** | **8.13%** | Helpdesk, Systems, Network, and Information Security |
+| **Data Analyst / BI** | **536** | **3.82%** | Business Intelligence, Reporting, SQL, Power BI, Tableau |
+| **DevOps / Cloud** | **465** | **3.31%** | SRE, Cloud Infrastructure, CI/CD, Kubernetes, AWS |
+| **QA / Tester** | **443** | **3.16%** | Manual / Automation QC, Software Test Engineers |
+| **AI / ML Engineer** | **280** | **1.99%** | Machine Learning, Deep Learning, Computer Vision, NLP |
+| **Data Engineer** | **202** | **1.44%** | Big Data, Data Pipelines, ETL, Data Warehousing |
+| **Data Scientist** | **99** | **0.71%** | Statistical Modeling, Predictive Analytics |
 | **Total Valid Technical Roles** | **7,126** | **100.0%** | **Form the Task 1 dataset (`classification_data.csv`)** |
 
 ---
@@ -237,13 +237,16 @@ All 6 regressors were trained on configuration E4 (SBERT dense embeddings + One-
 | Extra Trees Regressor | 5.30 | 8.88 | 0.3350 | 5.56 | 0.3786 |
 | Random Forest Regressor | 5.40 | 8.77 | 0.3507 | 5.74 | 0.3545 |
 | Ridge Regression | 5.45 | 8.57 | 0.3801 | 5.91 | 0.3272 |
-| Linear Regression | 5.51 | 8.64 | 0.3703 | 5.99 | 0.3101 |
-| Dummy (Median Baseline) | 8.35 | 11.23 | -0.0634 | 8.67 | -0.0601 |
+| Linear Regression | 5.58 | 8.58 | 0.3782 | 5.91 | 0.3343 |
+| Dummy (Median Baseline) | 7.21 | 11.30 | -0.0772 | 7.12 | -0.0649 |
 
-**Figure 3: Actual vs. Predicted Salary Plot (Test Set)**  
+**Figure 3: Regression Model Performance Comparison (Test Set E4)**  
+*(Multi-panel comparison saved to `reports/figures/regression_model_comparison.png`)*
+
+**Figure 4: Actual vs. Predicted Salary Plot (Test Set)**  
 *(Scatter plot saved to `reports/figures/actual_vs_predicted.png`)*
 
-**Figure 4: Residual Error Distribution**  
+**Figure 5: Residual Error Distribution**  
 *(Plot saved to `reports/figures/residual_plot.png`)*
 
 ### 6.3 Reconciled Ablation Study
@@ -295,6 +298,9 @@ The corpus spans posting years from 2022 through 2026. To test real-world deploy
 | **XGBoost Regressor** | **7.99** | **12.70** | **0.1930** |
 | **Random Forest Regressor** | **8.46** | **13.30** | **0.1144** |
 
+**Figure 7: Longitudinal Temporal Validation Gap (Random vs. Out-of-Time 2026 Evaluation)**  
+*(Multi-panel comparison saved to `reports/figures/temporal_validation_comparison.png`)*
+
 **Temporal Generalization Discussion:** Under temporal validation, prediction error increases from ~5.24M to ~7.94M VND. This reveals a macroeconomic generalization gap: 2026 recruitment compensation packages in Vietnam experienced noticeable inflation and structural salary band shifts compared to 2022–2024 postings, which models trained strictly on historical data slightly underestimate.
 
 ---
@@ -326,7 +332,10 @@ The corpus spans posting years from 2022 through 2026. To test real-world deploy
 | Gaussian Mixture Model ($k=8$, Sample) | 8 | 0.0874 | 3.5195 | 93.39 | 0.1263 | 0.2791 |
 | DBSCAN ($\text{eps}=0.45$, Sample $N=3000$) | 1 | N/A | N/A | N/A | N/A | N/A |
 
-**Figure 7: K-Means Inertia Elbow Curve and Silhouette Progression**  
+**Figure 8: Fair Head-to-Head Comparison Across 4 Clustering Algorithms**  
+*(Comparison on Silhouette, Davies-Bouldin, and NMI/ARI saved to `reports/figures/clustering_algorithm_comparison.png`)*
+
+**Figure 9: K-Means Inertia Elbow Curve and Silhouette Progression**  
 *(Saved to `reports/figures/elbow_curve.png` and `reports/figures/silhouette_comparison.png`)*
 
 #### Benchmark Takeaways:

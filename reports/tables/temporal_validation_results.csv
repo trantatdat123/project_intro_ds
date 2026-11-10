@@ -1,4 +1,7 @@
 Config,Model,MAE (Million VND),RMSE (Million VND),R2 Score
-Temporal (<=2025 -> 2026),Ridge,7.94,12.56,0.2104
-Temporal (<=2025 -> 2026),Random Forest,8.46,13.3,0.1144
-Temporal (<=2025 -> 2026),XGBoost,7.99,12.7,0.193
+Temporal (<=2025 -> 2026),Dummy (Median Baseline),10.94,16.56,-0.3726
+Temporal (<=2025 -> 2026),Linear Regression,7.97,12.39,0.2324
+Temporal (<=2025 -> 2026),Ridge Regression,7.94,12.56,0.2104
+Temporal (<=2025 -> 2026),Random Forest Regressor,8.46,13.3,0.1144
+Temporal (<=2025 -> 2026),Extra Trees Regressor,8.12,12.89,0.1693
+Temporal (<=2025 -> 2026),XGBoost Regressor,7.99,12.7,0.193

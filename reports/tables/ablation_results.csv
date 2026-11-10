@@ -1,13 +1,25 @@
 Config,Model,MAE (Million VND),RMSE (Million VND),R2 Score,Val MAE (Million VND),Val R2 Score
-E1,Ridge,6.05,9.24,0.2797,6.46,0.2087
-E1,Random Forest,5.76,8.86,0.3371,5.99,0.3164
-E1,XGBoost,5.76,8.86,0.337,5.98,0.3183
-E2,Ridge,5.9,9.07,0.3065,6.25,0.252
-E2,Random Forest,5.62,8.97,0.321,5.58,0.3813
-E2,XGBoost,5.53,8.76,0.3532,5.66,0.3659
-E3,Ridge,5.48,8.6,0.3757,6.01,0.3069
-E3,Random Forest,5.64,8.96,0.3221,6.02,0.303
-E3,XGBoost,5.35,8.71,0.3597,5.64,0.385
-E4,Ridge,5.45,8.57,0.3801,5.91,0.3272
-E4,Random Forest,5.4,8.77,0.3507,5.74,0.3545
-E4,XGBoost,5.24,8.71,0.3604,5.34,0.429
+E1,Dummy (Median Baseline),7.21,11.3,-0.0772,7.12,-0.0649
+E1,Linear Regression,6.04,9.24,0.2792,6.46,0.2099
+E1,Ridge Regression,6.05,9.24,0.2797,6.46,0.2087
+E1,Random Forest Regressor,5.76,8.86,0.3371,5.99,0.3164
+E1,Extra Trees Regressor,5.8,8.91,0.3301,5.99,0.3258
+E1,XGBoost Regressor,5.76,8.86,0.337,5.98,0.3183
+E2,Dummy (Median Baseline),7.21,11.3,-0.0772,7.12,-0.0649
+E2,Linear Regression,5.9,9.07,0.3061,6.25,0.2528
+E2,Ridge Regression,5.9,9.07,0.3065,6.25,0.252
+E2,Random Forest Regressor,5.62,8.97,0.321,5.58,0.3813
+E2,Extra Trees Regressor,5.75,9.63,0.2171,5.61,0.3799
+E2,XGBoost Regressor,5.53,8.76,0.3532,5.66,0.3659
+E3,Dummy (Median Baseline),7.21,11.3,-0.0772,7.12,-0.0649
+E3,Linear Regression,5.59,8.59,0.378,6.01,0.3148
+E3,Ridge Regression,5.48,8.6,0.3757,6.01,0.3069
+E3,Random Forest Regressor,5.64,8.96,0.3221,6.02,0.303
+E3,Extra Trees Regressor,5.55,9.09,0.3034,5.82,0.3475
+E3,XGBoost Regressor,5.35,8.71,0.3597,5.64,0.385
+E4,Dummy (Median Baseline),7.21,11.3,-0.0772,7.12,-0.0649
+E4,Linear Regression,5.58,8.58,0.3782,5.91,0.3343
+E4,Ridge Regression,5.45,8.57,0.3801,5.91,0.3272
+E4,Random Forest Regressor,5.4,8.77,0.3507,5.74,0.3545
+E4,Extra Trees Regressor,5.3,8.88,0.335,5.56,0.3786
+E4,XGBoost Regressor,5.24,8.71,0.3604,5.34,0.429
